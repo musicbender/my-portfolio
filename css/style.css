@@ -10,7 +10,7 @@ body, html {
 
 .title-section {
     width: 100%;
-    height: 400px;
+    height: 600px;
     font-family: Montserrat;
     color: #ffffff;
     background-color: #3BE5D9;
@@ -18,7 +18,7 @@ body, html {
 }
 
 .title-div {
-    margin: 120px auto;
+    margin: 170px auto;
     text-align: center;
 }
 
@@ -34,5 +34,68 @@ body, html {
 /*******Work Section*******/
 
 .work-section {
+    margin: 0;
+    height: 800px;
+    background-color: #2b313d;
+    text-align: center;
+    overflow: hidden;
+}
+
+.work-header {
+    margin: 60px auto 0 auto;
+    font-family: Montserrat;
+    font-size: 3rem;
+    color: #ffffff;
+}
+
+.container {
+    margin: 40px auto 0 auto;
+    width: 90%;
+    text-align: center;
+}
+
+.row {
     
+}
+
+.thumbnail {
+    margin: 10px;
+}
+
+/*******About*******/
+
+.about-section {
+    margin: 0;
+    height: 300px;
+    background-color: #ffffff;
+    text-align: center;
+    overflow: hidden;
+}
+
+.about-header {
+    margin: 60px auto 0 auto;
+    font-family: Montserrat;
+    font-size: 3rem;
+    color: #2b313d;
+}
+
+.skills-list {
+    font-family: "Open Sans";
+    list-style: none;
+}
+
+.skills-list li {
+    display: inline-block;
+    margin: 0 10px 0 10px;
+    font-size: 1.75rem;
+}
+
+/*******Contact*******/
+
+.contact-section {
+    margin: 0;
+    height: 100px;
+    background-color: #6f778a;
+    text-align: center;
+    overflow: hidden;
 }
