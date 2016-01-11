@@ -31,6 +31,16 @@ body, html {
     font-size: 1rem;
 }
 
+svg#bigTriangleColor {
+	pointer-events: none;
+}
+
+#bigTriangleColor path {
+	fill: #3BE5D9;
+	stroke: darken(#3BE5D9, 7%);
+	stroke-width: 2;
+}
+
 /*******Work Section*******/
 
 .work-section {
@@ -98,4 +108,15 @@ body, html {
     background-color: #6f778a;
     text-align: center;
     overflow: hidden;
+}
+
+.social-media {
+    display: inline-block;
+    margin: 10px auto;
+    padding-right: 50px;
+}
+
+.social-media li {
+    display: inline-block;
+    list-style: none;
 }
