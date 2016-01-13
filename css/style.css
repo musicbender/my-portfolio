@@ -42,25 +42,12 @@ body, html {
 .subtitle {
     font-size: 1rem;
 }
-svg {
-    opacity: 1;
-}
-svg#bigTriangleColor {
-	pointer-events: none;
-}
-
-#bigTriangleColor path {
-    opacity: 1;
-	fill: #2b313d;
-	stroke: darken(#3BE5D9, 7%);
-	stroke-width: 2;
-}
 
 /*******Work Section*******/
 
 .work-section {
     margin: -100px 0 0 0;
-    height: 900px;
+    height: 1000px;
     background-color: transparent;
     text-align: center;
     position: relative;
@@ -68,14 +55,25 @@ svg#bigTriangleColor {
     overflow: hidden;
 }
 
+svg#bigTriangleColor {
+	pointer-events: none;
+}
+
+#bigTriangleColor path {
+	fill: #2b313d;
+	stroke: darken(#3BE5D9, 7%);
+	stroke-width: 2;
+}
+
 .work-container {
     margin: -6px 0 0 0;
+    height: 940px;
     background-color: #2b313d;
     overflow: hidden;
 }
 
 .work-header {
-    margin: 50px auto 0 auto;
+    margin: 115px auto 0 auto;
     font-family: Montserrat;
     font-size: 3rem;
     color: #ffffff;
@@ -93,6 +91,12 @@ svg#bigTriangleColor {
 
 .thumbnail {
     margin: 10px;
+    -webkit-filter: grayscale(1) brightness(85%);
+    filter: grayscale(1) brightness(85%);
+    -webkit-box-shadow: 5px 5px 9px -3px rgba(0,0,0,0.75);
+-moz-box-shadow: 5px 5px 9px -3px rgba(0,0,0,0.75);
+box-shadow: 5px 5px 9px -3px rgba(0,0,0,0.75);
+    
 }
 
 /*******About*******/
