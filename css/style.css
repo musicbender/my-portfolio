@@ -10,7 +10,7 @@ body, html {
 
 .title-section {
     width: 100%;
-    height: 600px;
+    height: 900px;
     font-family: 'Open Sans', sans-serif;
     color: #ffffff;
     background-color: #3BE5D9;
@@ -18,12 +18,12 @@ body, html {
 }
 
 .title-div {
-    margin: 170px auto;
-    text-align: center;
+    margin: 170px 0 0 60px;
+/*    text-align: center;*/
 }
 
 .title {
-    margin: 0 auto;
+    margin: 0;
     font-size: 10rem;
     font-weight: 300;
     letter-spacing: 0px;
@@ -37,13 +37,16 @@ body, html {
 .subtitle {
     font-size: 1rem;
 }
-
+svg {
+    background-color: transparent;
+}
 svg#bigTriangleColor {
 	pointer-events: none;
 }
 
 #bigTriangleColor path {
-	fill: #3BE5D9;
+    fill: transparent;
+/*	fill: #3BE5D9;*/
 	stroke: darken(#3BE5D9, 7%);
 	stroke-width: 2;
 }
@@ -52,7 +55,7 @@ svg#bigTriangleColor {
 
 .work-section {
     margin: 0;
-    height: 800px;
+    height: 900px;
     background-color: #2b313d;
     text-align: center;
     overflow: hidden;
