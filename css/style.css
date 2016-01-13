@@ -13,7 +13,12 @@ body, html {
     height: 900px;
     font-family: 'Open Sans', sans-serif;
     color: #ffffff;
+    background-image: url('https://images.unsplash.com/photo-1443527216320-7e744084f5a7?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=a2e78235a91d11aca971a3d1cc3c179b');
+    background-size: cover;
     background-color: #3BE5D9;
+    background-blend-mode: overlay;
+    position: relative;
+    z-index: 1;
     overflow: hidden;
 }
 
@@ -38,15 +43,15 @@ body, html {
     font-size: 1rem;
 }
 svg {
-    background-color: transparent;
+    opacity: 1;
 }
 svg#bigTriangleColor {
 	pointer-events: none;
 }
 
 #bigTriangleColor path {
-    fill: transparent;
-/*	fill: #3BE5D9;*/
+    opacity: 1;
+	fill: #2b313d;
 	stroke: darken(#3BE5D9, 7%);
 	stroke-width: 2;
 }
@@ -54,15 +59,21 @@ svg#bigTriangleColor {
 /*******Work Section*******/
 
 .work-section {
-    margin: 0;
+    margin: -100px 0 0 0;
     height: 900px;
-    background-color: #2b313d;
+    background-color: transparent;
     text-align: center;
+    position: relative;
+    z-index: 2;
     overflow: hidden;
 }
 
+.work-container {
+    background-color: #2b313d;
+}
+
 .work-header {
-    margin: 60px auto 0 auto;
+    margin: -10px auto 0 auto;
     font-family: Montserrat;
     font-size: 3rem;
     color: #ffffff;
@@ -130,3 +141,5 @@ svg#bigTriangleColor {
     display: inline-block;
     list-style: none;
 }
+
+/*path: M0 100 L0 0 L50 100 L100 0 L100 100 Z*/
