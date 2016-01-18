@@ -63,6 +63,7 @@ svg#bigTriangleColor {
 	fill: #2b313d;
 	stroke: darken(#3BE5D9, 7%);
 	stroke-width: 2;
+    z-index: 4;
 }
 
 .work-container {
@@ -73,10 +74,17 @@ svg#bigTriangleColor {
 }
 
 .work-header {
-    margin: 115px auto 0 auto;
+    position: relative;
+    top: 10px;
+    left: 25%;
+    margin: 0 auto;
     font-family: Montserrat;
     font-size: 3rem;
     color: #ffffff;
+    -ms-transform:     rotate(-7deg); /* IE 9 */
+    -webkit-transform: rotate(-7deg); /* Chrome, Safari, Opera */
+    transform:         rotate(-7deg);
+    z-index: 5;
 }
 
 .container {
