@@ -6,6 +6,11 @@ body, html {
     margin: 0;
 }
 
+h2 {
+    font-family: 'Open Sans';
+    font-size: 4rem;
+    font-weight: 300;
+}
 /********Title Section*******/
 
 .title-section {
@@ -30,26 +35,30 @@ body, html {
 .title {
     margin: 0;
     font-size: 10rem;
-    font-weight: 300;
+    font-weight: 400;
+    color: #02CCB5;
     letter-spacing: 0px;
     text-transform: uppercase;
-    text-shadow: 11px 11px 9px rgba(150, 150, 150, 0.27);
+/*    text-shadow: 11px 11px 9px rgba(150, 150, 150, 0.27);*/
     text-rendering: geometricPrecision;
 }
 
 .jacobs {
-    font-weight: 600;
+    font-weight: 400;
+    color: white;
 }
 
 .subtitle {
-    font-size: 1rem;
+    margin: 10px 0 0 15px;
+    font-size: 2rem;
+    font-weight: 300;
 }
 
 /*******Work Section*******/
 
 .work-section {
     margin: -100px 0 0 0;
-    height: 1000px;
+    height: 1200px;
     background-color: transparent;
     text-align: center;
     position: relative;
@@ -61,7 +70,7 @@ svg.bigTriangleColor {
 	pointer-events: none;
 }
 
-.bigTriangleColor path {
+.separator-work path {
 	fill: #2b313d;
 	stroke: darken(#3BE5D9, 7%);
 	stroke-width: 2;
@@ -69,15 +78,13 @@ svg.bigTriangleColor {
 
 .work-container {
     margin: -6px 0 0 0;
-    height: 940px;
+    height: 1140px;
     background-color: #2b313d;
     overflow: hidden;
 }
 
 .work-header {
     margin: 120px auto 0 auto;
-    font-family: 'Wire One';
-    font-size: 5rem;
     color: #ffffff;
 }
 
@@ -85,10 +92,6 @@ svg.bigTriangleColor {
     margin: 35px auto 0 auto;
     width: 90%;
     text-align: center;
-}
-
-.row {
-    
 }
 
 .thumbnail {
@@ -105,16 +108,20 @@ box-shadow: 5px 5px 9px -3px rgba(0,0,0,0.75);
 
 .skills-section {
     margin: 0;
-    height: 300px;
+    height: 350px;
     background-color: #ffffff;
     text-align: center;
     overflow: hidden;
 }
 
+.separator-skills path {
+	fill: #2b313d;
+	stroke: darken(#3BE5D9, 7%);
+	stroke-width: 2;
+}
+
 .skills-header {
-    margin: 60px auto 0 auto;
-    font-family: 'Wire One';
-    font-size: 5rem;
+    margin: 10px auto 0 auto;
     color: #2b313d;
 }
 
@@ -133,16 +140,26 @@ box-shadow: 5px 5px 9px -3px rgba(0,0,0,0.75);
 
 .about-section {
     margin: 0;
-    height: 300px;
-    background-color: #ffffff;
+    height: 800px;
+    background-color: transparent;
     text-align: center;
     overflow: hidden;
 }
 
+.separator-about path {
+	fill: #f7f7f7;
+	stroke: darken(#3BE5D9, 7%);
+	stroke-width: 2;
+}
+
+.about-container {
+    margin: -6px 0 0 0;
+    background-color: #f7f7f7;
+    height: 800px;
+    overflow: hidden;
+}
 .about-header {
     margin: 60px auto 0 auto;
-    font-family: Montserrat;
-    font-size: 3rem;
     color: #2b313d;
 }
 
@@ -151,8 +168,12 @@ box-shadow: 5px 5px 9px -3px rgba(0,0,0,0.75);
 
 .contact-section {
     margin: 0;
-    height: 100px;
+    height: 600px;
+    background-image: url('/images/wave_background.jpg');
     background-color: #6f778a;
+    background-size: cover;
+    background-color: #135E5E;
+    background-blend-mode: soft-light;
     text-align: center;
     overflow: hidden;
 }
@@ -168,4 +189,3 @@ box-shadow: 5px 5px 9px -3px rgba(0,0,0,0.75);
     list-style: none;
 }
 
-/*path: M0 100 L0 0 L50 100 L100 0 L100 100 Z*/
