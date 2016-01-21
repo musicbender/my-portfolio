@@ -18,7 +18,9 @@ h2 {
     height: 900px;
     font-family: 'Open Sans', sans-serif;
     color: #ffffff;
-    background-image: url('https://images.unsplash.com/photo-1443527216320-7e744084f5a7?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=a2e78235a91d11aca971a3d1cc3c179b');
+    background-image: url('https://images.unsplash.com/photo-1418224829731-3ed692c2caff?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=3a95cae549469f3035b3fc558017a3cc');
+/*    background-image: url('https://images.unsplash.com/photo-1443527216320-7e744084f5a7?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=a2e78235a91d11aca971a3d1cc3c179b');*/
+    background-position: center;
     background-size: cover;
     background-color: #3BE5D9;
     background-blend-mode: overlay;
@@ -28,7 +30,7 @@ h2 {
 }
 
 .title-div {
-    margin: 150px 0 0 60px;
+    margin: 150px 0 0 500px;
 /*    text-align: center;*/
 }
 
@@ -48,7 +50,7 @@ h2 {
 }
 
 .subtitle {
-    margin: 10px 0 0 15px;
+    margin: 10px 0 0 470px;
     font-size: 2rem;
     font-weight: 300;
 }
@@ -172,7 +174,7 @@ svg.bigTriangleColor {
 .caption-title {
     position: absolute;
     top: -30px;
-    left: 90px;
+    left: 175px;
     font-size: 1.5em;
 }
 
