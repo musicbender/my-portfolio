@@ -92,14 +92,15 @@ svg.bigTriangleColor {
     width: 90%;
     text-align: center;
     -webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
-      -ms-box-sizing: border-box;
-          box-sizing: border-box;
+    -moz-box-sizing:    border-box;
+    -ms-box-sizing:     border-box;
+    box-sizing:         border-box;
 }
 
 .pic-div {
     display: inline-block;
     position: relative;
+    margin: 10px;
     width: 400px;
     height: 225px;
     isolation: isolate;
@@ -137,18 +138,19 @@ svg.bigTriangleColor {
 }
 
 .pic:hover {
-    transform: scale(1.2, 1.2);
+    transform: scale(1.25, 1.25) translate(0px, -10px);
 }
 
 .caption {
-    display: none;
-    margin-top: -115px;
+    position: relative;
+/*    display: none;*/
+    margin-top: 5px;
     width: 400px;
     height: 125px;
     color: #ffffff;
     font-family: 'Open Sans';
     background-color: transparent;
-    opacity: 0.6;
+    opacity: 0;
     z-index: 100;
     pointer-events: none;
 }
@@ -160,7 +162,7 @@ svg.bigTriangleColor {
 	stroke-width: 2;
 }
 
-.caption-div {
+.caption-container {
     height: 150px;
     margin-top: -10px;
     background-color: #000000;
@@ -169,7 +171,7 @@ svg.bigTriangleColor {
 
 .caption-title {
     position: absolute;
-    top: 90px;
+    top: -30px;
     left: 90px;
     font-size: 1.5em;
 }
@@ -178,8 +180,6 @@ svg.bigTriangleColor {
     margin: 5px 0 0 0;
     font-size: 1em;
 }
-
-
 
 /*******Skills Section*******/
 
