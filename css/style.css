@@ -100,7 +100,6 @@ svg.bigTriangleColor {
 .pic-div {
     display: inline-block;
     position: relative;
-/*    margin: 10px;*/
     width: 400px;
     height: 225px;
     isolation: isolate;
@@ -143,28 +142,44 @@ svg.bigTriangleColor {
 
 .caption {
     display: none;
-    position: absolute;
-    top: 20px;
-    left: 0;
+    margin-top: -115px;
     width: 400px;
     height: 125px;
     color: #ffffff;
     font-family: 'Open Sans';
-    background-color: #000000;
+    background-color: transparent;
     opacity: 0.6;
     z-index: 100;
     pointer-events: none;
-    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.25);
+}
+
+.caption-triangle {
+    margin-top: -50px;
+    fill: black;
+	stroke: darken(#3BE5D9, 7%);
+	stroke-width: 2;
+}
+
+.caption-div {
+    height: 150px;
+    margin-top: -10px;
+    background-color: #000000;
+    float: left;
 }
 
 .caption-title {
-    margin: 0;
+    position: absolute;
+    top: 90px;
+    left: 90px;
     font-size: 1.5em;
 }
 
 .caption-body {
-    font-size: 1.25em;
+    margin: 5px 0 0 0;
+    font-size: 1em;
 }
+
+
 
 /*******Skills Section*******/
 
