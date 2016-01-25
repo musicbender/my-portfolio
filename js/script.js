@@ -5,10 +5,10 @@ $(document).ready(function(){
     
     $('.pic-div').mouseenter(function(){
         var caption = $(this).children().children().eq(1);
-        caption.stop().animate({top: '-115px', opacity: '0.7', easing: 'easeInCubic'}, 500);
+        caption.stop().animate({top: '-115px', opacity: '0.7', easing: 'easeInCubic'}, 480);
     });
     $('.pic-div').mouseleave(function(){
         var caption = $(this).children().children().eq(1);
-        caption.stop().animate({top: '115px', opacity: '0', easing: 'easeOutCubic'}, 500);
+        caption.stop().animate({top: '115px', opacity: '0', easing: 'easeOutCubic'}, 480);
     });
 });

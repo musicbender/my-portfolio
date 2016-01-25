@@ -23,6 +23,7 @@ h2 {
     background-position: center;
     background-size: cover;
     background-color: #3BE5D9;
+    background-attachment: fixed;
     background-blend-mode: overlay;
     position: relative;
     z-index: 1;
@@ -37,7 +38,7 @@ h2 {
 .title {
     margin: 0;
     font-size: 10rem;
-    font-weight: 400;
+    font-weight: 300;
     color: #02CCB5;
     letter-spacing: 0px;
     text-transform: uppercase;
@@ -45,13 +46,13 @@ h2 {
 }
 
 .jacobs {
-    font-weight: 400;
+    font-weight: 300;
     color: white;
 }
 
 .subtitle {
-    margin: 10px 0 0 470px;
-    font-size: 2rem;
+    margin: 10px 0 0 475px;
+    font-size: 1.8rem;
     font-weight: 300;
 }
 
@@ -59,7 +60,7 @@ h2 {
 
 .work-section {
     margin: -100px 0 0 0;
-    height: 1200px;
+    height: 1400px;
     background-color: transparent;
     text-align: center;
     position: relative;
@@ -79,7 +80,7 @@ svg.bigTriangleColor {
 
 .work-container {
     margin: -6px 0 0 0;
-    height: 1140px;
+    height: 1340px;
     background-color: #2b313d;
     overflow: hidden;
 }
@@ -183,11 +184,28 @@ svg.bigTriangleColor {
     font-size: 1em;
 }
 
+.recommend-body {
+    margin: 100px auto 0 auto;
+    width: 75%;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.25rem;
+    font-style: italic;
+    color: #a1a1a1;
+}
+
+.recommend-name {
+    margin: 20px auto;
+    width: 75%;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.25rem;
+    color: #a1a1a1;
+}
+
 /*******Skills Section*******/
 
 .skills-section {
     margin: 0;
-    height: 350px;
+    height: 300px;
     background-color: #ffffff;
     text-align: center;
     overflow: hidden;
@@ -212,7 +230,8 @@ svg.bigTriangleColor {
 .skills-list li {
     display: inline-block;
     margin: 0 10px 0 10px;
-    font-size: 1.75rem;
+    font-size: 1.5rem;
+    color: #a1a1a1;
 }
 
 /*******About*******/
@@ -234,6 +253,7 @@ svg.bigTriangleColor {
 .about-container {
     margin: -6px 0 0 0;
     background-color: #f7f7f7;
+    width: 100%;
     height: 1000px;
     overflow: hidden;
 }
@@ -242,17 +262,53 @@ svg.bigTriangleColor {
     color: #2b313d;
 }
 
+.about-mugshot-div {
+    display: inline-block;
+    margin: 130px 0 20px 0;
+    width: 50%;
+    float: left;
+}
+
+.about-mugshot {
+    width: 100%;
+    -webkit-clip-path: polygon(65% 1%, 100% 33%, 75% 100%, 0 100%, 0 0);
+    clip-path: polygon(65% 1%, 100% 33%, 75% 100%, 0 100%, 0 0);
+}
+
+.about-text-div {
+    display: inline-block;
+    margin: 130px 0 20px 0;
+    width: 50%;
+    float: right;
+}
+
+.about-subheader {
+    margin: 0;
+    font-size: 2.5rem;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+}
+
+.about-body {
+    box-sizing: border-box;
+    margin: 20px 0 0 0;
+    padding: 0 50px 0 50px;
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: #a1a1a1;
+    line-height: 2.5rem;
+}
+
 
 /*******Contact Section*******/
 
 .contact-section {
     margin: 0;
-    height: 750px;
-    background-image: url('/images/wave_background.jpg');
-    background-color: #6f778a;
+    height: 500px;
+    background-image: url('/images/bikewall_background2.jpg');
     background-size: cover;
-    background-color: #135E5E;
-    background-blend-mode: overlay;
+    background-position: center;
+    background-attachment: fixed;
     text-align: center;
     overflow: hidden;
 }
