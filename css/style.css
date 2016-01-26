@@ -349,10 +349,6 @@ svg.bigTriangleColor {
     text-decoration: none;
 }
 
-.social-item:hover {
-    color: #3BE5D9;
-}
-
 .social-item i {
     display: inline-block;
     margin: 0 30px 0 30px;
@@ -363,6 +359,13 @@ svg.bigTriangleColor {
     color: #fff;
     border: 2px solid #fff;
     border-radius: 100px;
+    transition: all 0.25s ease-in-out;
+}
+
+.social-item i:hover {
+    background-color: #3BE5D9;
+    border: 2px solid #3BE5D9;
+    color: #424856;
 }
 
 /*******Contact Me Button*******/
