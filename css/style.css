@@ -87,7 +87,7 @@ svg.bigTriangleColor {
 
 .work-header {
     margin: 120px auto 0 auto;
-    color: #ffffff;
+    color: #fff;
 }
 
 .container {
@@ -304,7 +304,7 @@ svg.bigTriangleColor {
 
 .contact-section {
     margin: 0;
-    height: 500px;
+    height: 600px;
     background-image: url('/images/bikewall_background2.jpg');
     background-size: cover;
     background-position: center;
@@ -319,35 +319,70 @@ svg.bigTriangleColor {
 	stroke-width: 2;
 }
 
-.contact-container {
-    
+.contact-header {
+    margin: 20px auto 0 auto;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    color: #fff;
+}
+
+.contact-text {
+    margin: 40px auto;
+    width: 650px;
+    font-size: 1.25rem;
+    color: #a1a1a1;
+    line-height: 2rem;
 }
 
 .social-media {
-    display: inline-block;
-    margin: 10px auto;
-    padding-right: 50px;
+    margin: 40px auto 20px auto;
 }
 
-.social-media li {
-    display: inline-block;
-    list-style: none;
+.social-item {
+    background-color: transparent;
+    text-decoration: none;
+    color: #fff;
 }
 
-/*******Contact Button*******/
-/* Common button styles */
+.social-item:link, .social-item:visited, .social-item:active {
+    color: #a1a1a1;
+    text-decoration: none;
+}
+
+.social-item:hover {
+    color: #3BE5D9;
+}
+
+.social-item i {
+    display: inline-block;
+    margin: 0 30px 0 30px;
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    font-size: 1.75rem;
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 100px;
+}
+
+/*******Contact Me Button*******/
+
 .button {
-	min-width: 150px;
-	max-width: 250px;
 	display: block;
-	margin: 0 auto;
+	margin: 40px auto;
 	padding: 1em 2em;
+    min-width: 150px;
+	max-width: 250px;
 	border: none;
 	background: none;
 	color: #fff;
 	vertical-align: middle;
 	position: relative;
     border: 2px solid;
+    letter-spacing: 2px;
+	text-transform: uppercase;
+    font-size: 1.25rem;
+    font-weight: 600;
 	z-index: 1;
 	-webkit-backface-visibility: hidden;
 	-moz-osx-font-smoothing: grayscale;
@@ -359,49 +394,6 @@ svg.bigTriangleColor {
 	vertical-align: middle;
 }
 
-
-/* Sizes */
-.button--size-s {
-	font-size: 14px;
-}
-.button--size-m {
-	font-size: 16px;
-}
-.button--size-l {
-	font-size: 18px;
-}
-
-/* Typography and Roundedness */
-.button--text-upper {
-	letter-spacing: 2px;
-	text-transform: uppercase;
-}
-.button--text-thin {
-	font-weight: 300;
-}
-.button--text-medium {
-	font-weight: 500;
-}
-.button--text-thick {
-	font-weight: 600;
-}
-.button--round-s {
-	border-radius: 5px;
-}
-.button--round-m {
-	border-radius: 15px;
-}
-.button--round-l {
-	border-radius: 40px;
-}
-
-/* Borders */
-
-.button--border-medium {
-	border: 2px solid;
-}
-
-/* Wayra */
 .button--wayra {
 	overflow: hidden;
 	width: 245px;
