@@ -480,6 +480,21 @@ svg.bigTriangleColor {
     .skills-list {
         width: 70%;
     }
+    .about-section {
+        height: 1697px;
+    }
+    .about-container {
+        height: 1600px;
+    }
+    .about-mugshot-div {
+        display: block;
+        width: 100%
+    }
+    .about-text-div {
+        display: block;
+        width: 100%;
+    }
+    
 }
 
 @media only screen and (max-width: 940px) {
@@ -502,6 +517,12 @@ svg.bigTriangleColor {
     }
     .caption-body {
         font-size: 0.85rem;
+    }
+    .about-section {
+        height: 1597px;
+    }
+    .about-container {
+        height: 1500px;
     }
 }
 
@@ -544,6 +565,12 @@ svg.bigTriangleColor {
     }
     .caption-body {
         font-size: 1rem;
+    }
+    .about-section {
+        height: 1497px;
+    }
+    .about-container {
+        height: 1400px;
     }
 }
 
@@ -597,6 +624,18 @@ svg.bigTriangleColor {
     .caption-body {
         font-size: 0.85rem;
     }
+    .about-section {
+        height: 1297px;
+    }
+    .about-container {
+        height: 1200px;
+    }
+    .about-subheader {
+        font-size: 2rem;
+    }
+    .about-body {
+        font-size: 1rem;
+    }
 }
 
 @media only screen and (max-width: 365px) {
@@ -605,5 +644,11 @@ svg.bigTriangleColor {
     }
     .skills-list {
         width: 90%;
+    }
+    .about-section {
+        height: 1397px;
+    }
+    .about-container {
+        height: 1300px;
     }
 }
