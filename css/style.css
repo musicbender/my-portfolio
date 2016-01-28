@@ -1,6 +1,5 @@
 /********General Style*******/
 
-
 body, html {
     font-size: 100%;
     margin: 0;
@@ -11,6 +10,11 @@ h2 {
     font-size: 4rem;
     font-weight: 300;
 }
+
+a:link {
+    text-decoration: none;
+}
+
 /********Title Section*******/
 
 .title-section {
