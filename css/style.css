@@ -549,6 +549,11 @@ svg.bigTriangleColor {
 }
 
 @media only screen and (max-width: 773px) {
+    .title-section {
+        height: 700px;
+        background-position: 22%;
+        background-attachment: scroll;
+    }
     .work-section {
         height: 2100px;
     }
@@ -581,6 +586,9 @@ svg.bigTriangleColor {
     .contact-text {
         width: 90%;
     }
+    .contact-section {
+        background-attachment: scroll;
+    }
 }
 
 @media only screen and (max-width: 500px) {
@@ -608,7 +616,6 @@ svg.bigTriangleColor {
     .title-section {
         height: 700px;
         background-position: left;
-        background-attachment: scroll;
     }
     .skills-list {
         width: 75%;
@@ -651,9 +658,6 @@ svg.bigTriangleColor {
     }
     .about-body {
         font-size: 1rem;
-    }
-    .contact-section {
-        background-attachment: scroll;
     }
 }
 
