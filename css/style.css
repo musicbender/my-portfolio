@@ -154,7 +154,6 @@ svg.bigTriangleColor {
 
 .caption {
     position: relative;
-/*    display: none;*/
     margin-top: 5px;
     width: 400px;
     height: 125px;
@@ -492,7 +491,7 @@ svg.bigTriangleColor {
     }
     .about-mugshot-div {
         display: block;
-        width: 85%;
+        width: 100%;
     }
     .about-text-div {
         display: block;
@@ -624,13 +623,13 @@ svg.bigTriangleColor {
         font-size: 1rem;
     }
     .work-section {
-        height: 1850px;
+        height: 1950px;
     }
     .work-container {
-        height: 1790px;
+        height: 1890px;
     }
     .pic-div {
-        margin: 0;
+        margin: 10px 0 10px 0;
     }
     .pic-div, .pic, .pic-link {
         width: 100%;
