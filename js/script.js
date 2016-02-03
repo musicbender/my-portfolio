@@ -5,11 +5,11 @@ $(document).ready(function(){
     //*******hover effect and caption show/hide for work samples*******//
     $('.pic-div').mouseenter(function(){
         var caption = $(this).children().children().eq(1);
-        caption.stop().animate({top: '-115px', opacity: '0.7', easing: 'easeInCubic'}, 480);
+        caption.stop().animate({top: '-115px', opacity: '0.7', easing: 'easeInCubic'}, 350);
     });
     $('.pic-div').mouseleave(function(){
         var caption = $(this).children().children().eq(1);
-        caption.stop().animate({top: '115px', opacity: '0', easing: 'easeOutCubic'}, 480);
+        caption.stop().animate({top: '115px', opacity: '0', easing: 'easeOutCubic'}, 350);
     });
     $('.pic-div').click(function() { 
         var caption = $(this).children().children().eq(1);

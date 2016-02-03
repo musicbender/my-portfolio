@@ -1,3 +1,5 @@
+/*******Imports*******/
+
 @import '_variables.scss';
 @import '_placeholders.scss';
 @import '_mixins.scss';
@@ -92,16 +94,14 @@ svg.bigTriangleColor {
 }
 
 .container {
+    @extend %border-box;
     margin: 35px auto 0 auto;
     width: 90%;
     text-align: center;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing:    border-box;
-    -ms-box-sizing:     border-box;
-    box-sizing:         border-box;
 }
 
 .pic-div {
+    @extend %transition;
     display: inline-block;
     position: relative;
     margin: 10px;
@@ -109,10 +109,13 @@ svg.bigTriangleColor {
     height: 225px;
     isolation: isolate;
     overflow: hidden;
-    @include transition(0.5s);
+    &:hover {
+        background-color: $colorAqua;
+    }
 }
 
 .pic {
+    @extend %transition;
     width: 400px;
     height: 225px;
     -webkit-filter: grayscale(1) brightness(85%);
@@ -121,20 +124,14 @@ svg.bigTriangleColor {
     -moz-box-shadow:    5px 5px 9px -3px rgba(0,0,0,0.75);
     box-shadow:         5px 5px 9px -3px rgba(0,0,0,0.75);
     mix-blend-mode: overlay;
-    @include transition(0.5s);
+    &:hover {
+        transform: scale(1.25, 1.25) translate(0px, -10px);
+    }
 }
 
 .pic-link {
     width: 400px;
     height: 225px;
-}
-
-.pic-div:hover {
-    background-color: $colorAqua;
-}
-
-.pic:hover {
-    transform: scale(1.25, 1.25) translate(0px, -10px);
 }
 
 .caption {
@@ -266,7 +263,7 @@ svg.bigTriangleColor {
 .about-mugshot {
     width: 100%;
     -webkit-clip-path: polygon(65% 1%, 100% 33%, 75% 100%, 0 100%, 0 0);
-    clip-path: polygon(65% 1%, 100% 33%, 75% 100%, 0 100%, 0 0);
+    clip-path:         polygon(65% 1%, 100% 33%, 75% 100%, 0 100%, 0 0);
 }
 
 .about-text-div {

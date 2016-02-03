@@ -1,5 +1,7 @@
+/*******Imports*******/
 /*******Font*******/
 /*******Colors*******/
+/*******Other*******/
 .title-section, .work-section, .skills-section, .about-section, .contact-section {
   position: relative;
   text-align: center;
@@ -9,6 +11,19 @@
   font-family: "Open Sans", sans-serif;
   font-size: 4rem;
   font-weight: 300; }
+
+.pic-div, .pic {
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  transition: all 0.5s ease; }
+
+.container {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box; }
 
 /********General Style*******/
 body, html {
@@ -84,11 +99,7 @@ svg.bigTriangleColor {
 .container {
   margin: 35px auto 0 auto;
   width: 90%;
-  text-align: center;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -ms-box-sizing: border-box;
-  box-sizing: border-box; }
+  text-align: center; }
 
 .pic-div {
   display: inline-block;
@@ -97,12 +108,9 @@ svg.bigTriangleColor {
   width: 400px;
   height: 225px;
   isolation: isolate;
-  overflow: hidden;
-  -webkit-transition: all 0.5s ease;
-  -moz-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
-  -ms-transition: all 0.5s ease;
-  transition: all 0.5s ease; }
+  overflow: hidden; }
+  .pic-div:hover {
+    background-color: #3BE5D9; }
 
 .pic {
   width: 400px;
@@ -112,22 +120,13 @@ svg.bigTriangleColor {
   -webkit-box-shadow: 5px 5px 9px -3px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 5px 5px 9px -3px rgba(0, 0, 0, 0.75);
   box-shadow: 5px 5px 9px -3px rgba(0, 0, 0, 0.75);
-  mix-blend-mode: overlay;
-  -webkit-transition: all 0.5s ease;
-  -moz-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
-  -ms-transition: all 0.5s ease;
-  transition: all 0.5s ease; }
+  mix-blend-mode: overlay; }
+  .pic:hover {
+    transform: scale(1.25, 1.25) translate(0px, -10px); }
 
 .pic-link {
   width: 400px;
   height: 225px; }
-
-.pic-div:hover {
-  background-color: #3BE5D9; }
-
-.pic:hover {
-  transform: scale(1.25, 1.25) translate(0px, -10px); }
 
 .caption {
   position: relative;
