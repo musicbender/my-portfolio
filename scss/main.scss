@@ -21,7 +21,7 @@ a:link {
 
 .title-section {
     height: 900px;
-    font-family: 'Open Sans', sans-serif;
+    font-family: $primaryFont;
     color: #ffffff;
     background-image: url('/images/header-background.jpg');
     background-position: center;
@@ -83,7 +83,6 @@ svg.bigTriangleColor {
 
 .separator-work path {
 	fill: #2b313d;
-//	stroke: darken(#3BE5D9, 7%);
 	stroke-width: 2;
 }
 
@@ -158,7 +157,7 @@ svg.bigTriangleColor {
     margin-top: 5px;
     width: 400px;
     height: 125px;
-    color: #ffffff;
+    color: #fff;
     font-family: 'Open Sans';
     background-color: transparent;
     opacity: 0;
@@ -169,7 +168,6 @@ svg.bigTriangleColor {
 .caption-triangle {
     margin: -50px 0 0 0;
     fill: black;
-//	stroke: darken(#3BE5D9, 7%);
 	stroke-width: 2;
 }
 
@@ -195,7 +193,7 @@ svg.bigTriangleColor {
 .recommend-body {
     margin: 100px auto 0 auto;
     width: 75%;
-    font-family: 'Open Sans', sans-serif;
+    font-family: $primaryFont;
     font-size: 1.25rem;
     font-weight: 300;
     font-style: italic;
@@ -205,7 +203,7 @@ svg.bigTriangleColor {
 .recommend-name {
     margin: 20px auto;
     width: 75%;
-    font-family: 'Open Sans', sans-serif;
+    font-family: $primaryFont;
     font-size: 1.25rem;
     color: #a1a1a1;
 }
@@ -213,6 +211,7 @@ svg.bigTriangleColor {
 /*******Skills Section*******/
 
 .skills-section {
+    position: relative;
     margin: 0;
     height: 300px;
     background-color: #ffffff;
@@ -222,7 +221,6 @@ svg.bigTriangleColor {
 
 .separator-skills path {
 	fill: #2b313d;
-//	stroke: darken(#3BE5D9, 7%);
 	stroke-width: 2;
 }
 
@@ -235,7 +233,7 @@ svg.bigTriangleColor {
     margin: 30px auto 0 auto;
     padding: 0;
     width: 100%;
-    font-family: "Open Sans";
+    font-family: $primaryFont;
     list-style: none;
 }
 
@@ -249,6 +247,7 @@ svg.bigTriangleColor {
 /*******About*******/
 
 .about-section {
+    position: relative;
     margin: 0;
     height: 1097px;
     background-color: transparent;
@@ -258,7 +257,6 @@ svg.bigTriangleColor {
 
 .separator-about path {
 	fill: #f7f7f7;
-//	stroke: darken(#3BE5D9, 7%);
 	stroke-width: 2;
 }
 
@@ -297,7 +295,7 @@ svg.bigTriangleColor {
 .about-subheader {
     margin: 0;
     font-size: 2.5rem;
-    font-family: 'Open Sans', sans-serif;
+    font-family: $primaryFont;
     font-weight: 600;
 }
 
@@ -326,13 +324,12 @@ svg.bigTriangleColor {
 
 .separator-contact {
     fill: #f7f7f7;
-//	stroke: darken(#3BE5D9, 7%);
 	stroke-width: 2;
 }
 
 .contact-header {
     margin: 20px auto 0 auto;
-    font-family: 'Open Sans', sans-serif;
+    font-family: $primaryFont;
     font-weight: 300;
     color: #fff;
 }
