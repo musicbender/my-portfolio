@@ -1,0 +1,73 @@
+/*******Contact Me Button*******/
+
+.button {
+	display: block;
+	margin: 40px auto;
+	padding: 1em 2em;
+    min-width: 150px;
+	max-width: 250px;
+	border: none;
+	background: none;
+	color: $colorWhite;
+	vertical-align: middle;
+	position: relative;
+    border: 2px solid;
+    letter-spacing: 2px;
+	text-transform: uppercase;
+    font-size: 1.25rem;
+    font-weight: 600;
+	z-index: 1;
+	-webkit-backface-visibility: hidden;
+	-moz-osx-font-smoothing: grayscale;
+}
+.button:focus {
+	outline: none;
+}
+.button > span {
+	vertical-align: middle;
+}
+
+.button--wayra {
+	overflow: hidden;
+	width: 245px;
+	-webkit-transition: border-color 0.3s, color 0.3s;
+	transition:         border-color 0.3s, color 0.3s;
+	-webkit-transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+	transition-timing-function:         cubic-bezier(0.2, 1, 0.3, 1);
+}
+.button--wayra::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 150%;
+	height: 100%;
+	background: #37474f;
+	z-index: -1;
+	-webkit-transform: rotate3d(0, 0, 1, -45deg) translate3d(0, -3em, 0);
+	transform:         rotate3d(0, 0, 1, -45deg) translate3d(0, -3em, 0);
+	-webkit-transform-origin: 0% 100%;
+	transform-origin:         0% 100%;
+	-webkit-transition: -webkit-transform 0.3s, opacity 0.3s, background-color 0.3s;
+	transition:         transform 0.3s, opacity 0.3s, background-color 0.3s;
+}
+.button--wayra:hover {
+	color: $colorWhite;
+	border-color: $colorAqua;
+    
+}
+.button--wayra.button--inverted:hover {
+	color: #424856;
+	border-color: $colorAqua;
+}
+.button--wayra:hover::before {
+	opacity: 1;
+	background-color: $colorAqua;
+	-webkit-transform: rotate3d(0, 0, 1, 0deg);
+	transform:         rotate3d(0, 0, 1, 0deg);
+	-webkit-transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+	transition-timing-function:         cubic-bezier(0.2, 1, 0.3, 1);
+}
+.button--wayra.button--inverted:hover::before {
+	background-color: $colorAqua;
+}

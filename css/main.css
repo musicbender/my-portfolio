@@ -1,18 +1,19 @@
+/*******Font*******/
 /*******Colors*******/
 .title-section, .work-section, .skills-section, .about-section, .contact-section {
   position: relative;
   text-align: center;
   overflow: hidden; }
 
+.work-header, .skills-header, .about-header, .contact-header {
+  font-family: "Open Sans", sans-serif;
+  font-size: 4rem;
+  font-weight: 300; }
+
 /********General Style*******/
 body, html {
   font-size: 100%;
   margin: 0; }
-
-h2 {
-  font-family: "Open Sans", sans-serif;
-  font-size: 4rem;
-  font-weight: 300; }
 
 a:link {
   text-decoration: none; }
@@ -97,11 +98,11 @@ svg.bigTriangleColor {
   height: 225px;
   isolation: isolate;
   overflow: hidden;
-  -webkit-transition: all 1s ease;
-  -moz-transition: all 1s ease;
-  -o-transition: all 1s ease;
-  -ms-transition: all 1s ease;
-  transition: all 1s ease; }
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  transition: all 0.5s ease; }
 
 .pic {
   width: 400px;
@@ -112,11 +113,11 @@ svg.bigTriangleColor {
   -moz-box-shadow: 5px 5px 9px -3px rgba(0, 0, 0, 0.75);
   box-shadow: 5px 5px 9px -3px rgba(0, 0, 0, 0.75);
   mix-blend-mode: overlay;
-  -webkit-transition: all 0.8s ease;
-  -moz-transition: all 0.8s ease;
-  -o-transition: all 0.8s ease;
-  -ms-transition: all 0.8s ease;
-  transition: all 0.8s ease; }
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  transition: all 0.5s ease; }
 
 .pic-link {
   width: 400px;
@@ -134,7 +135,7 @@ svg.bigTriangleColor {
   width: 400px;
   height: 125px;
   color: #fff;
-  font-family: 'Open Sans';
+  font-family: "Open Sans", sans-serif;
   background-color: transparent;
   opacity: 0;
   z-index: 100;
@@ -147,7 +148,7 @@ svg.bigTriangleColor {
 
 .caption-container {
   height: 150px;
-  margin-top: -10px;
+  margin-top: -7px;
   background-color: #2b313d;
   float: left; }
 
@@ -155,11 +156,11 @@ svg.bigTriangleColor {
   position: absolute;
   top: -30px;
   left: 175px;
-  font-size: 1.5em; }
+  font-size: 1.5rem; }
 
 .caption-body {
   margin: 5px 0 0 0;
-  font-size: 1em; }
+  font-size: 1rem; }
 
 .recommend-body {
   margin: 100px auto 0 auto;
@@ -197,17 +198,16 @@ svg.bigTriangleColor {
   width: 100%;
   font-family: "Open Sans", sans-serif;
   list-style: none; }
-
-.skills-list li {
-  display: inline-block;
-  margin: 0 10px 0 10px;
-  font-size: 1.5rem;
-  color: #a1a1a1; }
+  .skills-list li {
+    display: inline-block;
+    margin: 0 10px 0 10px;
+    font-size: 1.5rem;
+    color: #a1a1a1; }
 
 /*******About*******/
 .about-section {
   margin: 0;
-  height: 1097px;
+  height: 897px;
   background-color: transparent; }
 
 .separator-about path {
@@ -218,7 +218,7 @@ svg.bigTriangleColor {
   margin: -6px 0 0 0;
   background-color: #f7f7f7;
   width: 100%;
-  height: 1000px;
+  height: 800px;
   overflow: hidden; }
 
 .about-header {
@@ -271,9 +271,7 @@ svg.bigTriangleColor {
   stroke-width: 2; }
 
 .contact-header {
-  margin: 20px auto 0 auto;
-  font-family: "Open Sans", sans-serif;
-  font-weight: 300;
+  margin: 10px auto 0 auto;
   color: #fff; }
 
 .contact-text {
@@ -291,28 +289,26 @@ svg.bigTriangleColor {
   background-color: transparent;
   text-decoration: none;
   color: #fff; }
+  .social-item:link, .social-item:visited, .social-item:active {
+    color: #a1a1a1;
+    text-decoration: none; }
+  .social-item i {
+    display: inline-block;
+    margin: 15px 30px 15px 30px;
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    font-size: 1.75rem;
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 100px;
+    transition: all 0.25s ease-in-out; }
+    .social-item i:hover {
+      background-color: #3BE5D9;
+      border: 2px solid #3BE5D9;
+      color: #2b313d; }
 
-.social-item:link, .social-item:visited, .social-item:active {
-  color: #a1a1a1;
-  text-decoration: none; }
-
-.social-item i {
-  display: inline-block;
-  margin: 15px 30px 15px 30px;
-  width: 55px;
-  height: 55px;
-  line-height: 55px;
-  font-size: 1.75rem;
-  color: #fff;
-  border: 2px solid #fff;
-  border-radius: 100px;
-  transition: all 0.25s ease-in-out; }
-
-.social-item i:hover {
-  background-color: #3BE5D9;
-  border: 2px solid #3BE5D9;
-  color: #2b313d; }
-
+/*******Contact Button*******/
 /*******Contact Me Button*******/
 .button {
   display: block;

@@ -9,12 +9,6 @@ body, html {
     margin: 0;
 }
 
-h2 {
-    font-family: $primaryFont;
-    font-size: 4rem;
-    font-weight: 300;
-}
-
 a:link {
     text-decoration: none;
 }
@@ -45,8 +39,8 @@ a:link {
 .title {
     margin: 0;
     float: right;
-    font-size: 10rem;
-    font-weight: 300;
+    font-size: $fontTitle;
+    font-weight: $fontThin;
     color: $colorAqua2;
     letter-spacing: 0px;
     text-transform: uppercase;
@@ -54,7 +48,7 @@ a:link {
 }
 
 .jacobs {
-    font-weight: 300;
+    font-weight: $fontThin;
     color: white;
 }
 
@@ -62,7 +56,7 @@ a:link {
     margin: 10px 15px 0 0;
     float: right;
     font-size: 1.8rem;
-    font-weight: 300;
+    font-weight: $fontThin;
 }
 
 /*******Work Section*******/
@@ -92,6 +86,7 @@ svg.bigTriangleColor {
 }
 
 .work-header {
+    @extend %header-font;
     margin: 60px auto 0 auto;
     color: $colorWhite;
 }
@@ -114,11 +109,7 @@ svg.bigTriangleColor {
     height: 225px;
     isolation: isolate;
     overflow: hidden;
-    -webkit-transition: all 1s ease;
-    -moz-transition:    all 1s ease;
-    -o-transition:      all 1s ease;
-    -ms-transition:     all 1s ease;
-    transition:         all 1s ease;
+    @include transition(0.5s);
 }
 
 .pic {
@@ -130,11 +121,7 @@ svg.bigTriangleColor {
     -moz-box-shadow:    5px 5px 9px -3px rgba(0,0,0,0.75);
     box-shadow:         5px 5px 9px -3px rgba(0,0,0,0.75);
     mix-blend-mode: overlay;
-    -webkit-transition: all 0.8s ease;
-    -moz-transition:    all 0.8s ease;
-    -o-transition:      all 0.8s ease;
-    -ms-transition:     all 0.8s ease;
-    transition:         all 0.8s ease;
+    @include transition(0.5s);
 }
 
 .pic-link {
@@ -156,7 +143,7 @@ svg.bigTriangleColor {
     width: 400px;
     height: 125px;
     color: $colorWhite;
-    font-family: 'Open Sans';
+    font-family: $primaryFont;
     background-color: transparent;
     opacity: 0;
     z-index: 100;
@@ -171,7 +158,7 @@ svg.bigTriangleColor {
 
 .caption-container {
     height: 150px;
-    margin-top: -10px;
+    margin-top: -7px;
     background-color: $colorBlack;
     float: left;
 }
@@ -180,12 +167,12 @@ svg.bigTriangleColor {
     position: absolute;
     top: -30px;
     left: 175px;
-    font-size: 1.5em;
+    font-size: 1.5rem;
 }
 
 .caption-body {
     margin: 5px 0 0 0;
-    font-size: 1em;
+    font-size: 1rem;
 }
 
 .recommend-body {
@@ -193,7 +180,7 @@ svg.bigTriangleColor {
     width: 75%;
     font-family: $primaryFont;
     font-size: 1.25rem;
-    font-weight: 300;
+    font-weight: $fontThin;
     font-style: italic;
     color: $colorGrey;
 }
@@ -221,6 +208,7 @@ svg.bigTriangleColor {
 }
 
 .skills-header {
+    @extend %header-font;
     margin: 10px auto 0 auto;
     color: $colorBlack;
 }
@@ -231,13 +219,12 @@ svg.bigTriangleColor {
     width: 100%;
     font-family: $primaryFont;
     list-style: none;
-}
-
-.skills-list li {
-    display: inline-block;
-    margin: 0 10px 0 10px;
-    font-size: 1.5rem;
-    color: $colorGrey;
+    li {
+        display: inline-block;
+        margin: 0 10px 0 10px;
+        font-size: 1.5rem;
+        color: $colorGrey;
+    }
 }
 
 /*******About*******/
@@ -245,23 +232,26 @@ svg.bigTriangleColor {
 .about-section {
     @extend %section;
     margin: 0;
-    height: 1097px;
+    height: 897px;
     background-color: transparent;
 }
 
-.separator-about path {
-	fill: $colorLightGrey;
-	stroke-width: 2;
+.separator-about {
+    path {
+	    fill: $colorLightGrey;
+	    stroke-width: 2;
+    }
 }
 
 .about-container {
     margin: -6px 0 0 0;
     background-color: $colorLightGrey;
     width: 100%;
-    height: 1000px;
+    height: 800px;
     overflow: hidden;
 }
 .about-header {
+    @extend %header-font;
     margin: 60px auto 0 auto;
     color: $colorBlack;
 }
@@ -321,9 +311,8 @@ svg.bigTriangleColor {
 }
 
 .contact-header {
-    margin: 20px auto 0 auto;
-    font-family: $primaryFont;
-    font-weight: 300;
+    @extend %header-font;
+    margin: 10px auto 0 auto;
     color: $colorWhite;
 }
 
@@ -344,104 +333,34 @@ svg.bigTriangleColor {
     background-color: transparent;
     text-decoration: none;
     color: $colorWhite;
+    &:link, 
+    &:visited,
+    &:active {
+        color: $colorGrey;
+        text-decoration: none;
+    }
+    i {
+        display: inline-block;
+        margin: 15px 30px 15px 30px;
+        width: 55px;
+        height: 55px;
+        line-height: 55px;
+        font-size: 1.75rem;
+        color: $colorWhite;
+        border: 2px solid $colorWhite;
+        border-radius: 100px;
+        transition: all 0.25s ease-in-out;
+        &:hover {
+            background-color: $colorAqua;
+            border: 2px solid $colorAqua;
+            color: $colorBlack;
+        }
+    }
 }
 
-.social-item:link, .social-item:visited, .social-item:active {
-    color: $colorGrey;
-    text-decoration: none;
-}
+/*******Contact Button*******/
 
-.social-item i {
-    display: inline-block;
-    margin: 15px 30px 15px 30px;
-    width: 55px;
-    height: 55px;
-    line-height: 55px;
-    font-size: 1.75rem;
-    color: $colorWhite;
-    border: 2px solid $colorWhite;
-    border-radius: 100px;
-    transition: all 0.25s ease-in-out;
-}
-
-.social-item i:hover {
-    background-color: $colorAqua;
-    border: 2px solid $colorAqua;
-    color: $colorBlack;
-}
-
-/*******Contact Me Button*******/
-
-.button {
-	display: block;
-	margin: 40px auto;
-	padding: 1em 2em;
-    min-width: 150px;
-	max-width: 250px;
-	border: none;
-	background: none;
-	color: $colorWhite;
-	vertical-align: middle;
-	position: relative;
-    border: 2px solid;
-    letter-spacing: 2px;
-	text-transform: uppercase;
-    font-size: 1.25rem;
-    font-weight: 600;
-	z-index: 1;
-	-webkit-backface-visibility: hidden;
-	-moz-osx-font-smoothing: grayscale;
-}
-.button:focus {
-	outline: none;
-}
-.button > span {
-	vertical-align: middle;
-}
-
-.button--wayra {
-	overflow: hidden;
-	width: 245px;
-	-webkit-transition: border-color 0.3s, color 0.3s;
-	transition:         border-color 0.3s, color 0.3s;
-	-webkit-transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
-	transition-timing-function:         cubic-bezier(0.2, 1, 0.3, 1);
-}
-.button--wayra::before {
-	content: '';
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 150%;
-	height: 100%;
-	background: #37474f;
-	z-index: -1;
-	-webkit-transform: rotate3d(0, 0, 1, -45deg) translate3d(0, -3em, 0);
-	transform:         rotate3d(0, 0, 1, -45deg) translate3d(0, -3em, 0);
-	-webkit-transform-origin: 0% 100%;
-	transform-origin:         0% 100%;
-	-webkit-transition: -webkit-transform 0.3s, opacity 0.3s, background-color 0.3s;
-	transition:         transform 0.3s, opacity 0.3s, background-color 0.3s;
-}
-.button--wayra:hover {
-	color: $colorWhite;
-	border-color: $colorAqua;
-}
-.button--wayra.button--inverted:hover {
-	color: #424856;
-	border-color: $colorAqua;
-}
-.button--wayra:hover::before {
-	opacity: 1;
-	background-color: $colorAqua;
-	-webkit-transform: rotate3d(0, 0, 1, 0deg);
-	transform:         rotate3d(0, 0, 1, 0deg);
-	-webkit-transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
-	transition-timing-function:         cubic-bezier(0.2, 1, 0.3, 1);
-}
-.button--wayra.button--inverted:hover::before {
-	background-color: $colorAqua;
-}
+@import '_contact-btn.scss';
 
 /*******Media Queries*******/
 
