@@ -1,4 +1,9 @@
 /*******Colors*******/
+.title-section, .work-section, .skills-section, .about-section, .contact-section {
+  position: relative;
+  text-align: center;
+  overflow: hidden; }
+
 /********General Style*******/
 body, html {
   font-size: 100%;
@@ -16,16 +21,13 @@ a:link {
 .title-section {
   height: 900px;
   font-family: "Open Sans", sans-serif;
-  color: #ffffff;
+  color: #fff;
   background-image: url("/images/header-background.jpg");
   background-position: center;
   background-size: cover;
   background-color: #3BE5D9;
   background-attachment: fixed;
-  background-blend-mode: overlay;
-  position: relative;
-  z-index: 1;
-  overflow: hidden; }
+  background-blend-mode: overlay; }
 
 .title-div {
   position: relative;
@@ -59,10 +61,7 @@ a:link {
   margin: -100px 0 0 0;
   height: 1400px;
   background-color: transparent;
-  text-align: center;
-  position: relative;
-  z-index: 2;
-  overflow: hidden; }
+  z-index: 2; }
 
 svg.bigTriangleColor {
   pointer-events: none; }
@@ -124,7 +123,7 @@ svg.bigTriangleColor {
   height: 225px; }
 
 .pic-div:hover {
-  background-color: #10D5C8; }
+  background-color: #3BE5D9; }
 
 .pic:hover {
   transform: scale(1.25, 1.25) translate(0px, -10px); }
@@ -143,13 +142,13 @@ svg.bigTriangleColor {
 
 .caption-triangle {
   margin: -50px 0 0 0;
-  fill: black;
+  fill: #2b313d;
   stroke-width: 2; }
 
 .caption-container {
   height: 150px;
   margin-top: -10px;
-  background-color: #000000;
+  background-color: #2b313d;
   float: left; }
 
 .caption-title {
@@ -180,12 +179,9 @@ svg.bigTriangleColor {
 
 /*******Skills Section*******/
 .skills-section {
-  position: relative;
   margin: 0;
   height: 300px;
-  background-color: #ffffff;
-  text-align: center;
-  overflow: hidden; }
+  background-color: #fff; }
 
 .separator-skills path {
   fill: #2b313d;
@@ -210,12 +206,9 @@ svg.bigTriangleColor {
 
 /*******About*******/
 .about-section {
-  position: relative;
   margin: 0;
   height: 1097px;
-  background-color: transparent;
-  text-align: center;
-  overflow: hidden; }
+  background-color: transparent; }
 
 .separator-about path {
   fill: #f7f7f7;
@@ -271,9 +264,7 @@ svg.bigTriangleColor {
   background-image: url("/images/bikewall_background2.jpg");
   background-size: cover;
   background-position: center;
-  background-attachment: fixed;
-  text-align: center;
-  overflow: hidden; }
+  background-attachment: fixed; }
 
 .separator-contact {
   fill: #f7f7f7;
@@ -320,7 +311,7 @@ svg.bigTriangleColor {
 .social-item i:hover {
   background-color: #3BE5D9;
   border: 2px solid #3BE5D9;
-  color: #424856; }
+  color: #2b313d; }
 
 /*******Contact Me Button*******/
 .button {
@@ -375,22 +366,22 @@ svg.bigTriangleColor {
 
 .button--wayra:hover {
   color: #fff;
-  border-color: #2FE9EB; }
+  border-color: #3BE5D9; }
 
 .button--wayra.button--inverted:hover {
   color: #424856;
-  border-color: #2FE9EB; }
+  border-color: #3BE5D9; }
 
 .button--wayra:hover::before {
   opacity: 1;
-  background-color: #2FE9EB;
+  background-color: #3BE5D9;
   -webkit-transform: rotate3d(0, 0, 1, 0deg);
   transform: rotate3d(0, 0, 1, 0deg);
   -webkit-transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
   transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1); }
 
 .button--wayra.button--inverted:hover::before {
-  background-color: #2FE9EB; }
+  background-color: #3BE5D9; }
 
 /*******Media Queries*******/
 @media only screen and (max-width: 1350px) {

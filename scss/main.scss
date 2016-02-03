@@ -1,4 +1,6 @@
 @import '_variables.scss';
+@import '_placeholders.scss';
+@import '_mixins.scss';
 
 /********General Style*******/
 
@@ -20,18 +22,16 @@ a:link {
 /********Title Section*******/
 
 .title-section {
+    @extend %section;
     height: 900px;
     font-family: $primaryFont;
-    color: #ffffff;
+    color: $colorWhite;
     background-image: url('/images/header-background.jpg');
     background-position: center;
     background-size: cover;
-    background-color: #3BE5D9;
+    background-color: $colorAqua;
     background-attachment: fixed;
     background-blend-mode: overlay;
-    position: relative;
-    z-index: 1;
-    overflow: hidden;
 }
 
 .title-div {
@@ -47,7 +47,7 @@ a:link {
     float: right;
     font-size: 10rem;
     font-weight: 300;
-    color: #02CCB5;
+    color: $colorAqua2;
     letter-spacing: 0px;
     text-transform: uppercase;
     text-rendering: geometricPrecision;
@@ -68,13 +68,11 @@ a:link {
 /*******Work Section*******/
 
 .work-section {
+    @extend %section;
     margin: -100px 0 0 0;
     height: 1400px;
     background-color: transparent;
-    text-align: center;
-    position: relative;
     z-index: 2;
-    overflow: hidden;
 }
 
 svg.bigTriangleColor {
@@ -82,20 +80,20 @@ svg.bigTriangleColor {
 }
 
 .separator-work path {
-	fill: #2b313d;
+	fill: $colorBlack;
 	stroke-width: 2;
 }
 
 .work-container {
     margin: -6px 0 0 0;
     height: 1340px;
-    background-color: #2b313d;
+    background-color: $colorBlack;
     overflow: hidden;
 }
 
 .work-header {
     margin: 60px auto 0 auto;
-    color: #fff;
+    color: $colorWhite;
 }
 
 .container {
@@ -145,7 +143,7 @@ svg.bigTriangleColor {
 }
 
 .pic-div:hover {
-    background-color: #10D5C8;
+    background-color: $colorAqua;
 }
 
 .pic:hover {
@@ -157,7 +155,7 @@ svg.bigTriangleColor {
     margin-top: 5px;
     width: 400px;
     height: 125px;
-    color: #fff;
+    color: $colorWhite;
     font-family: 'Open Sans';
     background-color: transparent;
     opacity: 0;
@@ -167,14 +165,14 @@ svg.bigTriangleColor {
 
 .caption-triangle {
     margin: -50px 0 0 0;
-    fill: black;
+    fill: $colorBlack;
 	stroke-width: 2;
 }
 
 .caption-container {
     height: 150px;
     margin-top: -10px;
-    background-color: #000000;
+    background-color: $colorBlack;
     float: left;
 }
 
@@ -197,7 +195,7 @@ svg.bigTriangleColor {
     font-size: 1.25rem;
     font-weight: 300;
     font-style: italic;
-    color: #a1a1a1;
+    color: $colorGrey;
 }
 
 .recommend-name {
@@ -205,28 +203,26 @@ svg.bigTriangleColor {
     width: 75%;
     font-family: $primaryFont;
     font-size: 1.25rem;
-    color: #a1a1a1;
+    color: $colorGrey;
 }
 
 /*******Skills Section*******/
 
 .skills-section {
-    position: relative;
+    @extend %section;
     margin: 0;
     height: 300px;
-    background-color: #ffffff;
-    text-align: center;
-    overflow: hidden;
+    background-color: $colorWhite;
 }
 
 .separator-skills path {
-	fill: #2b313d;
+	fill: $colorBlack;
 	stroke-width: 2;
 }
 
 .skills-header {
     margin: 10px auto 0 auto;
-    color: #2b313d;
+    color: $colorBlack;
 }
 
 .skills-list {
@@ -241,35 +237,33 @@ svg.bigTriangleColor {
     display: inline-block;
     margin: 0 10px 0 10px;
     font-size: 1.5rem;
-    color: #a1a1a1;
+    color: $colorGrey;
 }
 
 /*******About*******/
 
 .about-section {
-    position: relative;
+    @extend %section;
     margin: 0;
     height: 1097px;
     background-color: transparent;
-    text-align: center;
-    overflow: hidden;
 }
 
 .separator-about path {
-	fill: #f7f7f7;
+	fill: $colorLightGrey;
 	stroke-width: 2;
 }
 
 .about-container {
     margin: -6px 0 0 0;
-    background-color: #f7f7f7;
+    background-color: $colorLightGrey;
     width: 100%;
     height: 1000px;
     overflow: hidden;
 }
 .about-header {
     margin: 60px auto 0 auto;
-    color: #2b313d;
+    color: $colorBlack;
 }
 
 .about-mugshot-div {
@@ -305,25 +299,24 @@ svg.bigTriangleColor {
     padding: 0 50px 0 50px;
     font-size: 1.5rem;
     font-weight: 300;
-    color: #a1a1a1;
+    color: $colorGrey;
     line-height: 2.5rem;
 }
 
 /*******Contact Section*******/
 
 .contact-section {
+    @extend %section;
     margin: 0;
     height: 600px;
     background-image: url('/images/bikewall_background2.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    text-align: center;
-    overflow: hidden;
 }
 
 .separator-contact {
-    fill: #f7f7f7;
+    fill: $colorLightGrey;
 	stroke-width: 2;
 }
 
@@ -331,14 +324,14 @@ svg.bigTriangleColor {
     margin: 20px auto 0 auto;
     font-family: $primaryFont;
     font-weight: 300;
-    color: #fff;
+    color: $colorWhite;
 }
 
 .contact-text {
     margin: 40px auto;
     width: 50%;
     font-size: 1.25rem;
-    color: #a1a1a1;
+    color: $colorGrey;
     line-height: 2rem;
 }
 
@@ -350,11 +343,11 @@ svg.bigTriangleColor {
 .social-item {
     background-color: transparent;
     text-decoration: none;
-    color: #fff;
+    color: $colorWhite;
 }
 
 .social-item:link, .social-item:visited, .social-item:active {
-    color: #a1a1a1;
+    color: $colorGrey;
     text-decoration: none;
 }
 
@@ -365,16 +358,16 @@ svg.bigTriangleColor {
     height: 55px;
     line-height: 55px;
     font-size: 1.75rem;
-    color: #fff;
-    border: 2px solid #fff;
+    color: $colorWhite;
+    border: 2px solid $colorWhite;
     border-radius: 100px;
     transition: all 0.25s ease-in-out;
 }
 
 .social-item i:hover {
-    background-color: #3BE5D9;
-    border: 2px solid #3BE5D9;
-    color: #424856;
+    background-color: $colorAqua;
+    border: 2px solid $colorAqua;
+    color: $colorBlack;
 }
 
 /*******Contact Me Button*******/
@@ -387,7 +380,7 @@ svg.bigTriangleColor {
 	max-width: 250px;
 	border: none;
 	background: none;
-	color: #fff;
+	color: $colorWhite;
 	vertical-align: middle;
 	position: relative;
     border: 2px solid;
@@ -431,23 +424,23 @@ svg.bigTriangleColor {
 	transition:         transform 0.3s, opacity 0.3s, background-color 0.3s;
 }
 .button--wayra:hover {
-	color: #fff;
-	border-color: #2FE9EB;
+	color: $colorWhite;
+	border-color: $colorAqua;
 }
 .button--wayra.button--inverted:hover {
 	color: #424856;
-	border-color: #2FE9EB;
+	border-color: $colorAqua;
 }
 .button--wayra:hover::before {
 	opacity: 1;
-	background-color: #2FE9EB;
+	background-color: $colorAqua;
 	-webkit-transform: rotate3d(0, 0, 1, 0deg);
 	transform:         rotate3d(0, 0, 1, 0deg);
 	-webkit-transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
 	transition-timing-function:         cubic-bezier(0.2, 1, 0.3, 1);
 }
 .button--wayra.button--inverted:hover::before {
-	background-color: #2FE9EB;
+	background-color: $colorAqua;
 }
 
 /*******Media Queries*******/
