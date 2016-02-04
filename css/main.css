@@ -41,6 +41,7 @@ a:link {
   background-image: url("/images/header-background.jpg");
   background-position: center;
   background-size: cover;
+  background-repeat: no-repeat;
   background-color: #3BE5D9;
   background-attachment: fixed;
   background-blend-mode: overlay; }
