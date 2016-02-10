@@ -25,6 +25,10 @@
   -ms-box-sizing: border-box;
   box-sizing: border-box; }
 
+.no-backgroundblendmode {
+  background-image: none;
+  background-size: auto; }
+
 /********General Style*******/
 body, html {
   font-size: 100%;
