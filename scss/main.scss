@@ -4,6 +4,7 @@
 @import '_placeholders.scss';
 @import '_mixins.scss';
 @import '_modernizr.scss';
+@import '_scroll-arrow.scss';
 
 /********General Style*******/
 
@@ -23,13 +24,9 @@ a:link {
     height: 900px;
     font-family: $primaryFont;
     color: $colorWhite;
-    background-image: url('/images/header-background.jpg');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
     background-color: $colorAqua;
     background-attachment: fixed;
-    background-blend-mode: overlay;
+    /* see _modernizr.scss for background-image info */
 }
 
 .title-div {
@@ -83,7 +80,7 @@ svg.bigTriangleColor {
 }
 
 .work-container {
-    margin: -6px 0 0 0;
+    margin: -6.1px 0 0 0;
     height: 1340px;
     background-color: $colorBlack;
     overflow: hidden;
@@ -462,6 +459,9 @@ svg.bigTriangleColor {
         background-position: 22%;
         background-attachment: scroll;
     }
+    .arrows {
+        bottom: 150px;
+    }
     .work-section {
         height: 2100px;
     }
@@ -572,6 +572,9 @@ svg.bigTriangleColor {
 @media only screen and (max-width: 365px) {
     .title {
         font-size: 3.25rem;
+    }
+    .arrows {
+        bottom: 300px;
     }
     .skills-list {
         width: 90%;

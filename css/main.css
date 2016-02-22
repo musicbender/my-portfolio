@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*******Imports*******/
 /*******Font*******/
 /*******Colors*******/
@@ -25,9 +26,56 @@
   -ms-box-sizing: border-box;
   box-sizing: border-box; }
 
-.no-backgroundblendmode {
-  background-image: none;
-  background-size: auto; }
+.backgroundblendmode .title-section {
+  background-image: url("/images/header-background.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #3BE5D9;
+  background-blend-mode: overlay; }
+
+.arrows {
+  width: 60px;
+  height: 72px;
+  position: absolute;
+  left: 50%;
+  margin-left: -30px;
+  bottom: 300px; }
+
+.arrows path {
+  stroke: #fff;
+  fill: transparent;
+  stroke-width: 2px;
+  animation: arrow 2s infinite;
+  -webkit-animation: arrow 2s infinite; }
+
+@keyframes arrow {
+  0% {
+    opacity: 0; }
+  40% {
+    opacity: 1; }
+  80% {
+    opacity: 0; }
+  100% {
+    opacity: 0; } }
+@-webkit-keyframes arrow /*Safari and Chrome*/ {
+  0% {
+    opacity: 0; }
+  40% {
+    opacity: 1; }
+  80% {
+    opacity: 0; }
+  100% {
+    opacity: 0; } }
+.arrows path.a1 {
+  animation-delay: -1s;
+  -webkit-animation-delay: -1s;
+  /* Safari σÆî Chrome */ }
+
+.arrows path.a2 {
+  animation-delay: -0.5s;
+  -webkit-animation-delay: -0.5s;
+  /* Safari σÆî Chrome */ }
 
 /********General Style*******/
 body, html {
@@ -42,13 +90,9 @@ a:link {
   height: 900px;
   font-family: "Open Sans", sans-serif;
   color: #fff;
-  background-image: url("/images/header-background.jpg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
   background-color: #3BE5D9;
   background-attachment: fixed;
-  background-blend-mode: overlay; }
+  /* see _modernizr.scss for background-image info */ }
 
 .title-div {
   position: relative;
@@ -92,7 +136,7 @@ svg.bigTriangleColor {
   stroke-width: 2; }
 
 .work-container {
-  margin: -6px 0 0 0;
+  margin: -6.1px 0 0 0;
   height: 1340px;
   background-color: #2b313d;
   overflow: hidden; }
@@ -471,6 +515,9 @@ svg.bigTriangleColor {
     background-position: 22%;
     background-attachment: scroll; }
 
+  .arrows {
+    bottom: 150px; }
+
   .work-section {
     height: 2100px; }
 
@@ -572,6 +619,9 @@ svg.bigTriangleColor {
 @media only screen and (max-width: 365px) {
   .title {
     font-size: 3.25rem; }
+
+  .arrows {
+    bottom: 300px; }
 
   .skills-list {
     width: 90%; }

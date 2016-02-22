@@ -1,4 +1,10 @@
-.no-backgroundblendmode {
-    background-image: none;
-    background-size: auto;
+.backgroundblendmode {
+    .title-section {
+        background-image: url('/images/header-background.jpg');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-color: $colorAqua;
+        background-blend-mode: overlay;
+    }
 }
