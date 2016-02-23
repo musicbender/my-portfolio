@@ -11,14 +11,14 @@ $(document).ready(function(){
         var caption = $(this).children().children().eq(1);
         caption.stop().animate({top: '115px', opacity: '0', easing: 'easeOutCubic'}, 350);
     });
-    $('.pic-div').click(function() { 
+    $('.pic-div').on('click', function() { 
         var caption = $(this).children().children().eq(1);
         var isHover = $(this).is(":hover");
         
         caption.stop().animate({top: '115px', opacity: '0'}, 0);
         if (isHover) {
-            $(this).css('background-color', 'transparent');
-            $(this).children().children().first().css('transform', 'scale(1, 1)').css('translate', '(0px, 0px');
+            $(this).addClass('pic-div-clicked');
+            $(this).children().children().first().addClass('pic-clicked');
         }
     });
 });
