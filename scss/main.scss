@@ -118,14 +118,13 @@ svg.bigTriangleColor {
 
 .pic {
     @extend %transition;
+    @extend %box-shadow;
+    @extend %filter;
     width: 400px;
     height: 225px;
-    -webkit-filter: grayscale(1) brightness(85%);
-    filter:         grayscale(1) brightness(85%);
-    -webkit-box-shadow: 5px 5px 9px -3px rgba(0,0,0,0.75);
-    -moz-box-shadow:    5px 5px 9px -3px rgba(0,0,0,0.75);
-    box-shadow:         5px 5px 9px -3px rgba(0,0,0,0.75);
     mix-blend-mode: overlay;
+    -webkit-backface-visibility: hidden;
+    backface-visibility:         hidden;
     &:hover {
         transform: scale(1.25, 1.25) translate(0px, -10px);
     }
@@ -137,6 +136,7 @@ svg.bigTriangleColor {
 .pic-link {
     width: 400px;
     height: 225px;
+    overflow: hidden;
 }
 
 .caption {
@@ -148,8 +148,8 @@ svg.bigTriangleColor {
     font-family: $primaryFont;
     background-color: transparent;
     opacity: 0;
-    z-index: 100;
     pointer-events: none;
+    z-index: 100;
 }
 
 .caption-triangle {
@@ -159,6 +159,7 @@ svg.bigTriangleColor {
 }
 
 .caption-container {
+    width: auto;
     height: 150px;
     margin-top: -7px;
     background-color: $colorBlack;
