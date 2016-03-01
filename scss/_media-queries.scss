@@ -165,6 +165,12 @@
     }
 }
 
+@media only screen and (max-width: 535px) {
+    .skills-list li {
+        font-size: 1.2rem;
+    }
+}
+
 @media only screen and (max-width: 507px) {
     .title-div {
         margin: 140px auto;
@@ -174,9 +180,6 @@
     }
     h2 {
         font-size: 3rem;
-    }
-    .skills-list li {
-        font-size: 1.2rem;
     }
     .about-mugshot-div {
         height: 300px;
