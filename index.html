@@ -3,38 +3,22 @@
 <head>
     <!--meta-->
     <meta charset="UTF-8">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"> 
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name=”robots” content=”noodp”>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Pat Jacobs is a front-end web developer based in Orange County, California. He specialises in many technologies including HTML5, CSS3, Javascript, jQuery, Web Audio API, AJAX. This website was created by Pat to show you the cool things he can do.">
     <meta name="author" content="Pat Jacobs">
     <meta name="google-site-verification" content="jnM2LF9Es49rpi5LP93U1pgtixlHQtpMAU7UPrVx0FM" />
     <title>Pat Jacobs: Front-end Web Developer in Orange County, CA</title>
-    
+
     <!--fonts-->
     <link async href='https://fonts.googleapis.com/css?family=Open+Sans:300,600' rel='stylesheet' type='text/css'>
-    
+
     <!--links and script files-->
-    <link rel="shortcut icon" href="images/pj-favicon.png" defer>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" type="text/css">
-    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
-    <link href="css/normalize.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="css/main.css" type="text/css">
-    
-    <script src="js/modernizr-custom.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js" defer></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js" defer></script>
-    <script src="js/script.js" type="text/javascript" defer></script>
-    
-    <!--Google Analytics-->
-    <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-      ga('create', 'UA-72988333-1', 'auto');
-      ga('send', 'pageview');
-    </script>
+    <link rel="shortcut icon" href="images/pj-favicon.png">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="build/build.css" type="text/css">
+    <script src="build/vendor/custom-modernizr.js"></script>
 </head>
 <body>
    <!--Title header-->
@@ -49,7 +33,7 @@
             <path class="a3" d="M0 40 L30 72 L60 40"></path>
        </svg>
     </section>
-    
+
     <!--Work-->
     <section class="work-section">
         <svg class="bigTriangleColor separator-work" xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100" viewBox="0 0 100 102" preserveAspectRatio="none">
@@ -61,7 +45,7 @@
                 <div class="row">
                    <div class="pic-div">
                         <a class="pic-link" href="http://www.mugmath.com">
-                            <img class="pic" src="images/thumbnail-demo-12.jpg" alt="MugMath"/>
+                            <img class="pic" src="build/images/thumbnail-demo-12.jpg" alt="MugMath"/>
                             <div class="caption">
                                <div class="caption-container">
                                    <h4 class="caption-title">Mug Math</h4>
@@ -72,7 +56,7 @@
                    </div>
                    <div class="pic-div">
                         <a class="pic-link" href="http://www.patjacobs.io/shopping-list">
-                            <img class="pic" src="images/thumbnail-demo-9.jpg" alt="Shopping List"/>
+                            <img class="pic" src="build/images/thumbnail-demo-9.jpg" alt="Shopping List"/>
                             <div class="caption">
                                <div class="caption-container">
                                    <h4 class="caption-title">Shopping List</h4>
@@ -85,7 +69,7 @@
                 <div class="row">
                     <div class="pic-div">
                        <a class="pic-link" href="http://www.patjacobs.io/sound-quiz">
-                           <img class="pic" src="images/thumbnail-demo-7.jpg" alt="Sound Quiz"/>
+                           <img class="pic" src="build/images/thumbnail-demo-7.jpg" alt="Sound Quiz"/>
                            <div class="caption">
                                <div class="caption-container">
                                    <h4 class="caption-title">Sound Quiz</h4>
@@ -96,7 +80,7 @@
                    </div>
                    <div class="pic-div">
                         <a class="pic-link" href="http://www.patjacobs.io/hot-or-cold">
-                            <img class="pic" src="images/thumbnail-demo-3.jpg" alt="Hot ot Cold"/>
+                            <img class="pic" src="build/images/thumbnail-demo-3.jpg" alt="Hot ot Cold"/>
                             <div class="caption">
                                <div class="caption-container">
                                    <h4 class="caption-title">Hot-or-Cold</h4>
@@ -109,7 +93,7 @@
                 <div class="row">
                     <div class="pic-div">
                         <a class="pic-link" href="https://soundcloud-recorder.patjacobs.io">
-                            <img class="pic" src="images/thumbnail-demo-8.jpg" alt="Soundcloud Recorder"/>
+                            <img class="pic" src="build/images/thumbnail-demo-8.jpg" alt="Soundcloud Recorder"/>
                             <div class="caption">
                                <div class="caption-container">
                                    <h4 class="caption-title">SC Uploader</h4>
@@ -118,22 +102,9 @@
                            </div>
                         </a>
                     </div>
-<!--
-                   <div class="pic-div">
-                        <a class="pic-link" href="http://www.patjacobs.io/boom-smack-ting">
-                            <img class="pic" src="images/thumbnail-demo-10.jpg" alt="Soundcloud Recorder"/>
-                            <div class="caption">
-                               <div class="caption-container">
-                                   <h4 class="caption-title">Boom Player</h4>
-                                   <p class="caption-body">A simple demonstration of a round-robin audio sample player. Javascript, jQuery, Web Audio API</p>
-                               </div>
-                           </div>
-                        </a>
-                    </div>
--->
                     <div class="pic-div">
                         <a class="pic-link" href="http://www.patjacobs.io/about-me">
-                            <img class="pic" src="images/thumbnail-demo-11.jpg" alt="About Me"/>
+                            <img class="pic" src="build/images/thumbnail-demo-11.jpg" alt="About Me"/>
                             <div class="caption">
                                <div class="caption-container">
                                    <h4 class="caption-title">About Me</h4>
@@ -148,7 +119,7 @@
             <p class="recommend-name">&mdash;William Turner, Thinkful Mentor and Author at Focal Press</p>
         </div>
     </section>
-    
+
     <!--Skills-->
     <section class="skills-section">
         <svg class="bigTriangleColor separator-skills" xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100" viewBox="0 0 100 102" preserveAspectRatio="none">
@@ -167,7 +138,7 @@
             <li class="skill-ajax">AJAX</li>
         </ul>
     </section>
-    
+
     <!--About-->
     <section class="about-section">
         <svg class="bigTriangleColor separator-about" xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100" viewBox="0 0 100 102" preserveAspectRatio="none">
@@ -176,7 +147,7 @@
         <div class="about-container">
             <h2 class="about-header">About</h2>
             <div class="about-mugshot-div">
-                <img class="about-mugshot" src="images/me_pic.jpg" alt="Pat Jacobs"/>
+                <img class="about-mugshot" src="build/images/me_pic.jpg" alt="Pat Jacobs"/>
             </div>
             <div class="about-text-div">
 <!--
@@ -188,7 +159,7 @@
             </div>
         </div>
     </section>
-    
+
     <!--Contact footer-->
     <footer class="contact-section">
         <svg class="bigTriangleColor separator-contact" xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100" viewBox="0 0 100 102" preserveAspectRatio="none">
@@ -214,5 +185,20 @@
             <a href="mailto:musicbender@gmail.com"><button class="button button--wayra button--inverted">Contact Me</button></a>
         </div>
     </footer>
+
+    <!--scripts-->
+    <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script>window.jQuery || document.write('<script src="build/vendor/jquery-1.12.0.min.js"><\/script>')</script>
+    <script src="build/build.js"></script>
+
+    <!--Google Analytics-->
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-72988333-1', 'auto');
+      ga('send', 'pageview');
+    </script>
 </body>
 </html>

@@ -11,7 +11,8 @@
 .work-header, .skills-header, .about-header, .contact-header {
   font-family: "Open Sans", sans-serif;
   font-size: 4rem;
-  font-weight: 300; }
+  font-weight: 300;
+  text-align: center; }
 
 .pic-div, .pic {
   -webkit-transition: all 0.5s ease;
@@ -35,8 +36,12 @@
   -webkit-filter: grayscale(1) brightness(85%);
   filter: grayscale(1) brightness(85%); }
 
+.about-mugshot {
+  -webkit-clip-path: polygon(65% 1%, 100% 33%, 75% 100%, 0 100%, 0 0);
+  clip-path: polygon(65% 1%, 100% 33%, 75% 100%, 0 100%, 0 0); }
+
 .backgroundblendmode .title-section {
-  background-image: url("/images/header-background.jpg");
+  background-image: url("images/header-background.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -49,7 +54,7 @@
   position: absolute;
   left: 50%;
   margin-left: -30px;
-  bottom: 300px; }
+  bottom: 260px; }
 
 .arrows path {
   stroke: #fff;
@@ -229,6 +234,7 @@ svg.bigTriangleColor {
   font-size: 1.25rem;
   font-weight: 300;
   font-style: italic;
+  text-align: center;
   color: #a1a1a1; }
 
 .recommend-name {
@@ -236,12 +242,13 @@ svg.bigTriangleColor {
   width: 75%;
   font-family: "Open Sans", sans-serif;
   font-size: 1.25rem;
+  text-align: center;
   color: #a1a1a1; }
 
 /*******Skills Section*******/
 .skills-section {
   margin: 0;
-  height: 300px;
+  height: 350px;
   background-color: #fff; }
 
 .separator-skills path {
@@ -257,6 +264,7 @@ svg.bigTriangleColor {
   padding: 0;
   width: 100%;
   font-family: "Open Sans", sans-serif;
+  text-align: center;
   list-style: none; }
   .skills-list li {
     display: inline-block;
@@ -292,9 +300,7 @@ svg.bigTriangleColor {
   float: left; }
 
 .about-mugshot {
-  width: 100%;
-  -webkit-clip-path: polygon(65% 1%, 100% 33%, 75% 100%, 0 100%, 0 0);
-  clip-path: polygon(65% 1%, 100% 33%, 75% 100%, 0 100%, 0 0); }
+  width: 100%; }
 
 .about-text-div {
   display: inline-block;
@@ -315,6 +321,7 @@ svg.bigTriangleColor {
   font-size: 1.5rem;
   font-weight: 300;
   color: #a1a1a1;
+  font-family: "Open Sans", sans-serif;
   line-height: 2.5rem; }
 
 /*******Contact Section*******/
@@ -338,16 +345,20 @@ svg.bigTriangleColor {
   margin: 40px auto;
   width: 50%;
   font-size: 1.25rem;
+  text-align: center;
   color: #a1a1a1;
+  font-family: "Open Sans", sans-serif;
   line-height: 2rem; }
 
 .social-media {
   margin: 40px auto 20px auto;
-  width: 100%; }
+  width: 100%;
+  text-align: center; }
 
 .social-item {
   background-color: transparent;
   text-decoration: none;
+  text-align: center;
   color: #fff; }
   .social-item:link, .social-item:visited, .social-item:active {
     color: #a1a1a1;
@@ -386,6 +397,7 @@ svg.bigTriangleColor {
   text-transform: uppercase;
   font-size: 1.25rem;
   font-weight: 600;
+  font-family: "Open Sans", sans-serif;
   z-index: 1;
   -webkit-backface-visibility: hidden;
   -moz-osx-font-smoothing: grayscale; }
