@@ -21,5 +21,21 @@ $(document).ready(function(){
             $(this).children().children().first().addClass('pic-clicked');
         }
     });
+
+    //*******Skills Animation*******//
+    $('.skills').addClass('hidden-skills').viewportChecker({
+        classToAddForFullView: 'visable-skills',
+        classToRemove: 'hidden-skills',
+        offset: '5%'
+    });
+
+    $('.tlt').textillate({
+        initialDelay: 1200,
+        in: {
+                effect: 'fadeInUp',
+                delay: 90
+            },
+        type: 'word'
+    });
 });
 

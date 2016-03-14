@@ -214,19 +214,22 @@ svg.bigTriangleColor {
     color: $colorBlack;
 }
 
-.skills-list {
+.skills {
     margin: 30px auto 0 auto;
     padding: 0;
     width: 100%;
     font-family: $primaryFont;
     text-align: center;
-    list-style: none;
-    li {
-        display: inline-block;
-        margin: 0 10px 0 10px;
-        font-size: 1.5rem;
-        color: $colorGrey;
-    }
+    font-size: 1.5rem;
+    color: $colorGrey;
+}
+
+.hidden-skills {
+    opacity: 0;
+}
+
+.visable-skills {
+    opacity: 1;
 }
 
 /*******About*******/
@@ -364,6 +367,7 @@ svg.bigTriangleColor {
 
 /*******Contact Button*******/
 @import 'components/_contact-btn.scss';
+
 
 /*******Media Queries*******/
 @import 'media/_media-queries.scss';

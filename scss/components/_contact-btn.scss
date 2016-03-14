@@ -1,5 +1,4 @@
 /*******Contact Me Button*******/
-
 .button {
     display: block;
     margin: 40px auto;
@@ -21,9 +20,11 @@
     -webkit-backface-visibility: hidden;
     -moz-osx-font-smoothing: grayscale;
 }
+
 .button:focus {
     outline: none;
 }
+
 .button > span {
     vertical-align: middle;
 }
@@ -36,6 +37,7 @@
     -webkit-transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
     transition-timing-function:         cubic-bezier(0.2, 1, 0.3, 1);
 }
+
 .button--wayra::before {
     content: '';
     position: absolute;
@@ -52,15 +54,17 @@
     -webkit-transition: -webkit-transform 0.3s, opacity 0.3s, background-color 0.3s;
     transition:         transform 0.3s, opacity 0.3s, background-color 0.3s;
 }
+
 .button--wayra:hover {
     color: $colorWhite;
     border-color: $colorAqua;
-
 }
+
 .button--wayra.button--inverted:hover {
     color: #424856;
     border-color: $colorAqua;
 }
+
 .button--wayra:hover::before {
     opacity: 1;
     background-color: $colorAqua;
@@ -69,6 +73,7 @@
     -webkit-transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
     transition-timing-function:         cubic-bezier(0.2, 1, 0.3, 1);
 }
+
 .button--wayra.button--inverted:hover::before {
     background-color: $colorAqua;
 }
