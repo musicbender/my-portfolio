@@ -50,7 +50,7 @@ module.exports = function(grunt) {
           outputFile: 'build/vendor/custom-modernizr.js',
           files: {
             src: [
-              'js/*.js',
+              'build/build.js',
               'css/*.css'
             ]
           }

@@ -106,6 +106,7 @@ a:link {
   color: #fff;
   background-color: #3BE5D9;
   background-attachment: fixed;
+  overflow: hidden;
   /* see _modernizr.scss for background-image info */ }
 
 .title-div {
@@ -655,6 +656,9 @@ svg.bigTriangleColor {
 
   .caption-body {
     font-size: 0.85rem; }
+
+  .skills-section {
+    height: 400px; }
 
   .about-section {
     height: 1150px; }

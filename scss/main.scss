@@ -23,6 +23,7 @@ a:link {
     color: $colorWhite;
     background-color: $colorAqua;
     background-attachment: fixed;
+    overflow: hidden;
     /* see _modernizr.scss for background-image info */
 }
 

@@ -23,19 +23,29 @@ $(document).ready(function(){
     });
 
     //*******Skills Animation*******//
-    $('.skills').addClass('hidden-skills').viewportChecker({
-        classToAddForFullView: 'visable-skills',
-        classToRemove: 'hidden-skills',
-        offset: '5%'
-    });
+    if (Modernizr.cssanimations) { //if browser supports it
+        skillsAnimate();
+    } else {  //if not
+        $('.tlt').css('opacity', '1');
+    }
 
-    $('.tlt').textillate({
-        initialDelay: 1200,
-        in: {
-                effect: 'fadeInUp',
-                delay: 90
-            },
-        type: 'word'
-    });
+    function skillsAnimate () {
+        $('.tlt').on('scrollSpy:enter', function() {
+            $(this).textillate({
+                initialDelay: 100,
+                in: {
+                        effect: 'fadeInUp',
+                        delay: 90
+                    },
+                type: 'word'
+            });
+        });
+        $('.tlt').scrollSpy();
+    }
+
+
+
+
+
 });
 
