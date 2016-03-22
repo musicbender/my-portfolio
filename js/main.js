@@ -1,6 +1,6 @@
 $(document).ready(function(){
     //*******adds SVG code for work sample items. Removes DRY code from HTML*******//
-    $('.caption').prepend('<svg class="bigTriangleColor caption-triangle" xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100" viewBox="0 0 100 102" preserveAspectRatio="none"><path d="M0 100 L75 0 L100 100 Z" /></svg>');
+    $('.caption').prepend('<svg class="bigTriangleColor caption-triangle" xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100" viewBox="0 0 100 101" preserveAspectRatio="none"><path d="M0 100 L75 0 L100 100 Z" /></svg>');
 
     //*******hover effect and caption show/hide for work samples*******//
     $('.pic-div').mouseenter(function(){
