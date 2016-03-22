@@ -2,6 +2,12 @@ $(document).ready(function(){
     //*******adds SVG code for work sample items. Removes DRY code from HTML*******//
     $('.caption').prepend('<svg class="bigTriangleColor caption-triangle" xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100" viewBox="0 0 100 102" preserveAspectRatio="none"><path d="M0 100 L75 0 L100 100 Z" /></svg>');
 
+    if (Modernizr.getuseruedia) {
+        console.log('yes getusermedia');
+    } else {
+        console.log('no getusermedia');
+    }
+
     //*******hover effect and caption show/hide for work samples*******//
     $('.pic-div').mouseenter(function(){
         var caption = $(this).children().children().eq(1);
@@ -23,15 +29,17 @@ $(document).ready(function(){
     });
 
     //*******Skills Animation*******//
+
+    var skills = $('.tlt');
     if (Modernizr.cssanimations) { //if browser supports it
         skillsAnimate();
     } else {  //if not
-        $('.tlt').css('opacity', '1');
+        skills.css('opacity', '1');
     }
 
     function skillsAnimate () {
-        $('.tlt').on('scrollSpy:enter', function() {
-            $(this).textillate({
+        skills.on('scrollSpy:enter', function() {
+            skills.textillate({
                 initialDelay: 100,
                 in: {
                         effect: 'fadeInUp',

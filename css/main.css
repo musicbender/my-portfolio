@@ -48,6 +48,11 @@
   background-color: #3BE5D9;
   background-blend-mode: overlay; }
 
+.getusermedia {
+  /*for detecting safari and older browsers that have a weird glitch when using this with the filters that are in place with this class*/ }
+  .getusermedia .pic:hover {
+    transform: scale(1.25, 1.25) translate(0px, -10px); }
+
 .arrows {
   width: 60px;
   height: 72px;
@@ -184,8 +189,6 @@ svg.bigTriangleColor {
   mix-blend-mode: overlay;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden; }
-  .pic:hover {
-    transform: scale(1.25, 1.25) translate(0px, -10px); }
   .pic .pic-clicked {
     transform: scale(1, 1) translate(0px, 0px); }
 
@@ -385,7 +388,6 @@ svg.bigTriangleColor {
 /*******Contact Button*******/
 /*******Contact Me Button*******/
 .button {
-  display: block;
   margin: 40px auto;
   padding: 1em 2em;
   min-width: 150px;
@@ -395,6 +397,7 @@ svg.bigTriangleColor {
   color: #fff;
   vertical-align: middle;
   position: relative;
+  left: 41.27%;
   border: 2px solid;
   letter-spacing: 2px;
   text-transform: uppercase;
@@ -425,7 +428,10 @@ svg.bigTriangleColor {
   top: 0;
   left: 0;
   width: 150%;
+  /*150%*/
   height: 100%;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
   background: #37474f;
   z-index: -1;
   -webkit-transform: rotate3d(0, 0, 1, -45deg) translate3d(0, -3em, 0);
