@@ -1,0 +1,20 @@
+.backgroundblendmode {
+    .title-section {
+        background-image: url('images/header-background.jpg');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-color: $colorAqua;
+        background-blend-mode: overlay;
+    }
+}
+
+
+.getusermedia {
+    .pic {
+        &:hover {
+            transform: scale(1.25, 1.25) translate(0px, -10px);
+        }
+    }
+    /*for detecting safari and older browsers that have a weird glitch when using this with the filters that are in place with this class*/
+}
