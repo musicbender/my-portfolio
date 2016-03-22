@@ -6,8 +6,9 @@
 
 %header-font {
     font-family: $primaryFont;
-    font-size: 4rem;
+    font-size: 3.85rem;
     font-weight: $fontThin;
+    text-align: center;
 }
 
 %transition {
@@ -34,4 +35,18 @@
 %filter {
     -webkit-filter: grayscale(1) brightness(85%);
     filter:         grayscale(1) brightness(85%);
+}
+
+%pic-clip {
+    -webkit-clip-path: polygon(65% 1%, 100% 33%, 75% 100%, 0 100%, 0 0);
+    clip-path:         polygon(65% 1%, 100% 33%, 75% 100%, 0 100%, 0 0);
+}
+
+%unselectable {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }

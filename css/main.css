@@ -10,8 +10,9 @@
 
 .work-header, .skills-header, .about-header, .contact-header {
   font-family: "Open Sans", sans-serif;
-  font-size: 4rem;
-  font-weight: 300; }
+  font-size: 3.85rem;
+  font-weight: 300;
+  text-align: center; }
 
 .pic-div, .pic {
   -webkit-transition: all 0.5s ease;
@@ -35,21 +36,38 @@
   -webkit-filter: grayscale(1) brightness(85%);
   filter: grayscale(1) brightness(85%); }
 
+.about-mugshot {
+  -webkit-clip-path: polygon(65% 1%, 100% 33%, 75% 100%, 0 100%, 0 0);
+  clip-path: polygon(65% 1%, 100% 33%, 75% 100%, 0 100%, 0 0); }
+
+.unselectable {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+
 .backgroundblendmode .title-section {
-  background-image: url("/images/header-background.jpg");
+  background-image: url("images/header-background.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   background-color: #3BE5D9;
   background-blend-mode: overlay; }
 
+.getusermedia {
+  /*for detecting safari and older browsers that have a weird glitch when using this with the filters that are in place with this class*/ }
+  .getusermedia .pic:hover {
+    transform: scale(1.25, 1.25) translate(0px, -10px); }
+
 .arrows {
   width: 60px;
   height: 72px;
-  position: absolute;
+  position: relative;
   left: 50%;
   margin-left: -30px;
-  bottom: 300px; }
+  bottom: -600px; }
 
 .arrows path {
   stroke: #fff;
@@ -101,6 +119,7 @@ a:link {
   color: #fff;
   background-color: #3BE5D9;
   background-attachment: fixed;
+  overflow: hidden;
   /* see _modernizr.scss for background-image info */ }
 
 .title-div {
@@ -159,6 +178,7 @@ svg.bigTriangleColor {
   width: 90%;
   text-align: center; }
 
+/*demo thumbnails*/
 .pic-div {
   display: inline-block;
   position: relative;
@@ -178,8 +198,6 @@ svg.bigTriangleColor {
   mix-blend-mode: overlay;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden; }
-  .pic:hover {
-    transform: scale(1.25, 1.25) translate(0px, -10px); }
   .pic .pic-clicked {
     transform: scale(1, 1) translate(0px, 0px); }
 
@@ -219,8 +237,9 @@ svg.bigTriangleColor {
   font-size: 1.5rem; }
 
 .caption-body {
-  margin: 5px 0 0 0;
-  font-size: 1rem; }
+  margin: 5px auto;
+  font-size: 1rem;
+  width: 94%; }
 
 .recommend-body {
   margin: 100px auto 0 auto;
@@ -229,6 +248,7 @@ svg.bigTriangleColor {
   font-size: 1.25rem;
   font-weight: 300;
   font-style: italic;
+  text-align: center;
   color: #a1a1a1; }
 
 .recommend-name {
@@ -236,12 +256,13 @@ svg.bigTriangleColor {
   width: 75%;
   font-family: "Open Sans", sans-serif;
   font-size: 1.25rem;
+  text-align: center;
   color: #a1a1a1; }
 
 /*******Skills Section*******/
 .skills-section {
   margin: 0;
-  height: 300px;
+  height: 350px;
   background-color: #fff; }
 
 .separator-skills path {
@@ -252,17 +273,20 @@ svg.bigTriangleColor {
   margin: 10px auto 0 auto;
   color: #2b313d; }
 
-.skills-list {
+.skills {
   margin: 30px auto 0 auto;
   padding: 0;
   width: 100%;
   font-family: "Open Sans", sans-serif;
-  list-style: none; }
-  .skills-list li {
-    display: inline-block;
-    margin: 0 10px 0 10px;
-    font-size: 1.5rem;
-    color: #a1a1a1; }
+  text-align: center;
+  font-size: 1.5rem;
+  color: #a1a1a1; }
+
+.hidden-skills {
+  opacity: 0; }
+
+.visable-skills {
+  opacity: 1; }
 
 /*******About*******/
 .about-section {
@@ -292,9 +316,7 @@ svg.bigTriangleColor {
   float: left; }
 
 .about-mugshot {
-  width: 100%;
-  -webkit-clip-path: polygon(65% 1%, 100% 33%, 75% 100%, 0 100%, 0 0);
-  clip-path: polygon(65% 1%, 100% 33%, 75% 100%, 0 100%, 0 0); }
+  width: 100%; }
 
 .about-text-div {
   display: inline-block;
@@ -315,12 +337,13 @@ svg.bigTriangleColor {
   font-size: 1.5rem;
   font-weight: 300;
   color: #a1a1a1;
+  font-family: "Open Sans", sans-serif;
   line-height: 2.5rem; }
 
 /*******Contact Section*******/
 .contact-section {
   margin: 0;
-  height: 600px;
+  height: 700px;
   background-image: url("/images/bikewall_background2.jpg");
   background-size: cover;
   background-position: center;
@@ -338,16 +361,20 @@ svg.bigTriangleColor {
   margin: 40px auto;
   width: 50%;
   font-size: 1.25rem;
+  text-align: center;
   color: #a1a1a1;
+  font-family: "Open Sans", sans-serif;
   line-height: 2rem; }
 
 .social-media {
   margin: 40px auto 20px auto;
-  width: 100%; }
+  width: 100%;
+  text-align: center; }
 
 .social-item {
   background-color: transparent;
   text-decoration: none;
+  text-align: center;
   color: #fff; }
   .social-item:link, .social-item:visited, .social-item:active {
     color: #a1a1a1;
@@ -370,8 +397,15 @@ svg.bigTriangleColor {
 
 /*******Contact Button*******/
 /*******Contact Me Button*******/
+.contact-btn-div {
+  margin: 40px auto 0 auto;
+  text-align: center;
+  height: 100px; }
+
+.contact-me-btn {
+  margin: 0 auto; }
+
 .button {
-  display: block;
   margin: 40px auto;
   padding: 1em 2em;
   min-width: 150px;
@@ -386,6 +420,7 @@ svg.bigTriangleColor {
   text-transform: uppercase;
   font-size: 1.25rem;
   font-weight: 600;
+  font-family: "Open Sans", sans-serif;
   z-index: 1;
   -webkit-backface-visibility: hidden;
   -moz-osx-font-smoothing: grayscale; }
@@ -410,7 +445,10 @@ svg.bigTriangleColor {
   top: 0;
   left: 0;
   width: 150%;
+  /*150%*/
   height: 100%;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
   background: #37474f;
   z-index: -1;
   -webkit-transform: rotate3d(0, 0, 1, -45deg) translate3d(0, -3em, 0);
@@ -528,6 +566,9 @@ svg.bigTriangleColor {
     float: none;
     font-size: 5rem; }
 
+  .arrows {
+    bottom: -200px; }
+
   .subtitle {
     float: none; }
 
@@ -540,7 +581,7 @@ svg.bigTriangleColor {
     background-attachment: scroll; }
 
   .arrows {
-    bottom: 150px; }
+    bottom: -60px; }
 
   .work-section {
     height: 2130px; }
@@ -642,6 +683,9 @@ svg.bigTriangleColor {
   .caption-body {
     font-size: 0.85rem; }
 
+  .skills-section {
+    height: 400px; }
+
   .about-section {
     height: 1150px; }
 
@@ -664,7 +708,7 @@ svg.bigTriangleColor {
     font-size: 3.25rem; }
 
   .arrows {
-    bottom: 300px; }
+    bottom: -100px; }
 
   .work-section {
     height: 2000px; }
@@ -683,5 +727,8 @@ svg.bigTriangleColor {
 
   .social-media {
     width: 100%; } }
+@media only screen and (max-width: 330px) {
+  .arrows {
+    bottom: -10px; } }
 
 /*# sourceMappingURL=main.css.map */

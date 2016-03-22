@@ -1,13 +1,11 @@
 /*******Imports*******/
-
-@import '_variables.scss';
-@import '_placeholders.scss';
-@import '_mixins.scss';
-@import '_modernizr.scss';
-@import '_scroll-arrow.scss';
+@import 'helpers/_variables.scss';
+@import 'helpers/_placeholders.scss';
+@import 'helpers/_mixins.scss';
+@import 'media/_modernizr.scss';
+@import 'components/_scroll-arrow.scss';
 
 /********General Style*******/
-
 body, html {
     font-size: 100%;
     margin: 0;
@@ -17,8 +15,11 @@ a:link {
     text-decoration: none;
 }
 
-/********Title Section*******/
+.unselectable {
+    @extend %unselectable;
+}
 
+/********Title Section*******/
 .title-section {
     @extend %section;
     height: 900px;
@@ -26,6 +27,7 @@ a:link {
     color: $colorWhite;
     background-color: $colorAqua;
     background-attachment: fixed;
+    overflow: hidden;
     /* see _modernizr.scss for background-image info */
 }
 
@@ -71,12 +73,12 @@ a:link {
 }
 
 svg.bigTriangleColor {
-	pointer-events: none;
+    pointer-events: none;
 }
 
 .separator-work path {
-	fill: $colorBlack;
-	stroke-width: 2;
+    fill: $colorBlack;
+    stroke-width: 2;
 }
 
 .work-container {
@@ -99,84 +101,8 @@ svg.bigTriangleColor {
     text-align: center;
 }
 
-.pic-div {
-    @extend %transition;
-    display: inline-block;
-    position: relative;
-    margin: 10px;
-    width: 400px;
-    height: 225px;
-    isolation: isolate;
-    overflow: hidden;
-    &:hover {
-        background-color: $colorAqua;
-    } 
-    .pic-div-clicked {
-        background-color: transparent;
-    }
-}
-
-.pic {
-    @extend %transition;
-    @extend %box-shadow;
-    @extend %filter;
-    width: 400px;
-    height: 225px;
-    mix-blend-mode: overlay;
-    -webkit-backface-visibility: hidden;
-    backface-visibility:         hidden;
-    &:hover {
-        transform: scale(1.25, 1.25) translate(0px, -10px);
-    }
-    .pic-clicked {
-        transform: scale(1, 1) translate(0px, 0px);
-    }
-}
-
-.pic-link {
-    width: 400px;
-    height: 225px;
-    overflow: hidden;
-}
-
-.caption {
-    position: relative;
-    margin-top: 5px;
-    width: 400px;
-    height: 125px;
-    color: $colorWhite;
-    font-family: $primaryFont;
-    background-color: transparent;
-    opacity: 0;
-    pointer-events: none;
-    z-index: 100;
-}
-
-.caption-triangle {
-    margin: -50px 0 0 0;
-    fill: $colorBlack;
-	stroke-width: 2;
-}
-
-.caption-container {
-    width: auto;
-    height: 150px;
-    margin-top: -7px;
-    background-color: $colorBlack;
-    float: left;
-}
-
-.caption-title {
-    position: absolute;
-    top: -30px;
-    left: 175px;
-    font-size: 1.5rem;
-}
-
-.caption-body {
-    margin: 5px 0 0 0;
-    font-size: 1rem;
-}
+/*demo thumbnails*/
+@import 'components/_demo-thumbs.scss';
 
 .recommend-body {
     margin: 100px auto 0 auto;
@@ -185,6 +111,7 @@ svg.bigTriangleColor {
     font-size: 1.25rem;
     font-weight: $fontThin;
     font-style: italic;
+    text-align: center;
     color: $colorGrey;
 }
 
@@ -193,21 +120,21 @@ svg.bigTriangleColor {
     width: 75%;
     font-family: $primaryFont;
     font-size: 1.25rem;
+    text-align: center;
     color: $colorGrey;
 }
 
 /*******Skills Section*******/
-
 .skills-section {
     @extend %section;
     margin: 0;
-    height: 300px;
+    height: 350px;
     background-color: $colorWhite;
 }
 
 .separator-skills path {
-	fill: $colorBlack;
-	stroke-width: 2;
+    fill: $colorBlack;
+    stroke-width: 2;
 }
 
 .skills-header {
@@ -216,22 +143,25 @@ svg.bigTriangleColor {
     color: $colorBlack;
 }
 
-.skills-list {
+.skills {
     margin: 30px auto 0 auto;
     padding: 0;
     width: 100%;
     font-family: $primaryFont;
-    list-style: none;
-    li {
-        display: inline-block;
-        margin: 0 10px 0 10px;
-        font-size: 1.5rem;
-        color: $colorGrey;
-    }
+    text-align: center;
+    font-size: 1.5rem;
+    color: $colorGrey;
+}
+
+.hidden-skills {
+    opacity: 0;
+}
+
+.visable-skills {
+    opacity: 1;
 }
 
 /*******About*******/
-
 .about-section {
     @extend %section;
     margin: 0;
@@ -241,8 +171,8 @@ svg.bigTriangleColor {
 
 .separator-about {
     path {
-	    fill: $colorLightGrey;
-	    stroke-width: 2;
+        fill: $colorLightGrey;
+        stroke-width: 2;
     }
 }
 
@@ -268,8 +198,7 @@ svg.bigTriangleColor {
 
 .about-mugshot {
     width: 100%;
-    -webkit-clip-path: polygon(65% 1%, 100% 33%, 75% 100%, 0 100%, 0 0);
-    clip-path:         polygon(65% 1%, 100% 33%, 75% 100%, 0 100%, 0 0);
+    @extend %pic-clip;
 }
 
 .about-text-div {
@@ -293,15 +222,15 @@ svg.bigTriangleColor {
     font-size: 1.5rem;
     font-weight: 300;
     color: $colorGrey;
+    font-family: $primaryFont;
     line-height: 2.5rem;
 }
 
 /*******Contact Section*******/
-
 .contact-section {
     @extend %section;
     margin: 0;
-    height: 600px;
+    height: 700px;
     background-image: url('/images/bikewall_background2.jpg');
     background-size: cover;
     background-position: center;
@@ -310,7 +239,7 @@ svg.bigTriangleColor {
 
 .separator-contact {
     fill: $colorLightGrey;
-	stroke-width: 2;
+    stroke-width: 2;
 }
 
 .contact-header {
@@ -323,20 +252,24 @@ svg.bigTriangleColor {
     margin: 40px auto;
     width: 50%;
     font-size: 1.25rem;
+    text-align: center;
     color: $colorGrey;
+    font-family: $primaryFont;
     line-height: 2rem;
 }
 
 .social-media {
     margin: 40px auto 20px auto;
     width: 100%;
+    text-align: center;
 }
 
 .social-item {
     background-color: transparent;
     text-decoration: none;
+    text-align: center;
     color: $colorWhite;
-    &:link, 
+    &:link,
     &:visited,
     &:active {
         color: $colorGrey;
@@ -362,9 +295,8 @@ svg.bigTriangleColor {
 }
 
 /*******Contact Button*******/
+@import 'components/_contact-btn.scss';
 
-@import '_contact-btn.scss';
 
 /*******Media Queries*******/
-
-@import '_media-queries.scss';
+@import 'media/_media-queries.scss';
