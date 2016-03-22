@@ -44,10 +44,5 @@ $(document).ready(function(){
         });
         $('.tlt').scrollSpy();
     }
-
-
-
-
-
 });
 
