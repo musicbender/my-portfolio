@@ -341,7 +341,7 @@ svg.bigTriangleColor {
 /*******Contact Section*******/
 .contact-section {
   margin: 0;
-  height: 600px;
+  height: 700px;
   background-image: url("/images/bikewall_background2.jpg");
   background-size: cover;
   background-position: center;
@@ -395,6 +395,14 @@ svg.bigTriangleColor {
 
 /*******Contact Button*******/
 /*******Contact Me Button*******/
+.contact-btn-div {
+  margin: 40px auto 0 auto;
+  text-align: center;
+  height: 100px; }
+
+.contact-me-btn {
+  margin: 0 auto; }
+
 .button {
   margin: 40px auto;
   padding: 1em 2em;
@@ -405,7 +413,6 @@ svg.bigTriangleColor {
   color: #fff;
   vertical-align: middle;
   position: relative;
-  left: 41.27%;
   border: 2px solid;
   letter-spacing: 2px;
   text-transform: uppercase;
