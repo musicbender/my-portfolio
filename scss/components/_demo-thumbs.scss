@@ -1,0 +1,78 @@
+
+.pic-div {
+    @extend %transition;
+    display: inline-block;
+    position: relative;
+    margin: 10px;
+    width: 400px;
+    height: 225px;
+    isolation: isolate;
+    overflow: hidden;
+    &:hover {
+        background-color: $colorAqua;
+    }
+    .pic-div-clicked {
+        background-color: transparent;
+    }
+}
+
+.pic {
+    @extend %transition;
+    @extend %box-shadow;
+    @extend %filter;
+    width: 400px;
+    height: 225px;
+    mix-blend-mode: overlay;
+    -webkit-backface-visibility: hidden;
+    backface-visibility:         hidden;
+
+    .pic-clicked {
+        transform: scale(1, 1) translate(0px, 0px);
+    }
+}
+
+.pic-link {
+    width: 400px;
+    height: 225px;
+    overflow: hidden;
+}
+
+.caption {
+    position: relative;
+    margin-top: 5px;
+    width: 400px;
+    height: 125px;
+    color: $colorWhite;
+    font-family: $primaryFont;
+    background-color: transparent;
+    opacity: 0;
+    pointer-events: none;
+    z-index: 100;
+}
+
+.caption-triangle {
+    margin: -50px 0 0 0;
+    fill: $colorBlack;
+    stroke-width: 2;
+}
+
+.caption-container {
+    width: auto;
+    height: 150px;
+    margin-top: -7px;
+    background-color: $colorBlack;
+    float: left;
+}
+
+.caption-title {
+    position: absolute;
+    top: -30px;
+    left: 175px;
+    font-size: 1.5rem;
+}
+
+.caption-body {
+    margin: 5px auto;
+    font-size: 1rem;
+    width: 92%;
+}
