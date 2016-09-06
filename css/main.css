@@ -49,7 +49,7 @@
   user-select: none; }
 
 .backgroundblendmode .title-section {
-  background-image: url("images/header-background.jpg");
+  background-image: url("http://res.cloudinary.com/dmrjjo6ue/image/upload/v1473120687/header-background_dnxa6s.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -281,6 +281,10 @@ svg.bigTriangleColor {
   text-align: center;
   font-size: 1.5rem;
   color: #a1a1a1; }
+
+.skills::nth-child(even) {
+  color: #969696;
+  font-weight: 800; }
 
 .hidden-skills {
   opacity: 0; }

@@ -153,6 +153,11 @@ svg.bigTriangleColor {
     color: $colorGrey;
 }
 
+.skills::nth-child(even) {
+    color: rgb(150,150,150);
+    font-weight:800;
+}
+
 .hidden-skills {
     opacity: 0;
 }
