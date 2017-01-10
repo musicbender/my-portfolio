@@ -236,6 +236,12 @@ svg.bigTriangleColor {
   left: 175px;
   font-size: 1.5rem; }
 
+.caption-title-rescue {
+  top: -36px;
+  left: 163px;
+  font-size: 1.2rem;
+  width: 10em; }
+
 .caption-body {
   margin: 5px auto;
   font-size: 1rem;
@@ -262,7 +268,7 @@ svg.bigTriangleColor {
 /*******Skills Section*******/
 .skills-section {
   margin: 0;
-  height: 350px;
+  height: 30em;
   background-color: #fff; }
 
 .separator-skills path {
@@ -280,7 +286,8 @@ svg.bigTriangleColor {
   font-family: "Open Sans", sans-serif;
   text-align: center;
   font-size: 1.5rem;
-  color: #a1a1a1; }
+  color: #a1a1a1;
+  word-spacing: 10px; }
 
 .skills::nth-child(even) {
   color: #969696;
@@ -402,7 +409,7 @@ svg.bigTriangleColor {
 /*******Contact Button*******/
 /*******Contact Me Button*******/
 .contact-btn-div {
-  margin: 40px auto 0 auto;
+  margin: 40px auto 0;
   text-align: center;
   height: 100px; }
 
@@ -457,8 +464,8 @@ svg.bigTriangleColor {
   z-index: -1;
   -webkit-transform: rotate3d(0, 0, 1, -45deg) translate3d(0, -3em, 0);
   transform: rotate3d(0, 0, 1, -45deg) translate3d(0, -3em, 0);
-  -webkit-transform-origin: 0% 100%;
-  transform-origin: 0% 100%;
+  -webkit-transform-origin: 0 100%;
+  transform-origin: 0 100%;
   -webkit-transition: -webkit-transform 0.3s, opacity 0.3s, background-color 0.3s;
   transition: transform 0.3s, opacity 0.3s, background-color 0.3s; }
 
@@ -480,6 +487,25 @@ svg.bigTriangleColor {
 
 .button--wayra.button--inverted:hover::before {
   background-color: #3BE5D9; }
+
+/*******Skills Btn*******/
+.skills-btn-container {
+  text-align: center;
+  display: block;
+  margin: 2em auto; }
+
+.skills-btn {
+  border: 2px solid #3c3c3c;
+  color: #3c3c3c; }
+
+.skills-btn:hover {
+  color: #fff !important;
+  border-color: #3BE5D9; }
+
+.skills-github {
+  margin-left: 0.2em;
+  font-size: 1.7em !important;
+  transform: translate(0, 9%); }
 
 /*******Media Queries*******/
 @media only screen and (max-width: 1350px) {
@@ -506,7 +532,7 @@ svg.bigTriangleColor {
     font-size: 6rem; }
 
   .skills-section {
-    height: 350px; }
+    height: 30em; }
 
   .skills-list {
     width: 70%; }
@@ -630,7 +656,10 @@ svg.bigTriangleColor {
     height: 355px; }
 
   .about-text-div {
-    margin: 10px auto 50px auto; } }
+    margin: 10px auto 50px auto; }
+
+  .skills-section {
+    height: 35em; } }
 @media only screen and (max-width: 535px) {
   .skills-list li {
     font-size: 1.2rem; } }
@@ -681,14 +710,20 @@ svg.bigTriangleColor {
     height: 100px; }
 
   .caption-title {
-    left: 150px;
-    font-size: 1.2rem; }
+    top: -20px;
+    left: 135px;
+    font-size: 1rem; }
+
+  .caption-title-rescue {
+    left: 120px;
+    font-size: 0.9rem;
+    top: -20px; }
 
   .caption-body {
     font-size: 0.85rem; }
 
   .skills-section {
-    height: 400px; }
+    height: 40em; }
 
   .about-section {
     height: 1150px; }

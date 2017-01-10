@@ -28,11 +28,12 @@
         font-size: 6rem;
     }
     .skills-section {
-        height: 350px;
+      height: 30em;
     }
     .skills-list {
         width: 70%;
     }
+
     .about-section {
         height: 1097px;
     }
@@ -166,8 +167,10 @@
     .about-text-div {
         margin: 10px auto 50px auto;
     }
+    .skills-section {
+      height: 35em;
+    }
 }
-
 @media only screen and (max-width: 535px) {
     .skills-list li {
         font-size: 1.2rem;
@@ -224,14 +227,20 @@
         height: 100px;
     }
     .caption-title {
-        left: 150px;
-        font-size: 1.2rem;
+        top: -20px;
+        left: 135px;
+        font-size: 1rem;
+    }
+    .caption-title-rescue {
+        left: 120px;
+        font-size: 0.9rem;
+        top: -20px;
     }
     .caption-body {
         font-size: 0.85rem;
     }
     .skills-section {
-        height: 400px;
+        height: 40em;
     }
     .about-section {
         height: 1150px;

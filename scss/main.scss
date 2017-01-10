@@ -124,11 +124,12 @@ svg.bigTriangleColor {
     color: $colorGrey;
 }
 
+
 /*******Skills Section*******/
 .skills-section {
     @extend %section;
     margin: 0;
-    height: 350px;
+    height: 30em;
     background-color: $colorWhite;
 }
 
@@ -151,6 +152,7 @@ svg.bigTriangleColor {
     text-align: center;
     font-size: 1.5rem;
     color: $colorGrey;
+    word-spacing: 10px;
 }
 
 .skills::nth-child(even) {
@@ -305,4 +307,3 @@ svg.bigTriangleColor {
 
 /*******Media Queries*******/
 @import 'media/_media-queries.scss';
-
