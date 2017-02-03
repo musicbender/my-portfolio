@@ -3,7 +3,7 @@
 /*******Font*******/
 /*******Colors*******/
 /*******Other*******/
-.title-section, .work-section, .skills-section, .about-section, .contact-section {
+.title-section, .skills-section, .about-section, .contact-section {
   position: relative;
   text-align: center;
   overflow: hidden; }
@@ -49,11 +49,11 @@
   user-select: none; }
 
 .backgroundblendmode .title-section {
-  background-image: url("http://res.cloudinary.com/dmrjjo6ue/image/upload/v1473120687/header-background_dnxa6s.jpg");
+  background-color: rgba(59, 229, 217, 0.5);
+  background-image: url("images/pattern.svg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  background-color: #3BE5D9;
   background-blend-mode: overlay; }
 
 .getusermedia {
@@ -120,6 +120,7 @@ a:link {
   background-color: #3BE5D9;
   background-attachment: fixed;
   overflow: hidden;
+  z-index: 1;
   /* see _modernizr.scss for background-image info */ }
 
 .title-div {
@@ -151,6 +152,9 @@ a:link {
 
 /*******Work Section*******/
 .work-section {
+  position: relative;
+  text-align: center;
+  overflow: hidden;
   margin: -100px 0 0 0;
   height: 1400px;
   background-color: transparent;
@@ -164,7 +168,7 @@ svg.bigTriangleColor {
   stroke-width: 2; }
 
 .work-container {
-  margin: -6.1px 0 0 0;
+  margin: -4.1px 0 0 0;
   height: 1340px;
   background-color: #2b313d;
   overflow: hidden; }
@@ -186,7 +190,8 @@ svg.bigTriangleColor {
   width: 400px;
   height: 225px;
   isolation: isolate;
-  overflow: hidden; }
+  overflow: hidden;
+  z-index: 10; }
   .pic-div:hover {
     background-color: #3BE5D9; }
   .pic-div .pic-div-clicked {
@@ -355,10 +360,12 @@ svg.bigTriangleColor {
 .contact-section {
   margin: 0;
   height: 700px;
-  background-image: url("/images/bikewall_background2.jpg");
+  background-image: url("images/pattern.svg");
   background-size: cover;
   background-position: center;
-  background-attachment: fixed; }
+  background-attachment: fixed;
+  background-color: rgba(50, 50, 50, 0.92);
+  background-blend-mode: overlay; }
 
 .separator-contact {
   fill: #f7f7f7;
@@ -622,6 +629,9 @@ svg.bigTriangleColor {
   .pic-div, .pic, .pic-link {
     width: 400px;
     height: 225px; }
+
+  .pic-div {
+    z-index: 11; }
 
   .caption {
     width: 400px; }

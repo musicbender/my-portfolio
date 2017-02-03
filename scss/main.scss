@@ -28,6 +28,7 @@ a:link {
     background-color: $colorAqua;
     background-attachment: fixed;
     overflow: hidden;
+    z-index: 1;
     /* see _modernizr.scss for background-image info */
 }
 
@@ -65,7 +66,7 @@ a:link {
 /*******Work Section*******/
 
 .work-section {
-    @extend %section;
+    @include section();
     margin: -100px 0 0 0;
     height: 1400px;
     background-color: transparent;
@@ -82,7 +83,7 @@ svg.bigTriangleColor {
 }
 
 .work-container {
-    margin: -6.1px 0 0 0;
+    margin: -4.1px 0 0 0;
     height: 1340px;
     background-color: $colorBlack;
     overflow: hidden;
@@ -238,10 +239,12 @@ svg.bigTriangleColor {
     @extend %section;
     margin: 0;
     height: 700px;
-    background-image: url('/images/bikewall_background2.jpg');
+    background-image: url('images/pattern.svg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
+    background-color: rgba(50,50,50,0.92);
+    background-blend-mode: overlay;
 }
 
 .separator-contact {

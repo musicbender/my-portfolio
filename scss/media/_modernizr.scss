@@ -1,11 +1,10 @@
 .backgroundblendmode {
     .title-section {
-//        background-image: url('images/header-background.jpg');
-        background-image: url('http://res.cloudinary.com/dmrjjo6ue/image/upload/v1473120687/header-background_dnxa6s.jpg');
+        background-color: rgba($colorAqua, 0.5);
+        background-image: url('images/pattern.svg');
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
-        background-color: $colorAqua;
         background-blend-mode: overlay;
     }
 }
