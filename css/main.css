@@ -56,11 +56,6 @@
   background-repeat: no-repeat;
   background-blend-mode: overlay; }
 
-.getusermedia {
-  /*for detecting safari and older browsers that have a weird glitch when using this with the filters that are in place with this class*/ }
-  .getusermedia .pic:hover {
-    transform: scale(1.25, 1.25) translate(0px, -10px); }
-
 .arrows {
   width: 60px;
   height: 72px;
@@ -192,6 +187,7 @@ svg.bigTriangleColor {
   width: 400px;
   height: 225px;
   isolation: isolate;
+  background-color: transparent;
   overflow: hidden;
   z-index: 10; }
   .pic-div:hover {
@@ -201,17 +197,19 @@ svg.bigTriangleColor {
 
 @keyframes show-caption {
   0% {
-    top: 115px;
+    transform: translateY(115px);
     opacity: 0; }
-  100% {
-    top: -115px;
-    opacity: 1; } }
-@keyframes hide-caption {
-  0% {
-    top: -115px;
+  20% {
+    transform: translateY(-140px);
     opacity: 1; }
   100% {
-    top: 115px;
+    transform: translateY(-115px); } }
+@keyframes hide-caption {
+  0% {
+    transform: translateY(-115px);
+    opacity: 1; }
+  100% {
+    transform: translateY(115px);
     opacity: 0; } }
 .pic {
   width: 400px;
@@ -228,9 +226,9 @@ svg.bigTriangleColor {
   overflow: hidden; }
 
 .pic-div:hover .caption {
-  top: -115px;
+  transform: translateY(-115px);
   opacity: 1;
-  animation: show-caption 0.3s; }
+  animation: show-caption 0.5s; }
 
 .caption {
   position: relative;
