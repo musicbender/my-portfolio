@@ -3,3 +3,12 @@
   text-align: center;
   overflow: hidden;
 }
+
+@mixin super-center ($top: 50%, $left: 50%, $x: -50%, $y: -50%) {
+  position: absolute;
+  top: $top;
+  left: $left;
+  -webkit-transform: translate($x,$y);
+  -ms-transform: translate($x,$y);
+  transform: translate($x,$y);
+}

@@ -7,9 +7,14 @@ $fontThin: 300;
 $colorAqua: #3BE5D9;
 $colorAqua2: #02CCB5;
 $colorWhite: #fff;
-$colorGrey: #a1a1a1;
-$colorLightGrey: #f7f7f7;
-$colorBlack: #2b313d;
+$white: $colorWhite;
+$offWhite: rgb(245,245,245);
+$colorGrey: rgb(155,155,155);
+$grey: $colorGrey;
+$colorLightGrey: rgb(225,225,225);
+$lightGrey: $colorLightGrey;
+$colorBlack: rgb(50,50,50);
+$black: $colorBlack;
 
 /*******Other*******/
 $transition: all 0.5s ease;

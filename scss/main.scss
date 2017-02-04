@@ -22,9 +22,9 @@ a:link {
 /********Title Section*******/
 .title-section {
     @extend %section;
-    height: 900px;
+    height: 100vh;
     font-family: $primaryFont;
-    color: $colorWhite;
+    color: $white;
     background-color: $colorAqua;
     background-attachment: fixed;
     overflow: hidden;
@@ -45,7 +45,7 @@ a:link {
     float: right;
     font-size: $fontTitle;
     font-weight: $fontThin;
-    color: $colorAqua2;
+    color: darken($colorAqua2, 5%);
     letter-spacing: 0px;
     text-transform: uppercase;
     text-rendering: geometricPrecision;
@@ -68,7 +68,7 @@ a:link {
 .work-section {
     @include section();
     margin: -100px 0 0 0;
-    height: 1400px;
+    height: auto;
     background-color: transparent;
     z-index: 2;
 }
@@ -84,15 +84,15 @@ svg.bigTriangleColor {
 
 .work-container {
     margin: -4.1px 0 0 0;
-    height: 1340px;
-    background-color: $colorBlack;
+    height: auto;
+    background-color: $black;
     overflow: hidden;
 }
 
 .work-header {
     @extend %header-font;
     margin: 60px auto 0 auto;
-    color: $colorWhite;
+    color: $white;
 }
 
 .container {
@@ -113,16 +113,16 @@ svg.bigTriangleColor {
     font-weight: $fontThin;
     font-style: italic;
     text-align: center;
-    color: $colorGrey;
+    color: $grey;
 }
 
 .recommend-name {
-    margin: 20px auto;
+    margin: 20px auto 7em;
     width: 75%;
     font-family: $primaryFont;
     font-size: 1.25rem;
     text-align: center;
-    color: $colorGrey;
+    color: $grey;
 }
 
 
@@ -131,18 +131,18 @@ svg.bigTriangleColor {
     @extend %section;
     margin: 0;
     height: 30em;
-    background-color: $colorWhite;
+    background-color: $white;
 }
 
 .separator-skills path {
-    fill: $colorBlack;
+    fill: $black;
     stroke-width: 2;
 }
 
 .skills-header {
     @extend %header-font;
     margin: 10px auto 0 auto;
-    color: $colorBlack;
+    color: $black;
 }
 
 .skills {
@@ -152,7 +152,7 @@ svg.bigTriangleColor {
     font-family: $primaryFont;
     text-align: center;
     font-size: 1.5rem;
-    color: $colorGrey;
+    color: $grey;
     word-spacing: 10px;
 }
 
@@ -179,14 +179,14 @@ svg.bigTriangleColor {
 
 .separator-about {
     path {
-        fill: $colorLightGrey;
+        fill: $offWhite;
         stroke-width: 2;
     }
 }
 
 .about-container {
     margin: -6px 0 0 0;
-    background-color: $colorLightGrey;
+    background-color: $offWhite;
     width: 100%;
     height: calc(800px - 97px);
     overflow: hidden;
@@ -194,7 +194,7 @@ svg.bigTriangleColor {
 .about-header {
     @extend %header-font;
     margin: 60px auto 0 auto;
-    color: $colorBlack;
+    color: $black;
 }
 
 .about-mugshot-div {
@@ -229,7 +229,7 @@ svg.bigTriangleColor {
     padding: 0 50px 0 50px;
     font-size: 1.5rem;
     font-weight: 300;
-    color: $colorGrey;
+    color: $grey;
     font-family: $primaryFont;
     line-height: 2.5rem;
 }
@@ -248,7 +248,7 @@ svg.bigTriangleColor {
 }
 
 .separator-contact {
-    fill: $colorLightGrey;
+    fill: $offWhite;
     stroke-width: 2;
 }
 
@@ -263,7 +263,7 @@ svg.bigTriangleColor {
     width: 50%;
     font-size: 1.25rem;
     text-align: center;
-    color: $colorGrey;
+    color: $lightGrey;
     font-family: $primaryFont;
     line-height: 2rem;
 }
@@ -278,11 +278,11 @@ svg.bigTriangleColor {
     background-color: transparent;
     text-decoration: none;
     text-align: center;
-    color: $colorWhite;
+    color: $white;
     &:link,
     &:visited,
     &:active {
-        color: $colorGrey;
+        color: $grey;
         text-decoration: none;
     }
     i {
@@ -292,14 +292,14 @@ svg.bigTriangleColor {
         height: 55px;
         line-height: 55px;
         font-size: 1.75rem;
-        color: $colorWhite;
-        border: 2px solid $colorWhite;
+        color: $white;
+        border: 2px solid $white;
         border-radius: 100px;
         transition: all 0.25s ease-in-out;
         &:hover {
             background-color: $colorAqua;
             border: 2px solid $colorAqua;
-            color: $colorBlack;
+            color: $black;
         }
     }
 }

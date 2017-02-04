@@ -62,9 +62,11 @@
 @media only screen and (max-width: 940px) {
     .work-section {
         height: 1250px;
+        height: auto;
     }
     .work-container {
         height: calc(1250px - 60px);
+        height: auto;
     }
     .pic-div, .pic, .pic-link {
         width: 325px;
@@ -74,8 +76,12 @@
         width: 325px;
     }
     .caption-title {
-        left: 150px;
+        top: -15%;
         font-size: 1.2rem;
+    }
+    .caption-title-rescue {
+        top: -11%;
+        font-size: 0.9rem;
     }
     .caption-body {
         font-size: 0.85rem;
@@ -121,26 +127,52 @@
     }
     .work-section {
         height: 2130px;
+        height: auto
     }
     .work-container {
         height: calc(2130px - 60px);
+        height: auto;
     }
     .pic-div, .pic, .pic-link {
         width: 400px;
         height: 225px;
     }
+    .pic {
+        transform: scale(1, 1) translate(0px, 0px);
+    }
     .pic-div {
-      z-index: 11;
+        background-color: $grey
+    }
+    .pic-div:hover .caption {
+        animation: none;
+        top: -115px;
+        opacity: 1;
+    }
+    .caption-triangle path {
+        fill: rgba($black, 0.9);
     }
     .caption {
         width: 400px;
+        top: -115px;
+        opacity: 1;
+        transition: 0.3s;
+        animation: none;
+    }
+    .caption-container {
+        margin-top: -6px;
+        background-color: rgba($black, 0.9);
     }
     .caption-title {
-        left: 175px;
+        top: -21%;
         font-size: 1.5rem;
+    }
+    .caption-title-rescue {
+        top: -16%;
+        font-size: 1rem;
     }
     .caption-body {
         font-size: 1rem;
+        color: $lightGrey;
     }
     .about-section {
         height: 1250px;
@@ -171,7 +203,7 @@
         margin: 10px auto 50px auto;
     }
     .skills-section {
-      height: 35em;
+        height: 35em;
     }
 }
 @media only screen and (max-width: 535px) {
@@ -214,9 +246,11 @@
     }
     .work-section {
         height: 1950px;
+        height: auto;
     }
     .work-container {
         height: calc(1950px - 60px);
+        height: auto;
     }
     .pic-div {
         margin: 10px 0 10px 0;
@@ -231,13 +265,11 @@
     }
     .caption-title {
         top: -20px;
-        left: 135px;
         font-size: 1rem;
     }
     .caption-title-rescue {
-        left: 120px;
+        top: -15%;
         font-size: 0.9rem;
-        top: -20px;
     }
     .caption-body {
         font-size: 0.85rem;
@@ -277,9 +309,11 @@
     }
     .work-section {
         height: 2000px;
+        height: auto;
     }
     .work-container {
         height: calc(2000px - 60px);
+        height: auto;
     }
     .skills-list {
         width: 90%;

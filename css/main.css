@@ -114,7 +114,7 @@ a:link {
 
 /********Title Section*******/
 .title-section {
-  height: 900px;
+  height: 100vh;
   font-family: "Open Sans", sans-serif;
   color: #fff;
   background-color: #3BE5D9;
@@ -135,7 +135,7 @@ a:link {
   float: right;
   font-size: 10rem;
   font-weight: 300;
-  color: #02CCB5;
+  color: #02b39f;
   letter-spacing: 0px;
   text-transform: uppercase;
   text-rendering: geometricPrecision; }
@@ -156,7 +156,7 @@ a:link {
   text-align: center;
   overflow: hidden;
   margin: -100px 0 0 0;
-  height: 1400px;
+  height: auto;
   background-color: transparent;
   z-index: 2; }
 
@@ -164,13 +164,13 @@ svg.bigTriangleColor {
   pointer-events: none; }
 
 .separator-work path {
-  fill: #2b313d;
+  fill: #323232;
   stroke-width: 2; }
 
 .work-container {
   margin: -4.1px 0 0 0;
-  height: 1340px;
-  background-color: #2b313d;
+  height: auto;
+  background-color: #323232;
   overflow: hidden; }
 
 .work-header {
@@ -197,6 +197,20 @@ svg.bigTriangleColor {
   .pic-div .pic-div-clicked {
     background-color: transparent; }
 
+@keyframes show-caption {
+  0% {
+    top: 115px;
+    opacity: 0; }
+  100% {
+    top: -115px;
+    opacity: 1; } }
+@keyframes hide-caption {
+  0% {
+    top: -115px;
+    opacity: 1; }
+  100% {
+    top: 115px;
+    opacity: 0; } }
 .pic {
   width: 400px;
   height: 225px;
@@ -211,6 +225,11 @@ svg.bigTriangleColor {
   height: 225px;
   overflow: hidden; }
 
+.pic-div:hover .caption {
+  top: -115px;
+  opacity: 1;
+  animation: show-caption 0.3s; }
+
 .caption {
   position: relative;
   margin-top: 5px;
@@ -221,36 +240,40 @@ svg.bigTriangleColor {
   background-color: transparent;
   opacity: 0;
   pointer-events: none;
+  animation: hide-caption 0.3s;
   z-index: 100; }
 
 .caption-triangle {
   margin: -50px 0 0 0;
-  fill: #2b313d;
+  fill: #323232;
   stroke-width: 2; }
 
 .caption-container {
   width: auto;
   height: 150px;
   margin-top: -7px;
-  background-color: #2b313d;
+  background-color: #323232;
   float: left; }
 
 .caption-title {
   position: absolute;
-  top: -30px;
-  left: 175px;
+  top: -25%;
+  left: 60%;
+  -webkit-transform: translate(-50%, 0);
+  -ms-transform: translate(-50%, 0);
+  transform: translate(-50%, 0);
+  width: 100%;
   font-size: 1.5rem; }
 
 .caption-title-rescue {
-  top: -36px;
-  left: 163px;
   font-size: 1.2rem;
-  width: 10em; }
+  width: 50%; }
 
 .caption-body {
   margin: 5px auto;
   font-size: 1rem;
-  width: 94%; }
+  width: 94%;
+  color: #e1e1e1; }
 
 .recommend-body {
   margin: 100px auto 0 auto;
@@ -260,15 +283,15 @@ svg.bigTriangleColor {
   font-weight: 300;
   font-style: italic;
   text-align: center;
-  color: #a1a1a1; }
+  color: #9b9b9b; }
 
 .recommend-name {
-  margin: 20px auto;
+  margin: 20px auto 7em;
   width: 75%;
   font-family: "Open Sans", sans-serif;
   font-size: 1.25rem;
   text-align: center;
-  color: #a1a1a1; }
+  color: #9b9b9b; }
 
 /*******Skills Section*******/
 .skills-section {
@@ -277,12 +300,12 @@ svg.bigTriangleColor {
   background-color: #fff; }
 
 .separator-skills path {
-  fill: #2b313d;
+  fill: #323232;
   stroke-width: 2; }
 
 .skills-header {
   margin: 10px auto 0 auto;
-  color: #2b313d; }
+  color: #323232; }
 
 .skills {
   margin: 30px auto 0 auto;
@@ -291,7 +314,7 @@ svg.bigTriangleColor {
   font-family: "Open Sans", sans-serif;
   text-align: center;
   font-size: 1.5rem;
-  color: #a1a1a1;
+  color: #9b9b9b;
   word-spacing: 10px; }
 
 .skills::nth-child(even) {
@@ -311,19 +334,19 @@ svg.bigTriangleColor {
   background-color: transparent; }
 
 .separator-about path {
-  fill: #f7f7f7;
+  fill: whitesmoke;
   stroke-width: 2; }
 
 .about-container {
   margin: -6px 0 0 0;
-  background-color: #f7f7f7;
+  background-color: whitesmoke;
   width: 100%;
   height: calc(800px - 97px);
   overflow: hidden; }
 
 .about-header {
   margin: 60px auto 0 auto;
-  color: #2b313d; }
+  color: #323232; }
 
 .about-mugshot-div {
   display: inline-block;
@@ -352,7 +375,7 @@ svg.bigTriangleColor {
   padding: 0 50px 0 50px;
   font-size: 1.5rem;
   font-weight: 300;
-  color: #a1a1a1;
+  color: #9b9b9b;
   font-family: "Open Sans", sans-serif;
   line-height: 2.5rem; }
 
@@ -368,7 +391,7 @@ svg.bigTriangleColor {
   background-blend-mode: overlay; }
 
 .separator-contact {
-  fill: #f7f7f7;
+  fill: whitesmoke;
   stroke-width: 2; }
 
 .contact-header {
@@ -380,7 +403,7 @@ svg.bigTriangleColor {
   width: 50%;
   font-size: 1.25rem;
   text-align: center;
-  color: #a1a1a1;
+  color: #e1e1e1;
   font-family: "Open Sans", sans-serif;
   line-height: 2rem; }
 
@@ -395,7 +418,7 @@ svg.bigTriangleColor {
   text-align: center;
   color: #fff; }
   .social-item:link, .social-item:visited, .social-item:active {
-    color: #a1a1a1;
+    color: #9b9b9b;
     text-decoration: none; }
   .social-item i {
     display: inline-block;
@@ -411,7 +434,7 @@ svg.bigTriangleColor {
     .social-item i:hover {
       background-color: #3BE5D9;
       border: 2px solid #3BE5D9;
-      color: #2b313d; }
+      color: #323232; }
 
 /*******Contact Button*******/
 /*******Contact Me Button*******/
@@ -573,10 +596,12 @@ svg.bigTriangleColor {
     font-size: 1.5rem; } }
 @media only screen and (max-width: 940px) {
   .work-section {
-    height: 1250px; }
+    height: 1250px;
+    height: auto; }
 
   .work-container {
-    height: calc(1250px - 60px); }
+    height: calc(1250px - 60px);
+    height: auto; }
 
   .pic-div, .pic, .pic-link {
     width: 325px;
@@ -586,8 +611,12 @@ svg.bigTriangleColor {
     width: 325px; }
 
   .caption-title {
-    left: 150px;
+    top: -15%;
     font-size: 1.2rem; }
+
+  .caption-title-rescue {
+    top: -11%;
+    font-size: 0.9rem; }
 
   .caption-body {
     font-size: 0.85rem; }
@@ -626,27 +655,53 @@ svg.bigTriangleColor {
     bottom: -60px; }
 
   .work-section {
-    height: 2130px; }
+    height: 2130px;
+    height: auto; }
 
   .work-container {
-    height: calc(2130px - 60px); }
+    height: calc(2130px - 60px);
+    height: auto; }
 
   .pic-div, .pic, .pic-link {
     width: 400px;
     height: 225px; }
 
+  .pic {
+    transform: scale(1, 1) translate(0px, 0px); }
+
   .pic-div {
-    z-index: 11; }
+    background-color: #9b9b9b; }
+
+  .pic-div:hover .caption {
+    animation: none;
+    top: -115px;
+    opacity: 1; }
+
+  .caption-triangle path {
+    fill: rgba(50, 50, 50, 0.9); }
 
   .caption {
-    width: 400px; }
+    width: 400px;
+    top: -115px;
+    opacity: 1;
+    transition: 0.3s;
+    animation: none; }
+
+  .caption-container {
+    margin-top: -6px;
+    background-color: rgba(50, 50, 50, 0.9); }
 
   .caption-title {
-    left: 175px;
+    top: -21%;
     font-size: 1.5rem; }
 
-  .caption-body {
+  .caption-title-rescue {
+    top: -16%;
     font-size: 1rem; }
+
+  .caption-body {
+    font-size: 1rem;
+    color: #e1e1e1; }
 
   .about-section {
     height: 1250px; }
@@ -708,10 +763,12 @@ svg.bigTriangleColor {
     font-size: 1rem; }
 
   .work-section {
-    height: 1950px; }
+    height: 1950px;
+    height: auto; }
 
   .work-container {
-    height: calc(1950px - 60px); }
+    height: calc(1950px - 60px);
+    height: auto; }
 
   .pic-div {
     margin: 10px 0 10px 0; }
@@ -726,13 +783,11 @@ svg.bigTriangleColor {
 
   .caption-title {
     top: -20px;
-    left: 135px;
     font-size: 1rem; }
 
   .caption-title-rescue {
-    left: 120px;
-    font-size: 0.9rem;
-    top: -20px; }
+    top: -15%;
+    font-size: 0.9rem; }
 
   .caption-body {
     font-size: 0.85rem; }
@@ -765,10 +820,12 @@ svg.bigTriangleColor {
     bottom: -100px; }
 
   .work-section {
-    height: 2000px; }
+    height: 2000px;
+    height: auto; }
 
   .work-container {
-    height: calc(2000px - 60px); }
+    height: calc(2000px - 60px);
+    height: auto; }
 
   .skills-list {
     width: 90%; }

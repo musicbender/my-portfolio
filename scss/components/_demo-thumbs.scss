@@ -17,6 +17,28 @@
     }
 }
 
+@keyframes show-caption {
+  0% {
+    top: 115px;
+    opacity: 0;
+  }
+  100% {
+    top: -115px;
+    opacity: 1;
+  }
+}
+
+@keyframes hide-caption {
+  0% {
+    top: -115px;
+    opacity: 1;
+  }
+  100% {
+    top: 115px;
+    opacity: 0;
+  }
+}
+
 .pic {
     @extend %transition;
     @extend %box-shadow;
@@ -38,22 +60,29 @@
     overflow: hidden;
 }
 
+.pic-div:hover .caption {
+  top: -115px;
+  opacity: 1;
+  animation: show-caption 0.3s;
+}
+
 .caption {
     position: relative;
     margin-top: 5px;
     width: 400px;
     height: 125px;
-    color: $colorWhite;
+    color: $white;
     font-family: $primaryFont;
     background-color: transparent;
     opacity: 0;
     pointer-events: none;
+    animation: hide-caption 0.3s;
     z-index: 100;
 }
 
 .caption-triangle {
     margin: -50px 0 0 0;
-    fill: $colorBlack;
+    fill: $black;
     stroke-width: 2;
 }
 
@@ -61,26 +90,24 @@
     width: auto;
     height: 150px;
     margin-top: -7px;
-    background-color: $colorBlack;
+    background-color: $black;
     float: left;
 }
 
 .caption-title {
-    position: absolute;
-    top: -30px;
-    left: 175px;
+    @include super-center($top: -25%, $left: 60%, $x: -50%, $y: 0);
+    width: 100%;
     font-size: 1.5rem;
 }
 
 .caption-title-rescue {
-    top: -36px;
-    left: 163px;
     font-size: 1.2rem;
-    width: 10em;
+    width: 50%;
 }
 
 .caption-body {
     margin: 5px auto;
     font-size: 1rem;
     width: 94%;
+    color: $lightGrey;
 }

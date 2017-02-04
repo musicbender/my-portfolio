@@ -11,42 +11,16 @@ $(document).ready(function(){
 
     const $pic = $('.pic-div');
 
-    $pic.mouseenter(function(){
-        var caption = $(this).children().children().eq(1);
-        caption.stop().animate({top: '-115px', opacity: '0.9'}, 350);
-    });
-    $pic.mouseleave(function(){
-        var caption = $(this).children().children().eq(1);
-        caption.stop().animate({top: '115px', opacity: '0'}, 350);
-    });
     $pic.on('click', function() {
         var caption = $(this).children().children().eq(1);
         var isHover = $(this).is(":hover");
 
-        caption.stop().animate({top: '115px', opacity: '0'}, 0);
+        caption.css({top: '115px', opacity: '0'});
         if (isHover) {
             $(this).addClass('pic-div-clicked');
             $(this).children().children().first().addClass('pic-clicked');
         }
     });
-
-
-/*******IF MOBILE, FORCE HOVER ON THUMBS*******/
-
-    // checkSize();
-    //
-    // $(window).resize(function () {
-    //     checkSize();
-    // });
-    //
-    // function checkSize() {
-    //   console.log('check size');
-    //     if ($pic.css("z-index") === "11") {
-    //       var caption = $pic.children().children().eq(1);
-    //       caption.stop().animate({top: '-115px', opacity: '0.9'}, 350);
-    //     }
-    // }
-
 
 
 //*******Skills Animation*******//
