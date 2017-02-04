@@ -109,6 +109,9 @@ body, html {
   font-size: 100%;
   margin: 0; }
 
+body {
+  background-color: #323232; }
+
 a:link {
   text-decoration: none; }
 
@@ -118,7 +121,6 @@ a:link {
   font-family: "Open Sans", sans-serif;
   color: #fff;
   background-color: #3BE5D9;
-  background-attachment: fixed;
   overflow: hidden;
   z-index: 1;
   /* see _modernizr.scss for background-image info */ }
@@ -299,6 +301,9 @@ svg.bigTriangleColor {
   height: 30em;
   background-color: #fff; }
 
+.separator-skills {
+  margin-top: -0.5px; }
+
 .separator-skills path {
   fill: #323232;
   stroke-width: 2; }
@@ -331,7 +336,7 @@ svg.bigTriangleColor {
 .about-section {
   margin: 0;
   height: 800px;
-  background-color: transparent; }
+  background-color: #fff; }
 
 .separator-about path {
   fill: whitesmoke;
@@ -386,13 +391,13 @@ svg.bigTriangleColor {
   background-image: url("images/pattern.svg");
   background-size: cover;
   background-position: center;
-  background-attachment: fixed;
   background-color: rgba(50, 50, 50, 0.92);
   background-blend-mode: overlay; }
 
 .separator-contact {
   fill: whitesmoke;
-  stroke-width: 2; }
+  stroke-width: 2;
+  margin-top: -0.5px; }
 
 .contact-header {
   margin: 10px auto 0 auto;
