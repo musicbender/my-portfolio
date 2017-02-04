@@ -595,14 +595,6 @@ svg.bigTriangleColor {
   .about-body {
     font-size: 1.5rem; } }
 @media only screen and (max-width: 940px) {
-  .work-section {
-    height: 1250px;
-    height: auto; }
-
-  .work-container {
-    height: calc(1250px - 60px);
-    height: auto; }
-
   .pic-div, .pic, .pic-link {
     width: 325px;
     height: 188px; }
@@ -653,14 +645,6 @@ svg.bigTriangleColor {
 
   .arrows {
     bottom: -60px; }
-
-  .work-section {
-    height: 2130px;
-    height: auto; }
-
-  .work-container {
-    height: calc(2130px - 60px);
-    height: auto; }
 
   .pic-div, .pic, .pic-link {
     width: 400px;
@@ -762,14 +746,6 @@ svg.bigTriangleColor {
   .skills-list li {
     font-size: 1rem; }
 
-  .work-section {
-    height: 1950px;
-    height: auto; }
-
-  .work-container {
-    height: calc(1950px - 60px);
-    height: auto; }
-
   .pic-div {
     margin: 10px 0 10px 0; }
 
@@ -818,14 +794,6 @@ svg.bigTriangleColor {
 
   .arrows {
     bottom: -100px; }
-
-  .work-section {
-    height: 2000px;
-    height: auto; }
-
-  .work-container {
-    height: calc(2000px - 60px);
-    height: auto; }
 
   .skills-list {
     width: 90%; }

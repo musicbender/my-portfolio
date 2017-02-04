@@ -24,6 +24,7 @@ $(document).ready(function(){
 
 
 //*******Skills Animation*******//
+
     const $skills = $('.tlt');
     if (Modernizr.cssanimations) {
         $skills.on('inview', function(event, isInView) {
@@ -45,11 +46,11 @@ $(document).ready(function(){
 
 /*******Smooth Scroll*******/
 
-    $('.arrow-link').click(function(e) {
+    $('.arrows-link').click(function(e) {
       console.log('clicked');
       e.preventDefault();
       if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-        const target = $(this.hash);
+        var target = $(this.hash);
         target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
         if (target.length) {
           $('html, .main').animate({
