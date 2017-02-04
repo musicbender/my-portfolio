@@ -16,7 +16,7 @@
     max-width: 250px;
     border: none;
     background: none;
-    color: $colorWhite;
+    color: $white;
     vertical-align: middle;
     position: relative;
     border: 2px solid;
@@ -68,18 +68,18 @@
 }
 
 .button--wayra:hover {
-    color: $colorWhite;
-    border-color: $colorAqua;
+    color: $white;
+    border-color: $aqua;
 }
 
 .button--wayra.button--inverted:hover {
     color: #424856;
-    border-color: $colorAqua;
+    border-color: $aqua;
 }
 
 .button--wayra:hover::before {
     opacity: 1;
-    background-color: $colorAqua;
+    background-color: $aqua;
     -webkit-transform: rotate3d(0, 0, 1, 0deg);
     transform: rotate3d(0, 0, 1, 0deg);
     -webkit-transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
@@ -87,7 +87,7 @@
 }
 
 .button--wayra.button--inverted:hover::before {
-    background-color: $colorAqua;
+    background-color: $aqua;
 }
 
 

@@ -25,7 +25,7 @@ a:link {
     height: 100vh;
     font-family: $primaryFont;
     color: $white;
-    background-color: $colorAqua;
+    background-color: $aqua;
     background-attachment: fixed;
     overflow: hidden;
     z-index: 1;
@@ -45,7 +45,7 @@ a:link {
     float: right;
     font-size: $fontTitle;
     font-weight: $fontThin;
-    color: darken($colorAqua2, 5%);
+    color: darken($aqua2, 5%);
     letter-spacing: 0px;
     text-transform: uppercase;
     text-rendering: geometricPrecision;
@@ -78,7 +78,7 @@ svg.bigTriangleColor {
 }
 
 .separator-work path {
-    fill: $colorBlack;
+    fill: $black;
     stroke-width: 2;
 }
 
@@ -255,7 +255,7 @@ svg.bigTriangleColor {
 .contact-header {
     @extend %header-font;
     margin: 10px auto 0 auto;
-    color: $colorWhite;
+    color: $white;
 }
 
 .contact-text {
@@ -297,8 +297,8 @@ svg.bigTriangleColor {
         border-radius: 100px;
         transition: all 0.25s ease-in-out;
         &:hover {
-            background-color: $colorAqua;
-            border: 2px solid $colorAqua;
+            background-color: $aqua;
+            border: 2px solid $aqua;
             color: $black;
         }
     }
