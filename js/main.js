@@ -25,29 +25,28 @@ $(document).ready(function(){
 
 //*******Skills Animation*******//
 
-    const $skills = $('.tlt');
-    if (Modernizr.cssanimations) {
-        $skills.on('inview', function(event, isInView) {
-            if(isInView) {
-                $skills.textillate({
-                    initialDelay: 100,
-                    in: {
-                            effect: 'fadeInUp',
-                            delay: 90
-                        },
-                    type: 'word'
-                });
-            }
-        });
-    } else {
-        $skills.css('opacity', '1');
-    }
+    // const $skills = $('.tlt');
+    // if (Modernizr.cssanimations) {
+    //     $skills.on('inview', function(event, isInView) {
+    //         if(isInView) {
+    //             $skills.textillate({
+    //                 initialDelay: 100,
+    //                 in: {
+    //                         effect: 'fadeInUp',
+    //                         delay: 90
+    //                     },
+    //                 type: 'word'
+    //             });
+    //         }
+    //     });
+    // } else {
+    //     $skills.css('opacity', '1');
+    // }
 
 
 /*******Smooth Scroll*******/
 
     $('.arrows-link').click(function(e) {
-      console.log('clicked');
       e.preventDefault();
       if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
         var target = $(this.hash);
@@ -60,5 +59,4 @@ $(document).ready(function(){
         }
       }
     });
-
 });
