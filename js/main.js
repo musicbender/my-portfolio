@@ -4,7 +4,7 @@ $(document).ready(function(){
 
     const captionSvg = '<svg class="bigTriangleColor caption-triangle" xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100" viewBox="0 0 100 101" preserveAspectRatio="none"><path d="M0 100 L75 0 L100 100 Z" /></svg>'
 
-    $('.caption').prepend(captionSvg); 
+    $('.caption').prepend(captionSvg);
 
 
 //*******hover effect and caption show/hide for work samples*******//
