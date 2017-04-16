@@ -5,7 +5,9 @@
 @import 'media/_modernizr.scss';
 @import 'components/_scroll-arrow.scss';
 
+
 /********General Style*******/
+
 body, html {
     font-size: 100%;
     margin: 0;
@@ -184,7 +186,9 @@ svg.bigTriangleColor {
     opacity: 1;
 }
 
+
 /*******About*******/
+
 .about-section {
     @extend %section;
     margin: 0;
@@ -249,7 +253,9 @@ svg.bigTriangleColor {
     line-height: 2.5rem;
 }
 
+
 /*******Contact Section*******/
+
 .contact-section {
     @extend %section;
     margin: 0;
@@ -319,9 +325,12 @@ svg.bigTriangleColor {
     }
 }
 
+
 /*******Contact Button*******/
+
 @import 'components/_contact-btn.scss';
 
 
 /*******Media Queries*******/
+
 @import 'media/_media-queries.scss';
