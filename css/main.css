@@ -164,6 +164,9 @@ svg.bigTriangleColor {
   fill: #323232;
   stroke-width: 2; }
 
+.bigTriangleColor.mobile {
+  display: none; }
+
 .work-container {
   margin: -4.1px 0 0 0;
   height: auto;
@@ -195,22 +198,6 @@ svg.bigTriangleColor {
   .pic-div .pic-div-clicked {
     background-color: transparent; }
 
-@keyframes show-caption {
-  0% {
-    transform: translateY(115px);
-    opacity: 0; }
-  20% {
-    transform: translateY(-140px);
-    opacity: 1; }
-  100% {
-    transform: translateY(-115px); } }
-@keyframes hide-caption {
-  0% {
-    transform: translateY(-115px);
-    opacity: 1; }
-  100% {
-    transform: translateY(115px);
-    opacity: 0; } }
 .pic {
   width: 400px;
   height: 225px;
@@ -275,6 +262,23 @@ svg.bigTriangleColor {
   width: 94%;
   color: #e1e1e1; }
 
+/******* ANIMATIONS *******/
+@keyframes show-caption {
+  0% {
+    transform: translateY(115px);
+    opacity: 0; }
+  20% {
+    transform: translateY(-140px);
+    opacity: 1; }
+  100% {
+    transform: translateY(-115px); } }
+@keyframes hide-caption {
+  0% {
+    transform: translateY(-115px);
+    opacity: 1; }
+  100% {
+    transform: translateY(115px);
+    opacity: 0; } }
 .recommend-body {
   margin: 100px auto 0 auto;
   width: 75%;
