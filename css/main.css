@@ -641,7 +641,8 @@ svg.bigTriangleColor {
     width: 400px;
     height: 225px; }
   .work-section .pic {
-    transform: scale(1, 1) translate(0px, 0px); }
+    transform: scale(1, 1) translate(0px, 0px);
+    opacity: 0.5; }
   .work-section .pic-div {
     margin: 10px auto;
     background-color: #9b9b9b; }
