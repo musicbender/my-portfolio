@@ -8,51 +8,12 @@ $(document).ready(function(){
 
     const captionSvg2 = '<svg class="bigTriangleColor caption-triangle mobile" xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100" viewBox="0 0 100 101" preserveAspectRatio="none"><path d="M0 100 L25 0 L100 100 Z" /></svg>';
 
-
     $caption.prepend(captionSvg);
     $captionMobile.prepend(captionSvg2);
     $('.caption-triangle.mobile').css('display', 'none');
 
 
-//*******hover effect and caption show/hide for work samples*******//
-
-    // const $pic = $('.pic-div');
-
-    // $pic.on('click', function() {
-    //     var caption = $(this).children().children().eq(1);
-    //     var isHover = $(this).is(":hover");
-    //
-    //     caption.css({transform: 'translateY(-115)', opacity: '0'});
-    //     if (isHover) {
-    //         $(this).addClass('pic-div-clicked');
-    //         $(this).children().children().first().addClass('pic-clicked');
-    //     }
-    // });
-
-
-//*******Skills Animation*******//
-
-    // const $skills = $('.tlt');
-    // if (Modernizr.cssanimations) {
-    //     $skills.on('inview', function(event, isInView) {
-    //         if(isInView) {
-    //             $skills.textillate({
-    //                 initialDelay: 100,
-    //                 in: {
-    //                         effect: 'fadeInUp',
-    //                         delay: 90
-    //                     },
-    //                 type: 'word'
-    //             });
-    //         }
-    //     });
-    // } else {
-    //     $skills.css('opacity', '1');
-    // }
-
-
 /*******Smooth Scroll*******/
-
     $('.arrows-link').click(function(e) {
       e.preventDefault();
       if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {

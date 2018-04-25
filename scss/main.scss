@@ -192,7 +192,7 @@ svg.bigTriangleColor {
 .about-section {
     @extend %section;
     margin: 0;
-    height: 800px;
+    height: 830px;
     background-color: $white;
 }
 
@@ -207,7 +207,7 @@ svg.bigTriangleColor {
     margin: -6px 0 0 0;
     background-color: $offWhite;
     width: 100%;
-    height: calc(800px - 97px);
+    height: calc(830px - 97px);
     overflow: hidden;
 }
 .about-header {

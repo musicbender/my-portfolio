@@ -80,6 +80,7 @@
     opacity: 0; }
   100% {
     opacity: 0; } }
+
 @-webkit-keyframes arrow /*Safari and Chrome*/ {
   0% {
     opacity: 0; }
@@ -89,6 +90,7 @@
     opacity: 0; }
   100% {
     opacity: 0; } }
+
 .arrows path.a1 {
   animation-delay: -1s;
   -webkit-animation-delay: -1s;
@@ -274,6 +276,7 @@ svg.bigTriangleColor {
     opacity: 1; }
   100% {
     transform: translateY(-115px); } }
+
 @keyframes hide-caption {
   0% {
     transform: translateY(-115px);
@@ -281,6 +284,7 @@ svg.bigTriangleColor {
   100% {
     transform: translateY(115px);
     opacity: 0; } }
+
 .recommend-body {
   margin: 100px auto 0 auto;
   width: 75%;
@@ -339,7 +343,7 @@ svg.bigTriangleColor {
 /*******About*******/
 .about-section {
   margin: 0;
-  height: 800px;
+  height: 830px;
   background-color: #fff; }
 
 .separator-about path {
@@ -350,7 +354,7 @@ svg.bigTriangleColor {
   margin: -6px 0 0 0;
   background-color: whitesmoke;
   width: 100%;
-  height: calc(800px - 97px);
+  height: calc(830px - 97px);
   overflow: hidden; }
 
 .about-header {
@@ -561,9 +565,11 @@ svg.bigTriangleColor {
     font-size: 7rem; }
   .title-section .subtitle {
     font-size: 1rem; } }
+
 @media only screen and (max-width: 1200px) {
   .about-section .about-body {
     font-size: 1.2rem; } }
+
 @media only screen and (max-width: 1050px) {
   .title-section .title-div {
     top: 175px;
@@ -571,12 +577,10 @@ svg.bigTriangleColor {
     width: 600px; }
   .title-section .title {
     font-size: 6rem; }
-
   .skills-section {
     height: 30em; }
     .skills-section .skills-list {
       width: 70%; }
-
   .about-section {
     height: 1097px; }
     .about-section .about-container {
@@ -594,6 +598,7 @@ svg.bigTriangleColor {
       width: 100%; }
     .about-section .about-body {
       font-size: 1.5rem; } }
+
 @media only screen and (max-width: 940px) {
   .work-section .pic-div, .work-section .pic, .work-section .pic-link {
     width: 325px;
@@ -608,11 +613,11 @@ svg.bigTriangleColor {
     font-size: 0.9rem; }
   .work-section .caption-body {
     font-size: 0.85rem; }
-
   .about-section {
-    height: 1090px; }
+    height: 1290px; }
     .about-section .about-container {
-      height: calc(1090px - 97px); } }
+      height: calc(1290px - 97px); } }
+
 @media only screen and (max-width: 815px) {
   .title-section .title-div {
     position: static;
@@ -626,9 +631,9 @@ svg.bigTriangleColor {
     bottom: -200px; }
   .title-section .subtitle {
     float: none; }
-
   .skills-section .skills-list {
     width: 90%; } }
+
 @media only screen and (max-width: 773px) {
   .title-section {
     height: 700px;
@@ -636,7 +641,6 @@ svg.bigTriangleColor {
     background-attachment: scroll; }
     .title-section .arrows {
       bottom: -60px; }
-
   .work-section .pic-div, .work-section .pic, .work-section .pic-link {
     width: 400px;
     height: 225px; }
@@ -676,31 +680,31 @@ svg.bigTriangleColor {
   .work-section .caption.second .caption-title-rescue {
     top: 36%;
     font-size: 0.8rem; }
-
   .about-section {
-    height: 1250px; }
+    height: 1310px; }
     .about-section .about-container {
-      height: calc(1250px - 97px); }
+      height: calc(1310px - 97px); }
     .about-section .about-mugshot {
       -webkit-clip-path: polygon(65% 0%, 100% 33%, 70% 100%, 22% 100%, 0 100%, 0 0);
       clip-path: polygon(65% 0%, 100% 33%, 70% 100%, 22% 100%, 0 100%, 0 0); }
-
   .contact-section {
     height: 700px;
     background-attachment: scroll; }
     .contact-section .contact-text {
       width: 90%; } }
+
 @media only screen and (max-width: 650px) {
   .about-section .about-mugshot-div {
     height: 355px; }
   .about-section .about-text-div {
     margin: 10px auto 50px auto; }
-
   .skills-section {
     height: 35em; } }
+
 @media only screen and (max-width: 535px) {
   .skills-section .skills-list li {
     font-size: 1.2rem; } }
+
 @media only screen and (max-width: 507px) {
   .title-section .title-div {
     margin: 140px auto; }
@@ -708,19 +712,17 @@ svg.bigTriangleColor {
     font-size: 4rem; }
   .title-section h2 {
     font-size: 3rem; }
-
   .about-section .about-mugshot-div {
     height: 300px; }
-
   .contact-section {
     height: 800px; }
     .contact-section .social-media {
       width: 66%; } }
+
 @media only screen and (max-width: 475px) {
   .title-section {
     height: 700px;
     background-position: left; }
-
   .work-section .pic-div {
     margin: 10px auto; }
   .work-section .pic-div, .work-section .pic, .work-section .pic-link {
@@ -738,45 +740,41 @@ svg.bigTriangleColor {
     font-size: 0.9rem; }
   .work-section .caption-body {
     font-size: 0.85rem; }
-
   .skills-section {
     height: 40em; }
     .skills-section .skills-list {
       width: 75%; }
     .skills-section .skills-list li {
       font-size: 1rem; }
-
   .about-section {
-    height: 1150px; }
+    height: 1210px; }
     .about-section .about-container {
-      height: calc(1150px - 97px); }
+      height: calc(1210px - 97px); }
     .about-section .about-subheader {
       font-size: 2rem; }
     .about-section .about-mugshot-div {
       height: 300px; }
     .about-section .about-body {
       font-size: 1rem; } }
+
 @media only screen and (max-width: 420px) {
   .about-section .about-mugshot-div {
     height: 240px; } }
+
 @media only screen and (max-width: 365px) {
   .title-section .title {
     font-size: 3.25rem; }
   .title-section .arrows {
     bottom: -100px; }
-
   .skills-section .skills-list {
     width: 90%; }
-
   .about-section {
-    height: 1230px; }
+    height: 1300px; }
     .about-section .about-container {
-      height: calc(1230px - 97px); }
-
+      height: calc(1300px - 97px); }
   .contact-section .social-media {
     width: 100%; } }
+
 @media only screen and (max-width: 330px) {
   .title-section .arrows {
     bottom: -10px; } }
-
-/*# sourceMappingURL=main.css.map */
