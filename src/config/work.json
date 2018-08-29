@@ -1,0 +1,46 @@
+[
+  {
+    "id": "mugmath",
+    "label": "Mug Math",
+    "url": "https://mugmath.com",
+    "caption": "Universal Progressive Web App for coffee geeks. React, Redux, Node, Express, SCSS",
+    "thumb": "thumbnail-demo-4.jpg"
+  },
+  {
+    "id": "bladeandsoul",
+    "label": "Blade and Soul",
+    "url": "https://bladeandsoul.com/en",
+    "caption": "Official site for the AAA game Blade and Soul. React, Jekyll, SCSS, Mocha",
+    "thumb": "thumbnail-demo-15.jpg"
+  },
+  {
+    "id": "bns-esports",
+    "label": "B&S Esports",
+    "url": "https://esports.bladeandsoul.com/en/",
+    "caption": "Official Blade and Soul Esport site. React 16, Redux, GrraphQL, SCSS, AWS, Mocha, Webpack",
+    "thumb": "thumbnail-demo-13.jpg"
+  },
+  {
+    "id": "coin-counter",
+    "label": "Coin Counter",
+    "url": "https://www.patjacobs.io/coin-counter",
+    "caption": "Solution to the Coin Change problem. React/Redux, ES6, Webpack, Mocha",
+    "url": "thumbnail-demo-12.jpg",
+    "thumb": "thumbnail-demo-12.jpg"
+  },
+  {
+    "id": "carbine-studios",
+    "label": "Carbine Studios",
+    "url": "http://www.carbinestudios.com/",
+    "caption": "Information site for the Carbine Studios game developer company. Jekyll, jQuery, SCSS",
+    "thumb": "thumbnail-demo-14.jpg"
+  },
+  {
+    "id": "nep",
+    "label": "New Equity Productions",
+    "url": "http://newequityproductions.com",
+    "caption": "Exclusively built and designed marketing website. LESS, Javascript, PHP",
+    "caption": "Exclusively built and designed marketing website. LESS, Javascript, PHP",
+    "thumb": ""
+  }
+]
