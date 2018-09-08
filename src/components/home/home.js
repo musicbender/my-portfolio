@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { withRouter } from 'react-router-dom';
 import Header from '../header';
 import Work from '../work';
 import Skills from '../skills';
@@ -22,4 +23,5 @@ class Home extends Component {
     );
   }
 }
-export default Home;
+
+export default withRouter(Home);

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { IMG_PATH } from '../../config/config';
 import './work-item.scss'
 
@@ -6,7 +7,7 @@ export default ({ item, i }) => {
   const { id, label, url, caption, thumb } = item;
   return (
     <div className={`work-item ${id}`}>
-      <a className="pic-link" href={url} target="_blank">
+      <Link className="pic-link" to={`/case-study/${id}`}>
         <img className="pic" src={`${IMG_PATH}/${thumb}`} alt={label} />
         <div className="caption">
           <svg
@@ -32,7 +33,7 @@ export default ({ item, i }) => {
             <p className="caption-body">{caption}</p>
           </div>
         </div>
-      </a>
+      </Link>
     </div>
   );
 }

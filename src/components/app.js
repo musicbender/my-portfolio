@@ -14,7 +14,7 @@ class App extends Component {
     return (
       <main className="">
         <Route exact path="/" component={Home} />
-        {/* <Route path="/case-study/:case" component={CaseStudy}/> */}
+        <Route path="/case-study/:item" component={CaseStudy}/>
       </main>
     );
   }

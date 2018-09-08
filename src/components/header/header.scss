@@ -7,8 +7,13 @@
     height: 100vh;
     font-family: $primaryFont;
     color: $white;
-    background-color: $aqua;
     overflow: hidden;
+    background-color: rgba($aqua, 0.5);
+    background-image: url('/src/images/pattern.svg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: overlay;
     z-index: 1;
 }
 

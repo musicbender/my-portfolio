@@ -14,7 +14,7 @@ export default (props) => {
           <img className="about-mugshot" src={`${IMG_PATH}/me_pic.jpg`} alt="Pat Jacobs" />
         </div>
         <div className="about-text-div">
-            <p className="about-body">Hey there! I'm Pat. I'm a web software engineer based in sunny Orange County, California. I've gained an absurd amount of passion and curiosity for web development. Being up-to-date on the current technologies and in-tune with the industry is important to me. Currently I work as a front-end web enginner at the video game company NCSOFT.</p>
+            <p className="about-body">Hey, my name is Pat. I'm a web engineer based in sunny Orange County, California. Some of my favorite aspects of web development are making apps and tools, npm packages, reuseable react components, express APIs, writing tests (yes, you read that correctly) and bringing life to great designs. Currently I work as a front-end web enginner at the video game company NCSOFT.</p>
             <p className="about-body">I'm also into other things: roasting coffee, music composition, playing drums, teaching, gaming, woodworking, beer, making long lists, being a husband and father, and geeking out on life in general.</p>
         </div>
       </div>

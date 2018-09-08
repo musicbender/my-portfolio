@@ -1,0 +1,96 @@
+{
+  "mugmath": {
+    "title": "Mug Math",
+    "techList": [
+      "React",
+      "Redux",
+      "SCSS",
+      "Node",
+      "Express",
+      "Server Side Rendering",
+      "Service Workers",
+      "Material-UI"
+    ],
+    "url": "https://mugmath.com",
+    "content": [
+      {
+        "type": "img",
+        "image": ""
+      },
+      {
+        "type": "text",
+        "p1": "Mugmath is a Progressive Web App that helps coffee geeks like myself brew and roast better coffee. It is an assortment of small 'sub app' tools to help calculate and dial in your coffee.",
+        "p2": "On a technical standpoint, this project was a playground of a sorts for me to try new and experimental ideas. This was one of my first implimentations of server side rendering. On the Node backend, I pre-rendered the entire React app, some of the critical css, and the initial redux state. This was mainly for a perforamnce boost; in particular, to increase my perceptual performance and make sure a 'shell' of the app rendered immedately. At the time, I used SSR to also help with SEO, but these days Google has no issues crawling through javascript rendered sites."
+      },
+      {
+        "type": "img",
+        "image": ""
+      },
+      {
+        "type": "text",
+        "p1": "This app was also a chance for me to make a Progessive Web App -- something still considered 'leading edge', but more widely accepted than when I created Mugmath. In short, a PWA is the attempt for a website to act like a native app with nearly all of it's stregnths -- the best of both worlds between native and web.",
+        "p2": "Mugmath impliments all the common PWA features and then some: offline mode using service workers, https or http2, cross-browser, critical css, manifest file with app information, ability to be saved to mobile home screen and behave like a native app"
+      },
+      {
+        "type": "img",
+        "image": ""
+      },
+      {
+        "type": "text",
+        "p1": "On top of all this, it was also my goal to get a perfect lighthouse audit score. Aside from SEO being 90%, I accomplished this goal and continue to improve it as the lighthouse standards change."
+      }
+    ]
+  },
+  "bladeandsoul": {
+    "title": "Blade and Soul",
+    "techList": [
+      "React",
+      "Jekyll",
+      "SCSS",
+      "Mocha",
+      "Grunt",
+      "Node",
+      "Express",
+      "REST",
+      "MongoDB"
+    ],
+    "url": "https://bladeandsoul.com/en",
+    "content": []
+  },
+  "bns-esports": {
+    "title": "B&S Esports",
+    "techList": [
+      "React",
+      "Redux",
+      "SCSS",
+      "Mocha",
+      "GraphQL",
+      "Webpack",
+      "Node",
+      "MongoDB"
+    ],
+    "url": "https://esports.bladeandsoul.com/en/",
+    "content": []
+  },
+  "coin-counter": {
+    "title": "Coin Counter",
+    "techList": [
+      "React",
+      "Redux",
+      "Webpack",
+      "Mocha"
+    ],
+    "url": "https://www.patjacobs.io/coin-counter",
+    "content": []
+  },
+  "carbine-studios": {
+    "title": "Carbine Studios",
+    "techList": [
+      "Jekyll",
+      "jQuery",
+      "SCSS"
+    ],
+    "url": "http://www.carbinestudios.com/",
+    "content": []
+  }
+}
