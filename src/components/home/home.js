@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 import Header from '../header';
 import Work from '../work';
+import Skills from '../skills';
+import About from '../about';
+import Footer from '../footer';
 
 class Home extends Component {
   constructor(props) {
@@ -9,9 +12,12 @@ class Home extends Component {
 
   render() {
     return (
-      <main className="main">
+      <main className="home">
         <Header />
         <Work />
+        <Skills />
+        <About />
+        <Footer />
       </main>
     );
   }

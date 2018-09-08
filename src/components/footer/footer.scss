@@ -1,0 +1,72 @@
+@import '../../style/helpers/_variables';
+@import '../../style/helpers/_mixins';
+@import '../../style/helpers/_placeholders';
+
+.contact-section {
+    @extend %section;
+    margin: 0;
+    height: 700px;
+    // background-image: url('images/pattern.svg');
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(50,50,50,0.92);
+    background-blend-mode: overlay;
+}
+
+.separator-contact {
+    fill: $offWhite;
+    stroke-width: 2;
+    margin-top: -0.5px;
+}
+
+.contact-header {
+    @extend %header-font;
+    margin: 10px auto 0 auto;
+    color: $white;
+}
+
+.contact-text {
+    margin: 40px auto;
+    width: 50%;
+    font-size: 1.25rem;
+    text-align: center;
+    color: $lightGrey;
+    font-family: $primaryFont;
+    line-height: 2rem;
+}
+
+.social-media {
+    margin: 40px auto 20px auto;
+    width: 100%;
+    text-align: center;
+}
+
+.social-item {
+    background-color: transparent;
+    text-decoration: none;
+    text-align: center;
+    color: $white;
+    &:link,
+    &:visited,
+    &:active {
+        color: $grey;
+        text-decoration: none;
+    }
+    i {
+        display: inline-block;
+        margin: 15px 30px 15px 30px;
+        width: 55px;
+        height: 55px;
+        line-height: 55px;
+        font-size: 1.75rem;
+        color: $white;
+        border: 2px solid $white;
+        border-radius: 100px;
+        transition: all 0.25s ease-in-out;
+        &:hover {
+            background-color: $aqua;
+            border: 2px solid $aqua;
+            color: $black;
+        }
+    }
+}

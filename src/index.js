@@ -11,3 +11,5 @@ const Index = () => (
 );
 
 render(<Index />, document.getElementById('app'));
+
+module.hot.accept();

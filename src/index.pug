@@ -5,16 +5,15 @@ html.no-js(lang='en')
     meta(http-equiv='Content-Type', content='text/html; charset=utf-8')
     meta(name='”robots”', content='”noodp”')
     meta(name='viewport', content='width=device-width, initial-scale=1.0')
-    meta(name='description', content='Pat Jacobs is a front-end web developer based in Orange County, California. He specialises in many technologies including HTML5, CSS3, Javascript, jQuery, Web Audio API, AJAX. This website was created by Pat to show you the cool things he can do.')
+    meta(name='description', content='Pat Jacobs is a full-stack web engineer based in Orange County, California. He specialises in numerous technologies including React, Redux, Node, Express, Mongo, GraphQL, Mocha, PostCSS and SCSS.')
     meta(name='author', content='Pat Jacobs')
     meta(name='google-site-verification', content='jnM2LF9Es49rpi5LP93U1pgtixlHQtpMAU7UPrVx0FM')
     title Pat Jacobs: Fullstack Web Engineer in Orange County, CA
     // fonts
     link(async='', href='https://fonts.googleapis.com/css?family=Open+Sans:300,600', rel='stylesheet', type='text/css')
+    link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css")
     // links and script files
     link(rel='shortcut icon', href='images/pj-favicon.png')
-    link(rel='stylesheet', href='build/build.css', type='text/css')
-    script(src='build/vendor/custom-modernizr.js', async='')
     // Global site tag (gtag.js) - Google Analytics
     script(async='', src='https://www.googletagmanager.com/gtag/js?id=UA-72988333-1')
     script.
@@ -24,6 +23,4 @@ html.no-js(lang='en')
       gtag('config', 'UA-72988333-1');
   body.main
     div#app
-    script(src='build/build.js', async='')
-    // icons
-    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css')
+    script(src='/index.js', async='')

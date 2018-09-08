@@ -1,2 +1,67 @@
-@import '../../style/helpers/variables';
-@import '../../style/helpers/mixins';
+@import '../../style/helpers/_variables';
+@import '../../style/helpers/_mixins';
+@import '../../style/helpers/_placeholders';
+
+
+/*******Work Section*******/
+
+.work-section {
+    @include section();
+    margin: -100px 0 0 0;
+    height: auto;
+    background-color: transparent;
+    z-index: 2;
+}
+
+svg.bigTriangleColor {
+    pointer-events: none;
+}
+
+.separator-work path {
+    fill: $black;
+    stroke-width: 2;
+}
+
+.bigTriangleColor.mobile {
+  display: none;
+}
+
+.work-container {
+    margin: -4.1px 0 0 0;
+    height: auto;
+    background-color: $black;
+    overflow: hidden;
+}
+
+.work-header {
+    @extend %header-font;
+    margin: 60px auto 0 auto;
+    color: $white;
+}
+
+.container {
+    @extend %border-box;
+    margin: 35px auto 0 auto;
+    width: 90%;
+    text-align: center;
+}
+
+.recommend-body {
+    margin: 100px auto 0 auto;
+    width: 75%;
+    font-family: $primaryFont;
+    font-size: 1.25rem;
+    font-weight: $fontThin;
+    font-style: italic;
+    text-align: center;
+    color: $grey;
+}
+
+.recommend-name {
+    margin: 20px auto 7em;
+    width: 75%;
+    font-family: $primaryFont;
+    font-size: 1.25rem;
+    text-align: center;
+    color: $grey;
+}

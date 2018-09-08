@@ -26,118 +26,6 @@ a:link {
 }
 
 
-/********Title Section*******/
-
-.title-section {
-    @extend %section;
-    height: 100vh;
-    font-family: $primaryFont;
-    color: $white;
-    background-color: $aqua;
-    overflow: hidden;
-    z-index: 1;
-    /* see _modernizr.scss for background-image info */
-}
-
-.title-div {
-    position: relative;
-    top: 100px;
-    left: 30%;
-    margin: 0 15px 0 0;
-    width: 850px;
-}
-
-.title {
-    margin: 0;
-    float: right;
-    font-size: $fontTitle;
-    font-weight: $fontThin;
-    color: darken($aqua2, 5%);
-    letter-spacing: 0px;
-    text-transform: uppercase;
-    text-rendering: geometricPrecision;
-}
-
-.jacobs {
-    font-weight: $fontThin;
-    color: white;
-}
-
-.subtitle {
-    margin: 10px 15px 0 0;
-    float: right;
-    font-size: 1.8rem;
-    font-weight: $fontThin;
-}
-
-
-/*******Work Section*******/
-
-.work-section {
-    @include section();
-    margin: -100px 0 0 0;
-    height: auto;
-    background-color: transparent;
-    z-index: 2;
-}
-
-svg.bigTriangleColor {
-    pointer-events: none;
-}
-
-.separator-work path {
-    fill: $black;
-    stroke-width: 2;
-}
-
-.bigTriangleColor.mobile {
-  display: none;
-}
-
-.work-container {
-    margin: -4.1px 0 0 0;
-    height: auto;
-    background-color: $black;
-    overflow: hidden;
-}
-
-.work-header {
-    @extend %header-font;
-    margin: 60px auto 0 auto;
-    color: $white;
-}
-
-.container {
-    @extend %border-box;
-    margin: 35px auto 0 auto;
-    width: 90%;
-    text-align: center;
-}
-
-/*demo thumbnails*/
-@import 'components/_demo-thumbs.scss';
-
-.recommend-body {
-    margin: 100px auto 0 auto;
-    width: 75%;
-    font-family: $primaryFont;
-    font-size: 1.25rem;
-    font-weight: $fontThin;
-    font-style: italic;
-    text-align: center;
-    color: $grey;
-}
-
-.recommend-name {
-    margin: 20px auto 7em;
-    width: 75%;
-    font-family: $primaryFont;
-    font-size: 1.25rem;
-    text-align: center;
-    color: $grey;
-}
-
-
 /*******Skills Section*******/
 
 .skills-section {
@@ -175,7 +63,7 @@ svg.bigTriangleColor {
 
 .skills::nth-child(even) {
     color: rgb(150,150,150);
-    font-weight:800;
+    font-weight: 800;
 }
 
 .hidden-skills {

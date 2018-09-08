@@ -21,6 +21,6 @@ browserSync({
     baseDir: 'dist'
   },
   files: [
-    'src/*.html'
+    'dist/*.html'
   ]
 });

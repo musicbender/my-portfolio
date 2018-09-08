@@ -1,0 +1,68 @@
+@import '../../style/helpers/_variables';
+@import '../../style/helpers/_mixins';
+@import '../../style/helpers/_placeholders';
+
+.about-section {
+    @extend %section;
+    margin: 0;
+    height: 830px;
+    background-color: $white;
+}
+
+.separator-about {
+    path {
+        fill: $offWhite;
+        stroke-width: 2;
+    }
+}
+
+.about-container {
+    margin: -6px 0 0 0;
+    background-color: $offWhite;
+    width: 100%;
+    height: calc(830px - 97px);
+    overflow: hidden;
+}
+.about-header {
+    @extend %header-font;
+    margin: 60px auto 0 auto;
+    color: $black;
+}
+
+.about-mugshot-div {
+    display: inline-block;
+    margin: 30px 0 20px 0;
+    width: 50%;
+    float: left;
+}
+
+.about-mugshot {
+    width: 100%;
+    @extend %pic-clip;
+}
+
+.about-text-div {
+    display: inline-block;
+    margin: 20px 0 20px 0;
+    width: 50%;
+    float: right;
+}
+
+.about-subheader {
+    margin: 0;
+    font-size: 2.5rem;
+    font-family: $primaryFont;
+    font-weight: 600;
+}
+
+.about-body {
+    box-sizing: border-box;
+    margin: 20px 0 0 0;
+    padding: 0 50px 0 50px;
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: $grey;
+    font-family: $primaryFont;
+    line-height: 2.5rem;
+    text-align: left;
+}

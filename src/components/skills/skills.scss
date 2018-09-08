@@ -1,0 +1,49 @@
+@import '../../style/helpers/_variables';
+@import '../../style/helpers/_mixins';
+@import '../../style/helpers/_placeholders';
+
+.skills-section {
+    @extend %section;
+    margin: 0;
+    height: 30em;
+    background-color: $white;
+}
+
+.separator-skills {
+    margin-top: -0.5px;
+}
+
+.separator-skills path {
+    fill: $black;
+    stroke-width: 2;
+}
+
+.skills-header {
+    @extend %header-font;
+    margin: 10px auto 0 auto;
+    color: $black;
+}
+
+.skills {
+    margin: 30px auto 0 auto;
+    padding: 0;
+    width: 100%;
+    font-family: $primaryFont;
+    text-align: center;
+    font-size: 1.5rem;
+    color: $grey;
+    word-spacing: 10px;
+}
+
+.skills::nth-child(even) {
+    color: rgb(150,150,150);
+    font-weight: 800;
+}
+
+.hidden-skills {
+    opacity: 0;
+}
+
+.visable-skills {
+    opacity: 1;
+}

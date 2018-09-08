@@ -2,6 +2,7 @@ const webpack = require('webpack');
 const path = require('path');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 const config = {
   mode: 'production',
@@ -16,7 +17,7 @@ const config = {
   },
   output: {
     path: path.join(__dirname, '/dist'),
-    filename: 'dist.js',
+    filename: '[name].js',
     publicPath: '/',
   },
   module: {
@@ -48,6 +49,10 @@ const config = {
       },
       {
         test: /\.(jpe?g|png|gif|svg)$/i, loader: "file-loader?name=[path][hash].[ext]"
+      },
+      {
+        test: /\.pug/,
+        loader: "pug-loader",
       }
     ],
   },
@@ -59,6 +64,7 @@ const config = {
     }),
     new HtmlWebpackPlugin({
       template: 'src/index.pug',
+      filename: 'index.html',
       minify: {
         removeComments: true,
         collapseWhitespace: true,
@@ -78,21 +84,21 @@ const config = {
     })
   ],
   optimization: {
-    minimizer: {
-      new UglifyJsPlugin({
-        uglifyOptions: {
-          compress: true,
-          ecma: 6,
-          output: {
-            comments: false
-          }
-        }
-      }),
-    },
+    // minimizer: {
+    //   new UglifyJsPlugin({
+    //     uglifyOptions: {
+    //       compress: true,
+    //       ecma: 6,
+    //       output: {
+    //         comments: false
+    //       }
+    //     }
+    //   }),
+    // },
     splitChunks: {
       name: 'vendor',
       minChunks: 2
-    },
+    }
   }
 };
 

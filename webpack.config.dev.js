@@ -1,5 +1,5 @@
 const webpack = require('webpack');
-import HtmlWebpackPlugin from 'html-webpack-plugin';
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 const path = require('path');
 
 const config = {
@@ -7,7 +7,7 @@ const config = {
   devtool: 'cheap-module-source-map',
   target: 'web',
   resolve: {
-    extensions: ['.js', '.json', '.graphql'],
+    extensions: ['.js', '.json'],
   },
   entry: {
     index: [
@@ -18,11 +18,11 @@ const config = {
   },
   output: {
     path: path.join(__dirname, '/dist'),
-    filename: 'dist.js',
+    filename: '[name].js',
     publicPath: '/',
   },
   watchOptions: {
-    ignored: ['server/temp/*', 'node_modules']
+    ignored: ['node_modules']
   },
   module: {
     rules: [
@@ -58,11 +58,7 @@ const config = {
     new webpack.HotModuleReplacementPlugin(),
     new HtmlWebpackPlugin({
       template: 'src/index.pug',
-      minify: {
-        removeComments: true,
-        collapseWhitespace: true
-      },
-      inject: true
+      inject: 'body'
     }),
     new webpack.DefinePlugin({
       'process.env': {
@@ -70,6 +66,10 @@ const config = {
       },
     })
   ],
+  devServer: {
+    port: 3006,
+    hot: true,
+  }
 };
 
 module.exports = config;
