@@ -14,6 +14,10 @@ class CaseStudy extends Component {
     super(props);
   }
 
+  componentDidMount() {
+    window.scrollTo(0, 0);
+  }
+
   handleBack() {
     this.props.history.push('/');
   }

@@ -35,6 +35,11 @@
         border: 2px solid $white;
         transform: translate(calc(-50% - 0.75em), -50%);
         transition: transform 300ms ease-in-out;
+        &:hover {
+          background-color: $white;
+          color: $matte-black;
+          transition: all 300ms ease-in-out;
+        }
         > i {
           color: inherit;
           font-size: 1em;

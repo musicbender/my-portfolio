@@ -58,7 +58,31 @@
       "MongoDB"
     ],
     "url": "https://bladeandsoul.com/en",
-    "content": []
+    "content": [
+      {
+        "type": "img",
+        "imgFile": "bns-1.jpg",
+        "caption": "Carousel banner for the landing page"
+      },
+      {
+        "type": "text",
+        "p1": "Blade and Soul is a popular AAA Massively Multiplayer Online game. The website serves as a marketing site, game news resource, and online store for in-game items."
+      },
+      {
+        "type": "img",
+        "imgFile": "bns-2.jpg",
+        "caption": "Event page for the Celestial Dawn update"
+      },
+      {
+        "type": "text",
+        "p1": "Much of the content on this site is managed through a custom headless CMS (built with Node and MongoDB) that I help build apon and maintain."
+      },
+      {
+        "type": "img",
+        "imgFile": "bns-3.jpg",
+        "caption": "Previous updates page"
+      }
+    ]
   },
   "bns-esports": {
     "title": "B&S Esports",
@@ -73,7 +97,91 @@
       "MongoDB"
     ],
     "url": "https://esports.bladeandsoul.com/en/",
-    "content": []
+    "content": [
+      {
+        "type": "img",
+        "imgFile": "esports-1.jpg",
+        "caption": "Carousel banner on landing page"
+      },
+      {
+        "type": "text",
+        "p1": "I am a primary developer for our B&S Esports site. I've built, updated, and regular maintained this site and continue to be involved in its planning.",
+        "p2": "Ths entire site is built with React and Redux and we recently switched from using a REST API to using GraphQL. This is used for team management when teams register for our tournaments and other player data or account information. We use Apollo on the backend and a simple GraphQL request tool on the frontend."
+      },
+      {
+        "type": "img",
+        "imgFile": "esports-2.jpg",
+        "caption": "Team standings table build with regularly updating team data"
+      },
+      {
+        "type": "text",
+        "p1": "Many of the tournament pages displayed team data as a tournament was in progress. This data was regularly updated by another team, the data was then aggrigated and pulled into the site using various AWS services and node scripts."
+      },
+      {
+        "type": "img",
+        "imgFile": "esports-3.jpg",
+        "caption": "Tournament content taken from our custom CMS"
+      },
+      {
+        "type": "text",
+        "p1": "Much like content on the Blade and Soul main site, tournament content was also controlled through our custom headless CMS. I help build features and maintain the CMS especially when it pertains to this Esports site."
+      }
+    ]
+  },
+  "launcher-tool": {
+    "title": "Launcher Tool",
+    "techList": [
+      "Node",
+      "Express",
+      "GraphQL",
+      "MongoDB",
+      "React",
+      "Redux",
+      "SCSS",
+      "Mocha",
+      "Webpack",
+      "JSON Web Tokens",
+      "Server Side Rendering",
+      "Material-UI"
+    ],
+    "url": false,
+    "content": [
+      {
+        "type": "video",
+        "videoFile": "launcher-1.mp4",
+        "caption": "Authentication, user permissions, and landing page"
+      },
+      {
+        "type": "text",
+        "p1": "The launcher tool is a specialized CMS and tool for controlling content in NCSOFT's game launcher. I was the lead developer for this app and planned its functionality and archetecture.",
+        "p2": "This tool is a full-stack, universal web app with server-side rendering, GraphQL API, and JWT authentication."
+      },
+      {
+        "type": "video",
+        "videoFile": "launcher-2.mp4",
+        "caption": "Drag and drop items into the launcher slider"
+      },
+      {
+        "type": "text",
+        "p1": "I wanted it to be easy to add items into the launcher's slider, so I incorporated a drag and drop system. Items and be moved, added, and removed by dragging. Items can also be resized and edited.",
+        "p2": "Once a 'layout' is finished, the user can save it to the schedule. This app will then automatically publish the saved layout on the date/time dictated by the user. This is done through a Lambda function that hits the app's API, then the correct data is aggregated and saved to S3. The app's backend then 'pokes' the game launcher client to let it know it's data has been changed."
+      },
+      {
+        "type": "video",
+        "videoFile": "launcher-3.mp4",
+        "caption": "Save and schedule a publish"
+      },
+      {
+        "type": "text",
+        "p1": "The user can also edit an individual item. The form is dynamic, localized, and changes based on what type of item it is. As a user edits the item, the preview on the right instantly changes.",
+        "p2": "If the item is a news post, the user has the option to auto-fill the item using data from our CMS. The app will grab the data from our CMS API, display it, and auto-fill based on the what CMS item the user chose."
+      },
+      {
+        "type": "video",
+        "videoFile": "launcher-4.mp4",
+        "caption": "The item editor"
+      }
+    ]
   },
   "coin-counter": {
     "title": "Coin Counter",
@@ -84,7 +192,18 @@
       "Mocha"
     ],
     "url": "https://www.patjacobs.io/coin-counter",
-    "content": []
+    "content": [
+      {
+        "type": "img",
+        "imgFile": "coin-counter-1.jpg",
+        "caption": "Coin counting for days"
+      },
+      {
+        "type": "text",
+        "p1": "This project was an assignment project to meet these requirements: effectively and efficiently count how many coins you would need of each kind, be able to change the value of the coins, and use solid UX/UI.",
+        "p2": "I believe I accomplished these goals and I was able to build this in less than a day."
+      }
+    ]
   },
   "carbine-studios": {
     "title": "Carbine Studios",
@@ -94,6 +213,21 @@
       "SCSS"
     ],
     "url": "http://www.carbinestudios.com/",
-    "content": []
+    "content": [
+      {
+        "type": "img",
+        "imgFile": "carbine-1.jpg",
+        "caption": "Landing page for Carbine Studios"
+      },
+      {
+        "type": "text",
+        "p1": "This is the marketing site for the game company Carbine Studios. THe site contains information about the studio and game information. It also had a careers page that incorporated an outside API for displaying currently avaliable positions."
+      },
+      {
+        "type": "img",
+        "imgFile": "carbine-2.jpg",
+        "caption": "Game information page header"
+      }
+    ]
   }
 }

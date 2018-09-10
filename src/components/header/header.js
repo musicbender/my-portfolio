@@ -21,7 +21,7 @@ const Header = ({ type, title, techList }) => (
     }
     {
       type === 'main' &&
-      <a href="#work" className="arrows-link">
+      <a className="arrows-link">
         <FlickerArrows />
       </a>
     }
