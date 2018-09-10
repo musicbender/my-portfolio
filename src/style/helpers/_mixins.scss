@@ -12,3 +12,16 @@
   -ms-transform: translate($x,$y);
   transform: translate($x,$y);
 }
+
+@mixin line() {
+  &:after {
+    content: '';
+    position: absolute;
+    bottom: -0.65em;
+    left: 50%;
+    height: 2px;
+    width: 7em;
+    background-color: rgba($white, 0.145);
+    transform: translateX(-50%);
+  }
+}

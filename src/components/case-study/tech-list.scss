@@ -4,26 +4,10 @@
 
 .tech-list-wrapper {
   margin: 5em auto;
-  text-align: center;
-  font-family: $primaryFont;
-  color: $white;
-  > h3 {
-    position: relative;
-    margin: 0 0 2em 0;
-    font-size: 1.5em;
-    &:after {
-      content: '';
-      position: absolute;
-      bottom: -0.65em;
-      left: 50%;
-      height: 2px;
-      width: 5em;
-      background-color: rgba($white, 0.145);
-      transform: translateX(-50%);
-    }
-  }
   > ul.tech-list {
     list-style: none;
+    font-family: $primaryFont;
+    color: $white;
     > li {
       display: inline-block;
       padding: 0 1em;

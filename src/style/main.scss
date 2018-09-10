@@ -23,6 +23,14 @@ a:link {
     @extend %unselectable;
 }
 
+.line {
+    @include line();
+    position: relative;
+    width: 7em;
+    height: 2px;
+    margin: 0 auto 3em;
+}
+
 /*******Contact Button*******/
 
 @import 'components/_contact-btn.scss';

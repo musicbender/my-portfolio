@@ -1,0 +1,12 @@
+@import '../../../style/helpers/_variables';
+@import '../../../style/helpers/_mixins';
+
+h3.headline {
+  position: relative;
+  margin-bottom: 3em;
+  font-size: 1.5em;
+  text-align: center;
+  font-family: $primaryFont;
+  color: $white;
+  @include line();
+}

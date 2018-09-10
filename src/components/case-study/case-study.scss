@@ -26,5 +26,19 @@ main.case-study {
     height: auto;
     background-color: transparent;
     z-index: 2;
+    > .inner-wrapper {
+      margin: 0 auto;
+      max-width: 60em;
+      padding: 0 2em;
+      > .headline {
+        margin: 5em 0 3em;
+      }
+      .media-caption {
+        font-family: $primaryFont;
+        font-size: 0.66em;
+        text-align: left;
+        color: rgba($white, 0.66);
+      }
+    }
   }
 }

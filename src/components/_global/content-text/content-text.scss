@@ -1,0 +1,10 @@
+@import '../../../style/helpers/_variables';
+
+[class^="content-text-"] {
+  margin-bottom: 5em;
+  > p {
+    color: $white;
+    font-family: $primaryFont;
+    text-align: left;
+  }
+}

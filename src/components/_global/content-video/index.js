@@ -1,1 +1,1 @@
-export { default } from 'content-video';
+export { default } from './content-video';

@@ -15,7 +15,8 @@
     "content": [
       {
         "type": "img",
-        "image": ""
+        "imgFile": "mugmath-1.jpg",
+        "caption": "Home menu displaying all 'sub apps'"
       },
       {
         "type": "text",
@@ -24,7 +25,8 @@
       },
       {
         "type": "img",
-        "image": ""
+        "imgFile": "mugmath-2.jpg",
+        "caption": "The Easy Brew Calculator 'sub app'"
       },
       {
         "type": "text",
@@ -33,11 +35,12 @@
       },
       {
         "type": "img",
-        "image": ""
+        "imgFile": "mugmath-3.jpg",
+        "caption": "A nearly perfect lighthouse score"
       },
       {
         "type": "text",
-        "p1": "On top of all this, it was also my goal to get a perfect lighthouse audit score. Aside from SEO being 90%, I accomplished this goal and continue to improve it as the lighthouse standards change."
+        "p1": "On top of that, it was also my goal to get a perfect lighthouse audit score. Aside from SEO being 90%, I accomplished this goal and continue to improve it as the lighthouse standards change."
       }
     ]
   },
