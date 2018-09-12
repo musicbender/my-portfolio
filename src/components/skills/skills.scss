@@ -26,8 +26,10 @@
 
 .skills {
     margin: 30px auto 0 auto;
-    padding: 0;
-    width: 100%;
+    padding: 0 1em;
+    line-height: 1.4;
+    max-width: 40em;
+    width: auto;
     font-family: $primaryFont;
     text-align: center;
     font-size: 1.5rem;

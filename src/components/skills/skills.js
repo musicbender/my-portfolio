@@ -9,7 +9,7 @@ export default (props) => {
       </svg>
       <h2 className="skills-header">Skills</h2>
       <p className="skills tlt">
-          Javascript/ES6 React Redux Node Express MongoDB GraphQL REST PostCSS SCSS LESS AWS nginx jQuery Webpack Rollup UI/Design
+          Javascript/ES6 React Redux Node Express MongoDB GraphQL REST Mocha Jest PostCSS SCSS LESS AWS nginx jQuery Webpack Rollup UI/Design
       </p>
         <button className="button button--wayra button--inverted skills-btn">
           View My <i className="fa fa-github skills-github"></i><a className="skills-btn-a" href="https://www.github.com/musicbender" target="_blank"></a>
