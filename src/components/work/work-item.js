@@ -30,7 +30,6 @@ export default ({ item, i }) => {
           </svg>
           <div className="caption-container">
             <h4 className="caption-title">{label}</h4>
-            <p className="caption-body">{caption}</p>
           </div>
         </div>
       </Link>

@@ -19,12 +19,6 @@ const Header = ({ type, title, techList }) => (
         </h1>
       </div>
     }
-    {
-      type === 'main' &&
-      <a className="arrows-link">
-        <FlickerArrows />
-      </a>
-    }
   </section>
 );
 

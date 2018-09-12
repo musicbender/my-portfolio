@@ -3,9 +3,9 @@
 [class^="content-video-"] {
   position: relative;
   margin: 0 auto 5em;
-  width: 90%;
+  width: 100%;
   max-width: $previewWidth;
-  height: $previewHeight;
+  max-height: $previewHeight;
   > video {
     width: 100%;
     height: 100%;

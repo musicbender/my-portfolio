@@ -128,6 +128,90 @@
       }
     ]
   },
+  "photo-contest": {
+    "title": "Photo Contest",
+    "techList": [
+      "React",
+      "Redux",
+      "Node",
+      "Express",
+      "MongoDB",
+      "SCSS",
+      "Webpack"
+    ],
+    "url": false,
+    "content": [
+      {
+        "type": "video",
+        "videoFile": "contest-1.mp4",
+        "caption": "Creating a new contest"
+      },
+      {
+        "type": "text",
+        "p1": "This is a universal, full-stack web app designed for people to vote on a collection of photos. The administrator first creates a contest using the new contest form. There they can upload and preview their collection of photos (via drag and drop or clicking) and add other meta data such as contest deadline.",
+        "p2": "On save, the contest is saved on the mongo database as its own document and all of the photos as uploaded to S3 using a signed url from the app's backend."
+      },
+      {
+        "type": "video",
+        "videoFile": "contest-2.mp4",
+        "caption": "The contest page"
+      },
+      {
+        "text": "text",
+        "p1": "Because there are a lot of photos to load when a user opens a contest, I wanted the user to have a good experience while waiting. I also needed the contest to be fair -- if images loaded one at a time, the ones loaded first would have an advantage. So I preloaded the images and loaded them all at once when downloading was finished. I also added a Facebook like placeholder animation.",
+        "p2": "At the contest page, users can expand the image to see its full size. When they make a vote, it is instantly counted on the database. They get ten votes, then the contest is locked for that user using cookies."
+      },
+      {
+        "text": "text",
+        "p1": "This is only a version 1.0 of the app, and it is currently in use by my company. In the future, I plan to add user authentication and more administration features."
+      }
+    ]
+  },
+  "sencha": {
+    "title": "Sencha",
+    "techList": [
+      "React",
+      "Redux",
+      "Nightmare/Electron",
+      "Node",
+      "Express",
+      "Mocha",
+      "SCSS",
+      "Webpack",
+      "Material-UI"
+    ],
+    "url": false,
+    "content": [
+      {
+        "type": "video",
+        "videoFile": "sencha-1.mp4",
+        "caption": ""
+      },
+      {
+        "type": "text",
+        "p1": "Sencha is a universal, full-stack web app designed for a single purpose -- a dashboard for end-to-end testing for a collection of web projects. On the backend, it uses Nightmare/Electron to run functional javascript tests within a Chromium instance. The test results are archived to both a Mongo database and S3, and displayed on the frontend of the app."
+      },
+      {
+        "type": "video",
+        "videoFile": "sencha-2.mp4",
+        "caption": ""
+      },
+      {
+        "type": "text",
+        "p1": "You can run tests on any of your sites in the app in both live enviroments and staging/qa enviroments. You can also visit full archived test results.",
+        "p2": "Running tests in Chromium are hard on the EC2 server, so I needed to prevent multiple tests running at once (and there is no real need for that for this app). I did this by using web sockets. If a test starts running, anyone that is using the app will instantly be notified in real time. Also, certain UI elements are disabled preventing anyone from running a new test until the other one finishes."
+      },
+      {
+        "type": "video",
+        "videoFile": "sencha-3.mp4",
+        "caption": ""
+      },
+      {
+        "type": "text",
+        "p1": "I've also set up AWS Cloudwatch and Lambda functions to connect with app and run regular tests on a schedule. Results are also sent to a Slack channel so your team will get notifications on results (and @channel if a test fails)."
+      }
+    ]
+  },
   "launcher-tool": {
     "title": "Launcher Tool",
     "techList": [

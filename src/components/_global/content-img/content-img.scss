@@ -4,9 +4,10 @@
 [class^="content-img-"] {
   position: relative;
   margin: 0 auto 5em;
-  width: 90%;
+  width: 100%;
   max-width: $previewWidth;
-  height: $previewHeight;
+  max-height: $previewHeight;
+  padding-bottom: 53%;
   > a {
     position: absolute;
     top: 0;
@@ -28,6 +29,7 @@
       transition: opacity 300ms ease-in-out;
       > p {
         @include super-center();
+        display: none;
         padding: 1em 2em;
         font-size: 1.25em;
         color: $white;
@@ -35,6 +37,9 @@
         border: 2px solid $white;
         transform: translate(calc(-50% - 0.75em), -50%);
         transition: transform 300ms ease-in-out;
+        @media (min-width: $small-desktop-width) {
+          display: block;
+        }
         &:hover {
           background-color: $white;
           color: $matte-black;

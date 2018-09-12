@@ -49,13 +49,14 @@
 .work-item:hover .caption {
   transform: translateY(-115px);
   opacity: 1;
-  animation: show-caption 0.5s;
+  animation: show-caption 0.6s;
+  animation-fill-mode: forwards;
 }
 
 .caption {
     position: relative;
     margin-top: 5px;
-    width: 400px;
+    width: 450px;
     height: 125px;
     color: $white;
     font-family: $primaryFont;
@@ -73,7 +74,7 @@
 }
 
 .caption-container {
-    width: auto;
+    width: 100%;
     height: 150px;
     margin-top: -7px;
     background-color: $black;
@@ -81,21 +82,9 @@
 }
 
 .caption-title {
-    @include super-center($top: -25%, $left: 60%, $x: -50%, $y: 0);
+    @include super-center($top: -10%, $left: 60%, $x: -50%, $y: 0);
     width: 100%;
     font-size: 1.5rem;
-}
-
-.caption-title-rescue {
-    font-size: 1.2rem;
-    width: 50%;
-}
-
-.caption-body {
-    margin: 5px auto;
-    font-size: 1rem;
-    width: 94%;
-    color: $lightGrey;
 }
 
 
@@ -103,25 +92,26 @@
 
 @keyframes show-caption {
   0% {
-    transform: translateY(115px);
+    transform: translate(calc(-50% - 12em), 115px);
     opacity: 0;
   }
   20% {
-    transform: translateY(-140px);
+    transform: translate(calc(-50% + 13em), -140px);
     opacity: 1;
   }
   100% {
-    transform: translateY(-115px);
+    transform: translate(calc(-50% + 12em), -115px);
+    opacity: 1;
   }
 }
 
 @keyframes hide-caption {
   0% {
-    transform: translateY(-115px);
+    transform: translate(calc(-50% + 12em), -115px);
     opacity: 1;
   }
   100% {
-    transform: translateY(115px);
+    transform: translate(calc(-50% - 12em), 115px);
     opacity: 0;
   }
 }

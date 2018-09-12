@@ -48,6 +48,10 @@ class CaseStudy extends Component {
     const itemData = config[item];
     return (
       <main className="case-study">
+        <div className="back-btn" onClick={() => this.handleBack()}>
+          <i className="fa fa-long-arrow-left" />
+          Go Back
+        </div>
         <Header
           type="subpage"
           title={itemData.title}
@@ -55,7 +59,7 @@ class CaseStudy extends Component {
         />
         <section className="case-study-section">
           <svg className="bigTriangleColor separator-work" width="100%" height="100" viewBox="0 0 100 100" preserveAspectRatio="none">
-              <path d="M0 100 L0 0 L30 100 L100 0 L100 100 Z" />
+            <path d="M0 100 L0 0 L30 100 L100 0 L100 100 Z" />
           </svg>
           <div className="inner-wrapper">
             <Headline text="Case Study" />

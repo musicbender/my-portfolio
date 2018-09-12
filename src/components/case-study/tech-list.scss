@@ -5,6 +5,7 @@
 .tech-list-wrapper {
   margin: 5em auto;
   > ul.tech-list {
+    padding: 0;
     list-style: none;
     font-family: $primaryFont;
     color: $white;

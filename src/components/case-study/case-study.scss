@@ -3,20 +3,47 @@
 @import '../../style/helpers/_placeholders';
 
 main.case-study {
+  > .back-btn {
+    position: fixed;
+    top: 2em;
+    left: 1.5em;
+    color: $white;
+    font-family: $primaryFont;
+    font-size: 1em;
+    font-weight: bold;
+    z-index: 5;
+    > i {
+      margin-right: 0.5em;
+    }
+    &:hover {
+      cursor: pointer;
+      > i {
+        animation: back-hover 300ms linear;
+        animation-fill-mode: forwards;
+      }
+    }
+  }
   > .title-section {
     height: 18em;
-    background-color: rgba(50,50,50,0.2);
+    background-color: rgba(50, 50, 50, 0.2);
     > .subpage-title-div {
       position: relative;
       > .subpage-title {
-        position: absolute;
-        left: 6em;
-        top: 0.5em;
-        font-size: 3.5em;
+        position: static;
+        margin-top: 2em;
+        text-align: center;
+        font-size: 2.5em;
         font-weight: $fontThin;
         text-transform: uppercase;
         text-rendering: geometricPrecision;
         color: rgba($white, 0.87);
+        @media (min-width: $small-desktop-width) {
+          position: absolute;
+          left: 19%;
+          top: 1.5em;
+          margin: 0;
+          font-size: 3.5em;
+        }
       }
     }
   }
@@ -28,7 +55,7 @@ main.case-study {
     z-index: 2;
     > .inner-wrapper {
       margin: 0 auto;
-      max-width: 60em;
+      max-width: 40em;
       padding: 0 2em;
       > .headline {
         margin: 5em 0 3em;
@@ -41,4 +68,10 @@ main.case-study {
       }
     }
   }
+}
+
+@keyframes back-hover {
+  0% { transform: translateX(0); }
+  50% { transform: translateX(-0.45em); }
+  100% { transform: translateX(0); }
 }

@@ -12,7 +12,6 @@ export default ({ data, index }) => {
         id={id}
         width="640"
         height="360"
-        loop
         controls
       >
         <source src={VIDEO_PATH + '/' + videoFile} type="video/mp4" />
