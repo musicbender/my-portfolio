@@ -8,7 +8,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "export NODE_ENV=development; webpack-dev-server --config webpack.config.dev.js",
     "start:dist": "babel-node tools/dist-server.js",
-    "build": "npm run clean && babel-node tools/build.js"
+    "build": "npm run clean && babel-node tools/build.js",
+    "deploy": "npm run build && sh tools/deploy.sh"
   },
   "repository": {
     "type": "git",
