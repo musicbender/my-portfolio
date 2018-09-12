@@ -4,10 +4,11 @@
   "description": "A portfolio of some of my personal web development projects",
   "main": "src/index.js",
   "scripts": {
+    "clean": "rm -rf dist",
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "export NODE_ENV=development; webpack-dev-server --config webpack.config.dev.js",
     "start:dist": "babel-node tools/dist-server.js",
-    "build": "babel-node tools/build.js"
+    "build": "npm run clean && babel-node tools/build.js"
   },
   "repository": {
     "type": "git",
@@ -26,6 +27,7 @@
     "babel-preset-react": "^6.24.1",
     "browser-sync": "^2.24.6",
     "chalk": "^2.4.1",
+    "copy-webpack-plugin": "^4.5.2",
     "css-loader": "^1.0.0",
     "html-webpack-plugin": "^4.0.0-alpha",
     "mini-css-extract-plugin": "^0.4.2",
@@ -38,7 +40,9 @@
     "react-router-dom": "^4.3.1",
     "sass-loader": "^7.1.0",
     "style-loader": "^0.22.1",
+    "svg-url-loader": "^2.3.2",
     "trianglify": "^1.0.1",
+    "url-loader": "^1.1.1",
     "webpack": "^4.16.5",
     "webpack-cli": "^3.1.0",
     "webpack-dev-middleware": "^3.1.3",

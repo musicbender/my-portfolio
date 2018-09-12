@@ -11,7 +11,6 @@ const config = {
   },
   entry: {
     index: [
-      // 'webpack-hot-middleware/client?reload=true',
       'webpack/hot/only-dev-server',
       path.join(__dirname, '/src/index.js'),
     ]

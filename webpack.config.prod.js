@@ -3,6 +3,7 @@ const path = require('path');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin')
 
 const config = {
   mode: 'production',
@@ -44,11 +45,14 @@ const config = {
         ],
       },
       {
-        test: /\.(eot|svg|ttf|woff|woff2)$/,
+        test: /\.(eot|ttf|woff|woff2)$/,
         loader: 'file-loader?name=[path][name].[ext]'
       },
       {
-        test: /\.(jpe?g|png|gif|svg)$/i, loader: "file-loader?name=[path][hash].[ext]"
+        test: /\.(jpe?g|png|gif)$/i, loader: "file-loader?name=/images/[path][hash].[ext]"
+      },
+      {
+        test: /\.svg/i, loader: "svg-url-loader"
       },
       {
         test: /\.pug/,
@@ -79,22 +83,26 @@ const config = {
       },
       inject: true
     }),
+    new CopyWebpackPlugin([
+      { from: 'src/images', to: path.resolve(__dirname, 'dist/images'), flatten: false},
+      { from: 'src/video', to: path.resolve(__dirname, 'dist/video'), flatten: false},
+    ]),
     new MiniCssExtractPlugin({
       filename: "style.css",
     })
   ],
   optimization: {
-    // minimizer: {
-    //   new UglifyJsPlugin({
-    //     uglifyOptions: {
-    //       compress: true,
-    //       ecma: 6,
-    //       output: {
-    //         comments: false
-    //       }
-    //     }
-    //   }),
-    // },
+    minimizer: [
+      new UglifyJsPlugin({
+        uglifyOptions: {
+          compress: true,
+          ecma: 6,
+          output: {
+            comments: false
+          }
+        }
+      }),
+    ],
     splitChunks: {
       name: 'vendor',
       minChunks: 2

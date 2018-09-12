@@ -2,7 +2,7 @@
 // on your local machine.
 
 import browserSync from 'browser-sync';
-import { chalkProcessing } from './chalkConfig';
+import { chalkProcessing } from './chalk-config';
 
 /* eslint-disable no-console */
 
