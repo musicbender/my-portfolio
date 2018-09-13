@@ -45,7 +45,10 @@ const config = {
         loader: 'file-loader?name=[path][name].[ext]'
       },
       {
-        test: /\.(jpe?g|png|gif|svg)$/i, loader: "file-loader?name=[path][name].[ext]"
+        test: /\.(jpe?g|png|gif)$/i, loader: "file-loader?name=[path][name].[ext]"
+      },
+      {
+        test: /\.svg/i, loader: "svg-url-loader"
       },
       {
         test: /\.pug/,

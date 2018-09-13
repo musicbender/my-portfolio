@@ -12,6 +12,13 @@
           font-size: 1rem;
       }
     }
+    .about-section {
+      height: 950px;
+
+      .about-container {
+          height: calc(950px - 97px);
+      }
+    }
 }
 
 @media only screen and (max-width: 1200px) {
@@ -41,10 +48,10 @@
     }
 
     .about-section {
-        height: 1097px;
+        height: 1150px;
 
         .about-container {
-            height: calc(1097px - 97px);
+            height: calc(1150px - 97px);
         }
         .about-mugshot-div {
             display: block;
@@ -70,23 +77,9 @@
 
 @media only screen and (max-width: 940px) {
     .work-section {
-      .pic-div, .pic, .pic-link {
+      .work-item, .pic, .pic-link {
           width: 325px;
           height: 188px;
-      }
-      .caption {
-          width: 325px;
-      }
-      .caption-title {
-          top: -15%;
-          font-size: 1.2rem;
-      }
-      .caption-title-rescue {
-          top: -11%;
-          font-size: 0.9rem;
-      }
-      .caption-body {
-          font-size: 0.85rem;
       }
     }
 
@@ -136,61 +129,38 @@
     }
 
     .work-section {
-      .pic-div, .pic, .pic-link {
+      .work-item, .pic, .pic-link {
           width: 400px;
           height: 225px;
       }
       .pic {
           transform: scale(1, 1) translate(0px, 0px);
-          opacity: 0.5;
-      }
-      .pic-div {
-          margin: 10px auto;
-          background-color: $grey;
-      }
-      .pic-div:hover .caption {
-          animation: none;
           opacity: 1;
+      }
+      .work-item {
+          margin: 10px auto;
+          background-color: transparent;
+      }
+      .work-item:hover .caption {
+          display: none;
+          animation: none;
       }
       .caption-triangle path {
           fill: rgba($black, 0.95);
       }
       .caption {
-          width: 400px;
-          transform: translateY(-115px);
-          opacity: 1;
-          transition: 0.3s;
+        width: 430px;
+          opacity: 0;
           animation: none;
       }
       .caption-container {
           margin-top: -6px;
           background-color: rgba($black, 0.95);
       }
-      .caption-title {
-          top: -21%;
-          font-size: 1.5rem;
-      }
-      .caption-body {
-          font-size: 1rem;
-          color: $lightGrey;
-      }
-      .caption.second {
-        .caption-triangle { display: none !important; }
-        .caption-triangle.mobile { display: block !important; }
-        .caption-title {
-            top: 21%;
-            left: 34.5%;
-        }
-
-        .caption-title-rescue {
-            top: 36%;
-            font-size: 0.8rem;
-        }
-      }
     }
 
     .about-section {
-        height: 1310px;
+      height: 1310px;
 
       .about-container {
           height: calc(1310px - 97px);
@@ -225,6 +195,17 @@
         height: 35em;
     }
 }
+
+@media only screen and (max-width: 580px) {
+  .about-section {
+    height: 1500px;
+
+    .about-container {
+        height: calc(1500px - 97px);
+    }
+  }
+}
+
 @media only screen and (max-width: 535px) {
     .skills-section .skills-list li {
         font-size: 1.2rem;
@@ -265,10 +246,10 @@
     }
 
     .work-section {
-      .pic-div {
+      .work-item {
           margin: 10px auto;
       }
-      .pic-div, .pic, .pic-link {
+      .work-item, .pic, .pic-link {
           width: 100%;
           height: 188px;
       }
@@ -291,10 +272,10 @@
     }
 
     .about-section {
-      height: 1210px;
+      height: 1350px;
 
       .about-container {
-          height: calc(1210px - 97px);
+          height: calc(1350px - 97px);
       }
       .about-subheader {
           font-size: 2rem;
@@ -329,10 +310,10 @@
     }
 
     .about-section {
-        height: 1300px;
+        height: 1500px;
 
         .about-container {
-            height: calc(1300px - 97px);
+            height: calc(1500px - 97px);
         }
     }
 
