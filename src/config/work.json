@@ -1,5 +1,10 @@
 [
   {
+    "id": "lineage2",
+    "label": "Lineage 2",
+    "thumb": "thumbnail-lineage2.jpg"
+  },
+  {
     "id": "mugmath",
     "label": "Mug Math",
     "thumb": "thumbnail-demo-4.jpg"

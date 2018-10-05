@@ -1,4 +1,57 @@
 {
+  "lineage2": {
+    "title": "Lineage 2",
+    "techList": [
+      "React",
+      "SCSS",
+      "Node",
+      "Express",
+      "MongoDB",
+      "Webpack 4",
+      "REST",
+      "GraphQL"
+    ],
+    "url": "https://www.lineage2.com",
+    "content": [
+      {
+        "type": "img",
+        "imgFile": "lineage2-1.jpg",
+        "caption": "Home page populated with data from a custom headless CMS"
+      },
+      {
+        "type": "text",
+        "p1": "This is our new marketing site for one of NCSOFT's most popular titles, Lineage 2. About half of the content on the site is managed through our custom headless CMS that my team built. This data is fetched by the site and populates what you see in a way that is performant and as dynamic as possible."
+      },
+      {
+        "type": "img",
+        "imgFile": "lineage2-2.jpg",
+        "caption": "Home page populated with data from a custom headless CMS"
+      },
+      {
+        "type": "img",
+        "imgFile": "lineage2-3.jpg",
+        "caption": "Home page populated with data from a custom headless CMS"
+      },
+      {
+        "type": "text",
+        "p1": "The site includes game information about the possible races and classes a player could choose. There was a large amount of data that had to be visualized in a way that made sense. This included detailed stats on each player class. Here I used animated SVG for the stat circle bars."
+      },
+      {
+        "type": "img",
+        "imgFile": "lineage2-4.jpg",
+        "caption": "Home page populated with data from a custom headless CMS"
+      },
+      {
+        "type": "img",
+        "imgFile": "lineage2-5.jpg",
+        "caption": "Home page populated with data from a custom headless CMS"
+      },
+      {
+        "type": "text",
+        "p1": "There were several other pages including a shop wehre players could buy in-game currency, prestige packs, and server transfers. There was also CMS-generated news articles that could by organized by tags and categories."
+      }
+    ]
+  },
   "mugmath": {
     "title": "Mug Math",
     "techList": [
